@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: {{projectTitle}}</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo-first">
+        <img
+          class="main-header__logo-first-image"
+          src="img/logo-picture.svg"
+          width="33"
+          height="37"
+          alt="Логотип «Cat Energy»."
+        />
+      </a>
+      <a class="main-header__logo-secondary">
+        <img
+          class="main-header__logo-secondary-title"
+          src="img/logo-name.svg"
+          width="101"
+          height="18"
+          alt="Логотип с названием «Cat Energy»."
+        />
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html"> Главная </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html"> Подбор программы </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-form-container">
+      <h1 class="main-form-container__title">Подбор программы</h1>
+      <form
+        class="appointment-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <div class="form-profile">
+          <h2 class="visually-hidden">Анкета</h2>
+          <p class="form-profile__description">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+          <p class="field-group appointment-form__name">
+            <label class="form-label" for="appointment-form__name">ИМЯ:*</label>
+            <input
+              class="field-name"
+              type="text"
+              placeholder="барсик"
+              id="appointment-form__name"
+              name="appointment-form__name"
+            />
+          </p>
+          <p class="field-group appointment-form__mass">
+            <label class="form-label" for="appointment-form__mass"
+              >Вес (кг):*</label
+            >
+            <input
+              class="field-mass"
+              type="text"
+              placeholder="7"
+              id="appointment-form__mass"
+              name="appointment-form__mass"
+            />
+          </p>
+          <p class="field-group appointment-form__age">
+            <label class="form-label" for="appointment-form__age"
+              >Возраст (лет):</label
+            >
+            <input
+              class="field-age"
+              type="text"
+              placeholder="7"
+              id="appointment-form__age"
+              name="appointment-form__age"
+            />
+          </p>
+          <fieldset class="form-profile__filter">
+            <ul class="form-profile__filter__list">
+              <li class="form-profile__filter__item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="radio"
+                    name="programm"
+                    value="slim"
+                    checked
+                  />
+                  Похудение
+                </label>
+              </li>
+              <li class="form-profile__filter__item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="radio"
+                    name="programm"
+                    value="gain"
+                  />
+                  Набор массы
+                </label>
+              </li>
+              <li class="form-profile__filter__item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="radio"
+                    name="programm"
+                    value="need-advice"
+                  />
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-contacts">
+          <h2 class="form-contacts__title">
+            Контактные данные (владельца кота)
+          </h2>
+          <p class="field-group appointment-form__name">
+            <label class="form-label" for="appointment-form__email"
+              >E-mail:*</label
+            >
+            <input
+              class="field-email"
+              type="email"
+              placeholder="kuklachev@gmail.com"
+              id="appointment-form__email"
+              name="appointment-form__email"
+            />
+          </p>
+          <p class="field-group appointment-form__phone">
+            <label class="form-label" for="appointment-form__phone"
+              >Телефон:*</label
+            >
+            <input
+              class="field-phone"
+              type="text"
+              placeholder="8 (960) 900-60-90"
+              id="appointment-form__phone"
+              name="appointment-form__phone"
+            />
+          </p>
+        </div>
+        <div class="form-comment">
+          <h2 class="form-comment__title">Комментарий</h2>
+          <label class="form-label" for="appointment-form__comment"></label>
+          <input
+            class="field-comment"
+            type="text"
+            placeholder="Расскажите обо всех повадках кота"
+            id="appointment-form__comment"
+            name="appointment-form__comment"
+          />
+        </div>
+        <div class="form-optionally">
+          <h2 class="form-optionally__title">Дополнительно</h2>
+          <fieldset class="form-optionally__filter">
+            <ul class="form-optionally__filter__list">
+              <li class="form-optionally__filter__item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="optionally"
+                    value="sweetener"
+                    checked
+                  />
+                  Cахарозаменитель
+                </label>
+              </li>
+              <li class="form-optionally__filter__item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="optionally"
+                    value="Water"
+                  />
+                  Питьевая вода
+                </label>
+              </li>
+              <li class="form-optionally__filter__item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="optionally"
+                    value="Milk"
+                  />
+                  Молоко
+                </label>
+              </li>
+              <li class="form-optionally__filter__item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="optionally"
+                    value="vitamins"
+                  />
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <button class="button button-send" type="submit">
+          Отправить заявку
+        </button>
+        <span>* — Обязательные поля </span>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__location">
+        <h3 class="main-footer__location__title">
+          Приглашаем к сотрудничеству дилеров!
+        </h3>
+        <span class="main-footer__location__description"
+          >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
+        >
+      </div>
+      <img
+        class="main-footer__map"
+        src="img/map.jpg"
+        width="320"
+        height="362"
+        alt="Карта с местоположением Cat Energy."
+      />
+      <a class="main-footer__logo-secondary">
+        <img
+          class="main-header__logo-secondary-title"
+          src="img/logo-name.svg"
+          width="101"
+          height="18"
+          alt="Логотип с названием «Cat Energy»."
+        />
+      </a>
+      <div class="main-footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a
+              class="social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy"
+              >Мы в Вконтакте</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru"
+              >Мы в Ютубе</a
+            >
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--telegram"
+              href="https://t.me/htmlacademy"
+              >Мы в Телеграме</a
+            >
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            >HTML Academy</a
+          >
+          <a
+            class="copyright__logo-link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
