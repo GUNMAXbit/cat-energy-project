@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>Cat Energy</title>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -17,7 +17,7 @@
       </a>
       <a class="main-header__logo-secondary">
         <img
-          class="main-header__logo-secondary-title"
+          class="logo-secondary-title"
           src="img/logo-name.svg"
           width="101"
           height="18"
@@ -28,66 +28,68 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html"> Главная </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html"> Подбор программы </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav-list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#"> Главная </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html"> Подбор программы </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-container__title">Функциональное питание для котов</h1>
-      <p class="main-container__description">Занялся собой? Займись котом!</p>
-      <a class="button main-container__programm" href="form.html"
-        >Подобрать программу
-      </a>
+      <div class="main-header">
+        <h1 class="main-header__title">Функциональное питание для котов</h1>
+        <p class="main-header__description">Занялся собой? Займись котом!</p>
+        <a class="button main-header__programm" href="form.html"
+          >Подобрать программу
+        </a>
+      </div>
       <section class="programm">
         <h2 class="visually-hidden">Программы</h2>
-        <div class="first-programm">
-          <img
-            class="first-programm__icon"
-            src="img/small-cat.svg"
-            width="50"
-            height="53"
-            alt="Иконка с маленьким котом."
-          />
-          <h3 class="programm__title">Похудение</h3>
-          <p class="programm__description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по
-            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
-            сбросить лишний вес.
-          </p>
-          <a class="button programm-button" href="#">Каталог slim</a>
-        </div>
-        <div class="secondary-programm">
-          <img
-            class="secondary-programm__icon"
-            src="img/strong-cat.svg"
-            width="67"
-            height="50"
-            alt="Иконка с большим котом."
-          />
-          <h3 class="programm__title">Набор массы</h3>
-          <p class="programm__description">
-            Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-            Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </p>
-          <a class="button programm-button" href="#">Каталог pro</a>
-        </div>
+        <ul class="programm-list">
+          <li class="programm__item">
+            <img
+              class="programm__icon"
+              src="img/small-cat.svg"
+              width="50"
+              height="53"
+              alt="Иконка с маленьким котом."
+            />
+            <h3 class="programm__title">Похудение</h3>
+            <p class="programm__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+              сбросить лишний вес.
+            </p>
+            <a class="button" href="#">Каталог slim</a>
+          </li>
+          <li class="programm__item">
+            <img
+              class="programm__icon"
+              src="img/strong-cat.svg"
+              width="67"
+              height="50"
+              alt="Иконка с большим котом."
+            />
+            <h3 class="programm__title">Набор массы</h3>
+            <p class="programm__description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="button" href="#">Каталог pro</a>
+          </li>
+        </ul>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
+        <ul class="advantages-list">
           <li class="advantages__item">
             <img
               src="img/foliage.svg"
@@ -140,22 +142,24 @@
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__information">
+        <div class="example-information">
           <label>
             <input
-              class="first-information__field"
+              class="example-information__first-field"
               placeholder="5 КГ"
               type="text"
             />
-            <span class="first-information__description">снижение веса</span>
+            <span class="example-information__description">снижение веса</span>
           </label>
           <label>
             <input
-              class="information__field"
+              class="example-information__second-field"
               placeholder="60 ДНЕЙ"
               type="text"
             />
-            <span class="information__description">затрачено времени</span>
+            <span class="example-information__description"
+              >затрачено времени</span
+            >
           </label>
         </div>
         <span class="example__cost">Затраты на питание: 15 000 РУБ. </span>
@@ -168,62 +172,66 @@
         <div class="range">
           <span class="range_text">Было</span>
           <div class="range_scale">
-            <div class="range_bar"></div>
+            <div class="scale_bar"></div>
           </div>
           <span class="range_text">Стало</span>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__location">
-        <h3 class="main-footer__location__title">
+      <section class="footer-location">
+        <h2 class="visually-hidden">Местоположение</h2>
+        <h3 class="footer-location__title">
           Приглашаем к сотрудничеству дилеров!
         </h3>
-        <span class="main-footer__location__description"
+        <span class="footer-location__description"
           >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
         >
-      </div>
-      <img
-        class="main-footer__map"
-        src="img/map.jpg"
-        width="320"
-        height="362"
-        alt="Карта с местоположением Cat Energy."
-      />
-      <a class="main-footer__logo-secondary">
         <img
-          class="main-header__logo-secondary-title"
-          src="img/logo-name.svg"
-          width="101"
-          height="18"
-          alt="Логотип с названием «Cat Energy»."
+          class="footer-location__map"
+          src="img/map.jpg"
+          width="320"
+          height="362"
+          alt="Карта с местоположением Cat Energy."
         />
-      </a>
-      <div class="main-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a
-              class="social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-              >Мы в Вконтакте</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--youtube"
-              href="https://www.youtube.com/user/htmlacademyru"
-              >Мы в Ютубе</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--telegram"
-              href="https://t.me/htmlacademy"
-              >Мы в Телеграме</a
-            >
-          </li>
-        </ul>
-        <div class="main-footer__copyright copyright">
+      </section>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="footer-contacts__logo-secondary">
+          <img
+            class="logo-secondary-title"
+            src="img/logo-name.svg"
+            width="101"
+            height="18"
+            alt="Логотип с названием «Cat Energy»."
+          />
+        </a>
+        <div class="footer-contacts__social">
+          <ul class="social-list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+                >Мы в Вконтакте</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
+                >Мы в Ютубе</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
+                >Мы в Телеграме</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contacts__copyright copyright">
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
@@ -234,7 +242,7 @@
             href="https://htmlacademy.ru/intensive/adaptive"
           ></a>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
