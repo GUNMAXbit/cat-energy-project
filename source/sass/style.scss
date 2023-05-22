@@ -1,1 +1,30 @@
 // Начните писать стили здесь
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/oswaldmedium.wolf2") format("woff2"),
+    url("fonts/oswaldmedium.wolf") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/oswalregular.wolf2") format("woff2"),
+    url("fonts/oswalregular.wolf2") format("woff");
+}
+
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 27px;
+}
+
+@import "./main-header.scss";
+@import "./main-header-wrapper.scss";
+@import "./main-nav.scss";
+@import "./main-header-container.scss";

@@ -1,2 +1,36 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("font/oswaldmedium.wolf2") format("woff2"), url("fonts/oswaldmedium.wolf") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/oswalregular.wolf2") format("woff2"), url("fonts/oswalregular.wolf2") format("woff");
+}
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 27px;
+}
 
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
 /*# sourceMappingURL=style.css.map */

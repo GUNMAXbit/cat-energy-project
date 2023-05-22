@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-first">
-        <img
-          class="main-header__logo-first-image"
-          src="img/logo-picture.svg"
-          width="33"
-          height="37"
-          alt="Логотип «Cat Energy»."
-        />
-      </a>
-      <a class="main-header__logo-secondary">
-        <img
-          class="main-header__logo-secondary-image"
-          src="img/logo-name.svg"
-          width="101"
-          height="18"
-          alt="Логотип с названием «Cat Energy»."
-        />
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo-first">
+          <img
+            class="main-header__logo-first-image"
+            src="img/logo-picture.svg"
+            width="33"
+            height="37"
+            alt="Логотип «Cat Energy»."
+          />
+        </a>
+        <a class="main-header__logo-secondary">
+          <img
+            class="main-header__logo-secondary-image"
+            src="img/logo-name.svg"
+            width="101"
+            height="18"
+            alt="Логотип с названием «Cat Energy»."
+          />
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-list__item">
@@ -46,10 +49,14 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="main-header">
-        <h1 class="main-header__title">Функциональное питание для котов</h1>
-        <p class="main-header__description">Занялся собой? Займись котом!</p>
-        <a class="button main-header__program" href="form.html"
+      <div class="main-header-container">
+        <h1 class="main-header-container__title">
+          Функциональное питание для котов
+        </h1>
+        <p class="main-header-container__description">
+          Занялся собой? Займись котом!
+        </p>
+        <a class="button main-header-container__program" href="form.html"
           >Подобрать программу
         </a>
       </div>
@@ -153,24 +160,22 @@
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example-information">
+        <div class="example__information">
           <label>
             <input
-              class="example-information__first-field"
+              class="example__first-field"
               placeholder="5 КГ"
               type="text"
             />
-            <span class="example-information__description">снижение веса</span>
+            <span class="example__text">снижение веса</span>
           </label>
           <label>
             <input
-              class="example-information__second-field"
+              class="example__second-field"
               placeholder="60 ДНЕЙ"
               type="text"
             />
-            <span class="example-information__description"
-              >затрачено времени</span
-            >
+            <span class="example__text">затрачено времени</span>
           </label>
         </div>
         <span class="example__cost">Затраты на питание: 15 000 РУБ. </span>
@@ -180,12 +185,12 @@
           height="232"
           alt="Фотография кота."
         />
-        <div class="example-range">
-          <span class="example-range__text">Было</span>
-          <div class="example-range__scale">
-            <div class="example-range__scale__bar"></div>
+        <div class="range">
+          <span class="range__text">Было</span>
+          <div class="range__scale">
+            <div class="range__scale__bar"></div>
           </div>
-          <span class="example-range__text">Стало</span>
+          <span class="range__text">Стало</span>
         </div>
       </section>
     </main>
