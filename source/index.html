@@ -17,7 +17,7 @@
       </a>
       <a class="main-header__logo-secondary">
         <img
-          class="logo-secondary-title"
+          class="main-header__logo-secondary-image"
           src="img/logo-name.svg"
           width="101"
           height="18"
@@ -49,39 +49,39 @@
       <div class="main-header">
         <h1 class="main-header__title">Функциональное питание для котов</h1>
         <p class="main-header__description">Занялся собой? Займись котом!</p>
-        <a class="button main-header__programm" href="form.html"
+        <a class="button main-header__program" href="form.html"
           >Подобрать программу
         </a>
       </div>
-      <section class="programm">
+      <section class="program">
         <h2 class="visually-hidden">Программы</h2>
-        <ul class="programm-list">
-          <li class="programm-list__item">
+        <ul class="program-list">
+          <li class="program-list__item">
             <img
-              class="programm-list__item-icon"
+              class="program-list__item-icon"
               src="img/small-cat.svg"
               width="50"
               height="53"
               alt="Иконка с маленьким котом."
             />
-            <h3 class="programm-list__item-title">Похудение</h3>
-            <p class="programm-list__item-description">
+            <h3 class="program-list__item-title">Похудение</h3>
+            <p class="program-list__item-description">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
               сбросить лишний вес.
             </p>
             <a class="button" href="#">Каталог slim</a>
           </li>
-          <li class="programm-list__item">
+          <li class="program-list__item">
             <img
-              class="programm-list__item-icon"
+              class="program-list__item-icon"
               src="img/strong-cat.svg"
               width="67"
               height="50"
               alt="Иконка с большим котом."
             />
-            <h3 class="programm-list__item-title">Набор массы</h3>
-            <p class="programm-list__item-description">
+            <h3 class="program-list__item-title">Набор массы</h3>
+            <p class="program-list__item-description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
@@ -94,6 +94,7 @@
         <ul class="advantages-list">
           <li class="advantages-list__item">
             <img
+              class="advantages-list__item-icon"
               src="img/foliage.svg"
               width="60"
               height="60"
@@ -106,6 +107,7 @@
           </li>
           <li class="advantages-list__item">
             <img
+              class="advantages-list__item-icon"
               src="img/water.svg"
               width="60"
               height="60"
@@ -118,6 +120,7 @@
           </li>
           <li class="advantages-list__item">
             <img
+              class="advantages-list__item-icon"
               src="img/tableware.svg"
               width="60"
               height="60"
@@ -129,7 +132,13 @@
             </p>
           </li>
           <li class="advantages-list__item">
-            <img src="img/clock.svg" width="60" height="60" alt="Часы." />
+            <img
+              class="advantages-list__item-icon"
+              src="img/clock.svg"
+              width="60"
+              height="60"
+              alt="Часы."
+            />
             <p class="advantages-list__item-description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!
@@ -171,12 +180,12 @@
           height="232"
           alt="Фотография кота."
         />
-        <div class="range">
-          <span class="range_text">Было</span>
-          <div class="range_scale">
-            <div class="scale_bar"></div>
+        <div class="example-range">
+          <span class="example-range__text">Было</span>
+          <div class="example-range__scale">
+            <div class="example-range__scale__bar"></div>
           </div>
-          <span class="range_text">Стало</span>
+          <span class="example-range__text">Стало</span>
         </div>
       </section>
     </main>
@@ -199,9 +208,9 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts__logo-secondary">
+        <a class="footer-contacts__logo">
           <img
-            class="logo-secondary-title"
+            class="footer-contacts__logo-image"
             src="img/logo-name.svg"
             width="101"
             height="18"
@@ -212,28 +221,26 @@
           <ul class="social-list">
             <li class="social-list__item">
               <a
-                class="social-list__item-link social-list__item-link--vkontakte"
+                class="social-list__item-link"
                 href="https://vk.com/htmlacademy"
                 >Мы в Вконтакте</a
               >
             </li>
             <li class="social-list__item">
               <a
-                class="social-list__item-link social-list__item-link--youtube"
+                class="social-list__item-link"
                 href="https://www.youtube.com/user/htmlacademyru"
                 >Мы в Ютубе</a
               >
             </li>
             <li class="social-list__item">
-              <a
-                class="social-list__item-link social-list__item-link--telegram"
-                href="https://t.me/htmlacademy"
+              <a class="social-list__item-link" href="https://t.me/htmlacademy"
                 >Мы в Телеграме</a
               >
             </li>
           </ul>
         </div>
-        <div class="footer-contacts__copyright copyright">
+        <div class="footer-contacts__copyright">
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
