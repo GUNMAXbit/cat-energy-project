@@ -58,40 +58,40 @@
           <p class="form-profile__description">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-          <p class="form-profile__field appointment-form__name">
+          <p class="form-profile__field">
             <label
-              class="form-profile__field-label"
+              class="form-profile__label"
               for="appointment-form__name"
               >ИМЯ:*</label
             >
             <input
-              class="form-profile__field-label__field-name"
+              class="form-profile__input-name"
               type="text"
               placeholder="барсик"
               id="appointment-form__name"
               name="appointment-form__name"
             />
           </p>
-          <p class="form-profile__field appointment-form__mass">
+          <p class="form-profile__field ">
             <label
-              class="form-profile__field-label"
+              class="form-profile__label"
               for="appointment-form__mass"
               >Вес (кг):*</label
             >
             <input
-              class="form-profile__field-label__field-mass"
+              class="form-profile__input-mass"
               type="text"
               placeholder="7"
               id="appointment-form__mass"
               name="appointment-form__mass"
             />
           </p>
-          <p class="form-profile__field appointment-form__age">
-            <label class="form-profile__field-label" for="appointment-form__age"
+          <p class="form-profile__field">
+            <label class="form-profile__label" for="appointment-form__age"
               >Возраст (лет):</label
             >
             <input
-              class="form-profile__field-label__field-age"
+              class="form-profile__input-age"
               type="text"
               placeholder="7"
               id="appointment-form__age"
@@ -101,35 +101,38 @@
           <fieldset class="form-profile__filter">
             <ul class="form-profile-list">
               <li class="form-profile-list__item">
-                <label class="form-profile-list__item-control">
+                <label class="form-profile-list__item-control" for="appointment-form__slim">
                   <input
-                    class="form-profile-list__item-control__input"
+                    class="form-profile-list__item-input"
                     type="radio"
                     name="program"
                     value="slim"
+                    id="appointment-form__slim"
                     checked
                   />
                   Похудение
                 </label>
               </li>
               <li class="form-profile-list__item">
-                <label class="form-profile-list__item-control">
+                <label class="form-profile-list__item-control" for="appointment-form__gain">
                   <input
-                    class="form-profile-list__item-control__input"
+                    class="form-profile-list__item-input"
                     type="radio"
                     name="program"
                     value="gain"
+                    id="appointment-form__gain"
                   />
                   Набор массы
                 </label>
               </li>
               <li class="form-profile-list__item">
-                <label class="form-profile-list__item-control">
+                <label class="form-profile-list__item-control" for="appointment-form__need-advice">
                   <input
-                    class="form-profile-list__item-control__input"
+                    class="form-profile-list__item-input"
                     type="radio"
                     name="program"
                     value="need-advice"
+                    id="appointment-form__need-advice"
                   />
                   Не знаю (Нужен ваш совет)
                 </label>
@@ -141,28 +144,28 @@
           <h1 class="form-contacts__title">
             Контактные данные (владельца кота)
           </h1>
-          <p class="form-contacts__field appointment-form__name">
+          <p class="form-contacts__field">
             <label
-              class="form-contacts__field-label"
+              class="form-contacts__label"
               for="appointment-form__email"
               >E-mail:*</label
             >
             <input
-              class="form-contacts__field-label__field-email"
+              class="form-contacts__input-email"
               type="email"
               placeholder="kuklachev@gmail.com"
               id="appointment-form__email"
               name="appointment-form__email"
             />
           </p>
-          <p class="form-contacts__field appointment-form__phone">
+          <p class="form-contacts__field">
             <label
-              class="form-contacts__field-label"
+              class="form-contacts__label"
               for="appointment-form__phone"
               >Телефон:*</label
             >
             <input
-              class="form-contacts__field-label__field-phone"
+              class="form-contacts__input-phone"
               type="text"
               placeholder="8 (960) 900-60-90"
               id="appointment-form__phone"
@@ -177,7 +180,7 @@
             for="appointment-form__comment"
           ></label>
           <input
-            class="form-comment__label__field"
+            class="form-comment__input"
             type="text"
             placeholder="Расскажите обо всех повадках кота"
             id="appointment-form__comment"
@@ -189,46 +192,50 @@
           <fieldset class="form-optionally__filter">
             <ul class="form-optionally-list">
               <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control">
+                <label class="form-optionally-list__item-control" for="appointment-form__sweetener">
                   <input
-                    class="form-optionally-list__item-control__input"
+                    class="form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
                     value="sweetener"
+                    id="appointment-form__sweetener"
                     checked
                   />
                   Cахарозаменитель
                 </label>
               </li>
               <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control">
+                <label class="form-optionally-list__item-control" for="appointment-form__water">
                   <input
-                    class="form-optionally-list__item-control__input"
+                    class="form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
-                    value="Water"
+                    value="water"
+                    id="appointment-form__water"
                   />
                   Питьевая вода
                 </label>
               </li>
               <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control">
+                <label class="form-optionally-list__item-control" for="appointment-form__milk">
                   <input
-                    class="form-optionally-list__item-control__input"
+                    class="form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
-                    value="Milk"
+                    value="milk"
+                    id="appointment-form__milk"
                   />
                   Молоко
                 </label>
               </li>
               <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control">
+                <label class="form-optionally-list__item-control" for="appointment-form__vitamins">
                   <input
-                    class="form-optionally-list__item-control__input"
+                    class="form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
                     value="vitamins"
+                    id="appointment-form__vitamins"
                   />
                   Витамины
                 </label>
@@ -236,7 +243,7 @@
             </ul>
           </fieldset>
         </section>
-        <button class="button appointment-form__button" type="submit">
+        <button class="button appointment-form__btn" type="submit">
           Отправить заявку
         </button>
         <span>* — Обязательные поля </span>
@@ -293,7 +300,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-contacts__copyright">
+        <div class="copyright">
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
