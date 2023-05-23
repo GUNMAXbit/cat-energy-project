@@ -7,18 +7,18 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-first">
+      <a class="main-header__link-first">
         <img
-          class="main-header__logo-first-image"
+          class="main-header__link-first-image"
           src="img/logo-picture.svg"
           width="33"
           height="37"
           alt="Логотип «Cat Energy»."
         />
       </a>
-      <a class="main-header__logo-secondary">
+      <a class="main-header__link-secondary">
         <img
-          class="main-header__logo-secondary-image"
+          class="main-header__link-secondary-image"
           src="img/logo-name.svg"
           width="101"
           height="18"
@@ -47,206 +47,199 @@
       </nav>
     </header>
     <main class="main-form-container">
-      <form
-        class="appointment-form"
-        action="https://echo.htmlacademy.ru"
-        method="post"
-      >
-        <h1 class="appointment-form__title">Подбор программы</h1>
-        <section class="form-profile">
-          <h2 class="visually-hidden">Анкета</h2>
-          <p class="form-profile__description">
-            Заполните анкету, и мы подберем программу питания для вашего кота
-          </p>
-          <p class="form-profile__field">
-            <label
-              class="form-profile__label"
-              for="appointment-form__name"
-              >ИМЯ:*</label
-            >
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+        <fieldset class="form-profile">
+          <div class="form-profile__field">
+            <label class="form-profile__label" for="form__name">ИМЯ:*</label>
             <input
               class="form-profile__input-name"
               type="text"
               placeholder="барсик"
-              id="appointment-form__name"
-              name="appointment-form__name"
+              id="form__name"
+              name="form__name"
             />
-          </p>
-          <p class="form-profile__field ">
-            <label
-              class="form-profile__label"
-              for="appointment-form__mass"
+          </div>
+          <div class="form-profile__field">
+            <label class="form-profile__label" for="form__mass"
               >Вес (кг):*</label
             >
             <input
               class="form-profile__input-mass"
               type="text"
               placeholder="7"
-              id="appointment-form__mass"
-              name="appointment-form__mass"
+              id="form__mass"
+              name="form__mass"
             />
-          </p>
-          <p class="form-profile__field">
-            <label class="form-profile__label" for="appointment-form__age"
+          </div>
+          <div class="form-profile__field">
+            <label class="form-profile__label" for="form__age"
               >Возраст (лет):</label
             >
             <input
               class="form-profile__input-age"
               type="text"
               placeholder="7"
-              id="appointment-form__age"
-              name="appointment-form__age"
+              id="form__age"
+              name="form__age"
             />
-          </p>
-          <fieldset class="form-profile__filter">
-            <ul class="form-profile-list">
-              <li class="form-profile-list__item">
-                <label class="form-profile-list__item-control" for="appointment-form__slim">
-                  <input
-                    class="form-profile-list__item-input"
-                    type="radio"
-                    name="program"
-                    value="slim"
-                    id="appointment-form__slim"
-                    checked
-                  />
-                  Похудение
-                </label>
-              </li>
-              <li class="form-profile-list__item">
-                <label class="form-profile-list__item-control" for="appointment-form__gain">
-                  <input
-                    class="form-profile-list__item-input"
-                    type="radio"
-                    name="program"
-                    value="gain"
-                    id="appointment-form__gain"
-                  />
-                  Набор массы
-                </label>
-              </li>
-              <li class="form-profile-list__item">
-                <label class="form-profile-list__item-control" for="appointment-form__need-advice">
-                  <input
-                    class="form-profile-list__item-input"
-                    type="radio"
-                    name="program"
-                    value="need-advice"
-                    id="appointment-form__need-advice"
-                  />
-                  Не знаю (Нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </section>
-        <section class="form-contacts">
-          <h1 class="form-contacts__title">
+          </div>
+        </fieldset>
+        <fieldset class="form-program">
+          <ul class="form-program-list">
+            <li class="form-program-list__item">
+              <label class="form-program-list__item-control" for="form__slim">
+                Похудение
+              </label>
+              <input
+                class="form-program-list__item-input"
+                type="radio"
+                name="program"
+                value="slim"
+                id="form__slim"
+                checked
+              />
+            </li>
+            <li class="form-program-list__item">
+              <label class="form-program-list__item-control" for="form__gain"
+                >Набор массы
+              </label>
+              <input
+                class="form-program-list__item-input"
+                type="radio"
+                name="program"
+                value="gain"
+                id="form__gain"
+              />
+            </li>
+            <li class="form-program-list__item">
+              <label
+                class="form-program-list__item-control"
+                for="form__need-advice"
+                >Не знаю (Нужен ваш совет)
+              </label>
+              <input
+                class="form-program-list__item-input"
+                type="radio"
+                name="program"
+                value="need-advice"
+                id="form__need-advice"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-contacts">
+          <legend class="form-contacts__title">
             Контактные данные (владельца кота)
-          </h1>
-          <p class="form-contacts__field">
-            <label
-              class="form-contacts__label"
-              for="appointment-form__email"
+          </legend>
+          <div class="form-contacts__field">
+            <label class="form-contacts__label" for="form__email"
               >E-mail:*</label
             >
             <input
               class="form-contacts__input-email"
               type="email"
               placeholder="kuklachev@gmail.com"
-              id="appointment-form__email"
-              name="appointment-form__email"
+              id="form__email"
+              name="form__email"
             />
-          </p>
-          <p class="form-contacts__field">
-            <label
-              class="form-contacts__label"
-              for="appointment-form__phone"
+          </div>
+          <div class="form-contacts__field">
+            <label class="form-contacts__label" for="form__phone"
               >Телефон:*</label
             >
             <input
               class="form-contacts__input-phone"
               type="text"
               placeholder="8 (960) 900-60-90"
-              id="appointment-form__phone"
-              name="appointment-form__phone"
+              id="form__phone"
+              name="form__phone"
             />
-          </p>
-        </section>
-        <section class="form-comment">
-          <h1 class="form-comment__title">Комментарий</h1>
-          <label
-            class="form-comment__label"
-            for="appointment-form__comment"
-          ></label>
+          </div>
+        </fieldset>
+        <fieldset class="form-comment">
+          <legend class="form-comment__title">Комментарий</legend>
+          <label class="form-comment__label" for="form__comment"></label>
           <input
             class="form-comment__input"
             type="text"
             placeholder="Расскажите обо всех повадках кота"
-            id="appointment-form__comment"
-            name="appointment-form__comment"
+            id="form__comment"
+            name="form__comment"
           />
-        </section>
-        <section class="form-optionally">
-          <h1 class="form-optionally__title">Дополнительно</h1>
-          <fieldset class="form-optionally__filter">
-            <ul class="form-optionally-list">
-              <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control" for="appointment-form__sweetener">
-                  <input
-                    class="form-optionally-list__item-input"
-                    type="checkbox"
-                    name="optionally"
-                    value="sweetener"
-                    id="appointment-form__sweetener"
-                    checked
-                  />
-                  Cахарозаменитель
-                </label>
-              </li>
-              <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control" for="appointment-form__water">
-                  <input
-                    class="form-optionally-list__item-input"
-                    type="checkbox"
-                    name="optionally"
-                    value="water"
-                    id="appointment-form__water"
-                  />
-                  Питьевая вода
-                </label>
-              </li>
-              <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control" for="appointment-form__milk">
-                  <input
-                    class="form-optionally-list__item-input"
-                    type="checkbox"
-                    name="optionally"
-                    value="milk"
-                    id="appointment-form__milk"
-                  />
-                  Молоко
-                </label>
-              </li>
-              <li class="form-optionally-list__item">
-                <label class="form-optionally-list__item-control" for="appointment-form__vitamins">
-                  <input
-                    class="form-optionally-list__item-input"
-                    type="checkbox"
-                    name="optionally"
-                    value="vitamins"
-                    id="appointment-form__vitamins"
-                  />
-                  Витамины
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </section>
-        <button class="button appointment-form__btn" type="submit">
-          Отправить заявку
-        </button>
-        <span>* — Обязательные поля </span>
+        </fieldset>
+        <fieldset class="form-optionally">
+          <legend class="form-optionally__title">Дополнительно</legend>
+
+          <ul class="form-optionally-list">
+            <li class="form-optionally-list__item">
+              <label
+                class="form-optionally-list__item-control"
+                for="form__sweetener"
+              >
+                <input
+                  class="form-optionally-list__item-input"
+                  type="checkbox"
+                  name="optionally"
+                  value="sweetener"
+                  id="form__sweetener"
+                  checked
+                />
+                Cахарозаменитель
+              </label>
+            </li>
+            <li class="form-optionally-list__item">
+              <label
+                class="form-optionally-list__item-control"
+                for="form__water"
+              >
+                <input
+                  class="form-optionally-list__item-input"
+                  type="checkbox"
+                  name="optionally"
+                  value="water"
+                  id="form__water"
+                />
+                Питьевая вода
+              </label>
+            </li>
+            <li class="form-optionally-list__item">
+              <label
+                class="form-optionally-list__item-control"
+                for="form__milk"
+              >
+                <input
+                  class="form-optionally-list__item-input"
+                  type="checkbox"
+                  name="optionally"
+                  value="milk"
+                  id="form__milk"
+                />
+                Молоко
+              </label>
+            </li>
+            <li class="form-optionally-list__item">
+              <label
+                class="form-optionally-list__item-control"
+                for="form__vitamins"
+              >
+                <input
+                  class="form-optionally-list__item-input"
+                  type="checkbox"
+                  name="optionally"
+                  value="vitamins"
+                  id="form__vitamins"
+                />
+                Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button form__btn" type="submit">Отправить заявку</button>
+        <span class="form_text">* — Обязательные поля </span>
       </form>
     </main>
     <footer class="main-footer">
@@ -277,29 +270,25 @@
             alt="Логотип с названием «Cat Energy»."
           />
         </a>
-        <div class="footer-contacts__social">
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a
-                class="social-list__item-link"
-                href="https://vk.com/htmlacademy"
-                >Мы в Вконтакте</a
-              >
-            </li>
-            <li class="social-list__item">
-              <a
-                class="social-list__item-link"
-                href="https://www.youtube.com/user/htmlacademyru"
-                >Мы в Ютубе</a
-              >
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__item-link" href="https://t.me/htmlacademy"
-                >Мы в Телеграме</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__item-link" href="https://vk.com/htmlacademy"
+              >Мы в Вконтакте</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              class="social-list__item-link"
+              href="https://www.youtube.com/user/htmlacademyru"
+              >Мы в Ютубе</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__item-link" href="https://t.me/htmlacademy"
+              >Мы в Телеграме</a
+            >
+          </li>
+        </ul>
         <div class="copyright">
           <a
             class="copyright__link"
