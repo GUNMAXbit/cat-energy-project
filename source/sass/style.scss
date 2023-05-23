@@ -20,12 +20,12 @@
 .page {
   height: 100%;
   font-size: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald", sans-serif;
   line-height: 27px;
 }
 
-@import "./main-header.scss";
-@import "./main-header-wrapper.scss";
-@import "./main-nav.scss";
-@import "./main-header-container.scss";
-@import "./advantages.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-header-wrapper.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-header-container.scss";
+@import "./blocks/advantages.scss";
