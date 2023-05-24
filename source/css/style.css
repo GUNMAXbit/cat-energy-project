@@ -234,6 +234,118 @@
   flex-direction: column;
 }
 
+.catalog__title {
+  margin: 27px 0 41px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.catalog-list .catalog-list__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+}
+.catalog-list .catalog-list__item-container {
+  width: 112px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin-bottom: 13px;
+}
+.catalog-list .catalog-list__item-text {
+  display: flex;
+  flex-direction: column;
+}
+.catalog-list .catalog-list__item-title {
+  margin: 0 64px 14px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+.catalog-list .catalog-list__item-description {
+  display: flex;
+}
+.catalog-list .item-description__text {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-list__item-more {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.catalog-list__item-more .catalog-list__item-more__title {
+  margin: 78px 0 8px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.catalog-list__item-more .catalog-list__item-more__description {
+  margin: 0 0 21px 0;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.optional__title {
+  margin: 0 0 49px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.optional-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.optional-list .optional-list__item {
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+}
+.optional-list .optional-list__item-title {
+  margin: 0 0 13px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.optional-list .optional-list__item-description {
+  display: flex;
+  margin-bottom: 15px;
+}
+.optional-list .optional-list__item-description-text {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
 .page__body {
   height: 100%;
   font-size: 18px;
