@@ -14,15 +14,15 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $basic_black-2;
 }
 
 .footer-location__description {
-  font-family: "Arial";
+  font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $special_dark-grey;
 }
 
 .footer-location__map {
@@ -33,7 +33,7 @@
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: $basic_grey;
 }
 
 .footer-contacts__logo {

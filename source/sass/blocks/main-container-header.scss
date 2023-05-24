@@ -1,6 +1,6 @@
 .main-container-header {
-  background: url("../img/Rectangle 18.png") no-repeat,
-    url("../img/background-header.jpg") no-repeat;
+  background: url("../img/background-color.png") no-repeat,
+    url("../img/background-photo.jpg") no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -8,7 +8,7 @@
 .main-container-header__title {
   padding-top: 27px;
   margin: 0 0 25px 0;
-  color: #ffffff;
+  color: $basic_white;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -19,5 +19,5 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic_white;
 }

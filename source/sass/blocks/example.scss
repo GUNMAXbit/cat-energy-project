@@ -1,7 +1,7 @@
 .example {
   display: flex;
   flex-direction: column;
-  background-color: #eaeaea;
+  background-color: $grey;
 }
 
 .example__title {
@@ -10,16 +10,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $basic_black;
 }
 
 .example__description {
   margin: 0 0 20px 0;
-  font-family: "Arial";
+  font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
 }
 
 .example__information {
@@ -33,7 +33,7 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic_black;
 }
 
 .example__img {

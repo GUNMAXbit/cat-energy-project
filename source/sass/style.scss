@@ -1,5 +1,6 @@
 // Начните писать стили здесь
-@import "./fonts.scss";
+@import "./global/fonts.scss";
+@import "./global/colors.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container-header.scss";
@@ -8,10 +9,10 @@
 @import "./blocks/example.scss";
 @import "./blocks/main-footer.scss";
 
-body {
+.page__body {
   height: 100%;
   font-size: 18px;
-  font-family: "Oswald Regular", "Oswald Medium", "Arial", sans-serif;
+  font-family: $font-family-Oswald, $font-family-Arial, sans-serif;
   line-height: 27px;
 }
 

@@ -12,10 +12,11 @@
 .main-nav-list__item-link {
   display: block;
   padding: 22px 0;
-  font-family: "Oswald Medium";
+  font-family: $font-family-Oswald;
+  font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic_black;
   text-decoration: none;
 }

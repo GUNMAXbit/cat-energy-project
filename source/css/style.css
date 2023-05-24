@@ -34,7 +34,8 @@
 .main-nav-list__item-link {
   display: block;
   padding: 22px 0;
-  font-family: "Oswald Medium";
+  font-family: "Oswald Regular", "Oswald Medium";
+  font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -43,7 +44,7 @@
 }
 
 .main-container-header {
-  background: url("../img/Rectangle 18.png") no-repeat, url("../img/background-header.jpg") no-repeat;
+  background: url("../img/background-color.png") no-repeat, url("../img/background-photo.jpg") no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -233,7 +234,7 @@
   flex-direction: column;
 }
 
-body {
+.page__body {
   height: 100%;
   font-size: 18px;
   font-family: "Oswald Regular", "Oswald Medium", "Arial", sans-serif;

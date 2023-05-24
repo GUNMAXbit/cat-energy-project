@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $basic_black;
 }
 
 .advantages-list {
@@ -28,9 +28,9 @@
 
 .advantages-list__item-description {
   margin: 0;
-  font-family: "Arial";
+  font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
 }
