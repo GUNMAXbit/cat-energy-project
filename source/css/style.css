@@ -366,6 +366,159 @@
   margin: 0 0 43px 0;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  margin: 27px 41px 37px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.form__description {
+  margin: 0 74px 39px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form__btn {
+  margin-bottom: 21px;
+}
+
+.form_text {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.form-profile {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+.form-profile .form-profile__field {
+  display: flex;
+  margin-bottom: 14px;
+}
+.form-profile .form-profile__label {
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form-program {
+  border: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.form-program .form-program-list {
+  margin: 0 0 26px 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.form-program .form-program-list__item {
+  margin-bottom: 25px;
+}
+.form-program .form-program-list__item-control {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form-contacts {
+  padding: 0;
+  margin: 0 0 22px 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.form-contacts .form-contacts__title {
+  margin: 0 113px 35px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+.form-contacts .form-contacts__field {
+  margin-bottom: 14px;
+  display: flex;
+}
+.form-contacts .form-contacts__label {
+  margin-right: 11px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.form-comment__title {
+  margin: 0 149px 47px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-optionally {
+  border: none;
+  display: flex;
+  padding: 0;
+}
+.form-optionally .form-optionally__title {
+  margin: 0 159px 34px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+.form-optionally .form-optionally-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 34px 0;
+}
+.form-optionally .form-optionally-list__item {
+  margin-bottom: 13px;
+}
+.form-optionally .form-optionally-list__item-control {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .page__body {
   height: 100%;
   font-size: 18px;

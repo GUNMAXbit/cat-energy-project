@@ -7,27 +7,29 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__link-first">
-        <img
-          class="main-header__link-first-image"
-          src="img/logo-picture.svg"
-          width="33"
-          height="37"
-          alt="Логотип «Cat Energy»."
-        />
-      </a>
-      <a class="main-header__link-secondary">
-        <img
-          class="main-header__link-secondary-image"
-          src="img/logo-name.svg"
-          width="101"
-          height="18"
-          alt="Логотип с названием «Cat Energy»."
-        />
-      </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="main-header__wrapper">
+        <a class="main-header__link-first">
+          <img
+            class="main-header__link-first-image"
+            src="img/logo-picture.svg"
+            width="33"
+            height="37"
+            alt="Логотип «Cat Energy»."
+          />
+        </a>
+        <a class="main-header__link-secondary">
+          <img
+            class="main-header__link-secondary-image"
+            src="img/logo-name.svg"
+            width="101"
+            height="18"
+            alt="Логотип с названием «Cat Energy»."
+          />
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-list__item">
@@ -158,8 +160,8 @@
             />
           </div>
         </fieldset>
-        <fieldset class="form-comment">
-          <legend class="form-comment__title">Комментарий</legend>
+        <div class="form-comment">
+          <h2 class="form-comment__title">Комментарий</h2>
           <label class="form-comment__label" for="form__comment"></label>
           <input
             class="form-comment__input"
@@ -168,10 +170,9 @@
             id="form__comment"
             name="form__comment"
           />
-        </fieldset>
+        </div>
         <fieldset class="form-optionally">
           <legend class="form-optionally__title">Дополнительно</legend>
-
           <ul class="form-optionally-list">
             <li class="form-optionally-list__item">
               <label
@@ -243,19 +244,25 @@
     <footer class="main-footer">
       <section class="footer-location">
         <h2 class="visually-hidden">Местоположение</h2>
-        <h3 class="footer-location__title">
-          Приглашаем к сотрудничеству дилеров!
-        </h3>
-        <span class="footer-location__description"
-          >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
-        >
-        <img
-          class="footer-location__map"
-          src="img/map.jpg"
-          width="320"
-          height="362"
-          alt="Карта с местоположением Cat Energy."
-        />
+        <div class="footer-location__text">
+          <h3 class="footer-location__title">
+            Приглашаем к сотрудничеству дилеров!
+          </h3>
+          <span class="footer-location__description"
+            >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
+          >
+        </div>
+        <div class="footer-location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.305395708147!2d30.319860933888926!3d59.937904937671966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1684906451449!5m2!1sru!2sru"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>

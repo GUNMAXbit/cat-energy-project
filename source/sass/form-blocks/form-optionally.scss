@@ -1,0 +1,33 @@
+.form-optionally {
+  border: none;
+  display: flex;
+  padding: 0;
+
+  .form-optionally__title {
+    margin: 0 159px 34px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: $basic_black;
+  }
+
+  .form-optionally-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 34px 0;
+  }
+
+  .form-optionally-list__item {
+    margin-bottom: 13px;
+  }
+
+  .form-optionally-list__item-control {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+}
