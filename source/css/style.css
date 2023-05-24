@@ -346,6 +346,26 @@
   color: #444444;
 }
 
+.main-promo {
+  padding-top: 58px;
+  margin-bottom: 35px;
+  background: url("../img/promo-back.png") no-repeat, url("../img/promo-img.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.main-promo .main-promo__img {
+  margin-bottom: 48px;
+}
+.main-promo .main-promo__description {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0 0 43px 0;
+}
+
 .page__body {
   height: 100%;
   font-size: 18px;
