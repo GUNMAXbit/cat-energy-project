@@ -1,0 +1,46 @@
+.example {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  padding-top: 25px;
+  margin: 0 105px 40px 20px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__description {
+  margin: 0 0 20px 0;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__information {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.example__cost {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__img {
+  margin-bottom: 15px;
+}
+
+.range {
+  display: flex;
+  margin-bottom: 40px;
+}

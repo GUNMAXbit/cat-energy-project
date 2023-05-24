@@ -1,9 +1,11 @@
-.main-header-container {
+.main-container-header {
   background: url("../img/Rectangle 18.png") no-repeat,
     url("../img/background-header.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-header-container__title {
+.main-container-header__title {
   padding-top: 27px;
   margin: 0 0 25px 0;
   color: #ffffff;
@@ -12,7 +14,7 @@
   line-height: 36px;
 }
 
-.main-header-container__description {
+.main-container-header__description {
   margin: 0 0 29px 0;
   font-size: 14px;
   line-height: 14px;

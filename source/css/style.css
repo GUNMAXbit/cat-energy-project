@@ -42,11 +42,13 @@
   text-decoration: none;
 }
 
-.main-header-container {
+.main-container-header {
   background: url("../img/Rectangle 18.png") no-repeat, url("../img/background-header.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-header-container__title {
+.main-container-header__title {
   padding-top: 27px;
   margin: 0 0 25px 0;
   color: #ffffff;
@@ -55,7 +57,7 @@
   line-height: 36px;
 }
 
-.main-header-container__description {
+.main-container-header__description {
   margin: 0 0 29px 0;
   font-size: 14px;
   line-height: 14px;
@@ -132,10 +134,123 @@
   color: #444444;
 }
 
+.example {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  padding-top: 25px;
+  margin: 0 105px 40px 20px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__description {
+  margin: 0 0 20px 0;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__information {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.example__cost {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__img {
+  margin-bottom: 15px;
+}
+
+.range {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-location__text {
+  margin: 26px 0;
+  display: flex;
+}
+
+.footer-location__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.footer-location__description {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.footer-location__map {
+  width: 320px;
+  height: 362px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.footer-contacts__logo {
+  margin: 39px 0 32px 0;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   height: 100%;
   font-size: 18px;
-  font-family: "Oswald Regular", "Oswald Medium", Arial, sans-serif;
+  font-family: "Oswald Regular", "Oswald Medium", "Arial", sans-serif;
   line-height: 27px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
