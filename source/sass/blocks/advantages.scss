@@ -10,27 +10,4 @@
   color: $basic_black;
 }
 
-.advantages-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
 
-.advantages-list__item {
-  display: flex;
-}
-
-.advantages-list__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.advantages-list__item-description {
-  margin: 0;
-  font-family: $font-family-Arial;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special_dark-grey;
-}

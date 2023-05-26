@@ -2,26 +2,39 @@
 @import "./global/fonts.scss";
 @import "./global/colors.scss";
 @import "./blocks/main-header.scss";
+@import "./blocks/main-header-wrapper.scss";
 @import "./blocks/main-nav.scss";
+@import "./blocks/main-nav-list.scss";
 @import "./blocks/main-container-header.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/advantages-list.scss";
 @import "./blocks/program.scss";
+@import "./blocks/program-list.scss";
 @import "./blocks/example.scss";
+@import "./blocks/range.scss";
 @import "./blocks/main-footer.scss";
-@import "./catalog-blocks/catalog.scss";
-@import "./catalog-blocks/optional.scss";
-@import "./catalog-blocks/main-promo.scss";
-@import "./form-blocks/form.scss";
-@import "./form-blocks/form-profile.scss";
-@import "./form-blocks/form-program.scss";
-@import "./form-blocks/form-contacts.scss";
-@import "./form-blocks/form-comment.scss";
-@import "./form-blocks/form-optionally.scss";
+@import "./blocks/footer-location.scss";
+@import "./blocks/footer-contacts.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-list.scss";
+@import "./blocks/optional.scss";
+@import "./blocks/optional-list.scss";
+@import "./blocks/main-promo.scss";
+@import "./blocks/form.scss";
+@import "./blocks/form-profile.scss";
+@import "./blocks/form-program.scss";
+@import "./blocks/form-program-list.scss";
+@import "./blocks/form-contacts.scss";
+@import "./blocks/form-comment.scss";
+@import "./blocks/form-optionally.scss";
+@import "./blocks/form-optionally-list.scss";
 
 .page__body {
   height: 100%;
   font-size: 18px;
-  font-family: $font-family-Oswald, $font-family-Arial, sans-serif;
+  font-family: $font-family-Oswald, $font-family-Oswald-reserve, $font-family-Arial, $font-family-backup;
   line-height: 27px;
 }
 

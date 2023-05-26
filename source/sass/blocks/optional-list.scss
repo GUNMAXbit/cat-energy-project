@@ -1,18 +1,10 @@
-.optional__title {
-  margin: 0 0 49px 0;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: $basic_black;
-}
-
 .optional-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-
+}
   .optional-list__item {
     margin-bottom: 31px;
     display: flex;
@@ -40,4 +32,3 @@
     line-height: 14px;
     color: $special_dark-grey;
   }
-}
