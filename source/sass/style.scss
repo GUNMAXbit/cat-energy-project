@@ -1,27 +1,32 @@
-// Начните писать стили здесь
+/* Глобальные Файлы */
 @import "./global/fonts.scss";
-@import "./global/colors.scss";
+@import "./global/variables.scss";
+@import "./blocks/page-body.scss";
+@import "./blocks/visually-hidden.scss";
+
+/* Файлы для Header */
 @import "./blocks/main-header.scss";
 @import "./blocks/main-header-wrapper.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-nav-list.scss";
 @import "./blocks/main-container-header.scss";
+
+/* Файлы Главной страницы */
 @import "./blocks/advantages.scss";
 @import "./blocks/advantages-list.scss";
 @import "./blocks/program.scss";
 @import "./blocks/program-list.scss";
 @import "./blocks/example.scss";
 @import "./blocks/range.scss";
-@import "./blocks/main-footer.scss";
-@import "./blocks/footer-location.scss";
-@import "./blocks/footer-contacts.scss";
-@import "./blocks/social-list.scss";
-@import "./blocks/copyright.scss";
+
+/* Файлы Страницы каталога */
 @import "./blocks/catalog.scss";
 @import "./blocks/catalog-list.scss";
 @import "./blocks/optional.scss";
 @import "./blocks/optional-list.scss";
 @import "./blocks/main-promo.scss";
+
+/* Файлы Страницы с формой */
 @import "./blocks/form.scss";
 @import "./blocks/form-profile.scss";
 @import "./blocks/form-program.scss";
@@ -31,22 +36,14 @@
 @import "./blocks/form-optionally.scss";
 @import "./blocks/form-optionally-list.scss";
 
-.page__body {
-  height: 100%;
-  font-size: 18px;
-  font-family: $font-family-Oswald, $font-family-Oswald-reserve, $font-family-Arial, $font-family-backup;
-  line-height: 27px;
-}
+/* Файлы для Footer */
+@import "./blocks/main-footer.scss";
+@import "./blocks/footer-location.scss";
+@import "./blocks/footer-contacts.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/copyright.scss";
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
+
+
+

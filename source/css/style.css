@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Глобальные Файлы */
 @font-face {
   font-family: "Oswald Medium";
   font-weight: 700;
@@ -10,6 +12,29 @@
   font-style: normal;
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
+/* Colors */
+.page-body {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Oswald Regular", "Oswald Medium", "Arial", sans-serif;
+  line-height: 27px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Файлы для Header */
 .main-header {
   display: flex;
   flex-direction: column;
@@ -66,6 +91,7 @@
   color: #ffffff;
 }
 
+/* Файлы Главной страницы */
 .advantages {
   margin-bottom: 53px;
 }
@@ -182,58 +208,7 @@
   margin-bottom: 40px;
 }
 
-.main-footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-location__text {
-  margin: 26px 0;
-  display: flex;
-}
-
-.footer-location__title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-}
-
-.footer-location__description {
-  font-family: "Arial";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-}
-
-.footer-location__map {
-  width: 320px;
-  height: 362px;
-}
-
-.footer-contacts {
-  display: flex;
-  flex-direction: column;
-  background-color: #f2f2f2;
-}
-
-.footer-contacts__logo {
-  margin: 39px 0 32px 0;
-}
-
-.social-list {
-  list-style-type: none;
-  display: flex;
-}
-
-.copyright {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Файлы Страницы каталога */
 .catalog__title {
   margin: 27px 0 41px 0;
   font-weight: 400;
@@ -380,6 +355,7 @@
   margin: 0 0 43px 0;
 }
 
+/* Файлы Страницы с формой */
 .form {
   display: flex;
   flex-direction: column;
@@ -545,24 +521,56 @@
   color: #000000;
 }
 
-.page__body {
-  height: 100%;
-  font-size: 18px;
-  font-family: "Oswald Regular", "Oswald Medium", "Arial", sans-serif;
-  line-height: 27px;
+/* Файлы для Footer */
+.main-footer {
+  display: flex;
+  flex-direction: column;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.footer-location__text {
+  margin: 26px 0;
+  display: flex;
+}
+
+.footer-location__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.footer-location__description {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.footer-location__map {
+  width: 320px;
+  height: 362px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.footer-contacts__logo {
+  margin: 39px 0 32px 0;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
