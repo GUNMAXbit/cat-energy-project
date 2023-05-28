@@ -1,49 +1,44 @@
 /* Глобальные Файлы */
-@import "./global/fonts.scss";
-@import "./global/variables.scss";
-@import "./blocks/page-body.scss";
-@import "./blocks/visually-hidden.scss";
+@import "./global/fonts";
+@import "./global/variables";
+@import "./blocks/page-body";
+@import "./blocks/visually-hidden";
 
 /* Файлы для Header */
-@import "./blocks/main-header.scss";
-@import "./blocks/main-header-wrapper.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/main-nav-list.scss";
-@import "./blocks/main-container-header.scss";
+@import "./blocks/main-header";
+@import "./blocks/main-header-wrapper";
+@import "./blocks/main-nav";
+@import "./blocks/main-nav-list";
+@import "./blocks/main-container-header";
 
 /* Файлы Главной страницы */
-@import "./blocks/advantages.scss";
-@import "./blocks/advantages-list.scss";
-@import "./blocks/program.scss";
-@import "./blocks/program-list.scss";
-@import "./blocks/example.scss";
-@import "./blocks/range.scss";
+@import "./blocks/advantages";
+@import "./blocks/advantages-list";
+@import "./blocks/program";
+@import "./blocks/program-list";
+@import "./blocks/example";
+@import "./blocks/range";
 
 /* Файлы Страницы каталога */
-@import "./blocks/catalog.scss";
-@import "./blocks/catalog-list.scss";
-@import "./blocks/optional.scss";
-@import "./blocks/optional-list.scss";
-@import "./blocks/main-promo.scss";
+@import "./blocks/catalog";
+@import "./blocks/catalog-list";
+@import "./blocks/optional";
+@import "./blocks/optional-list";
+@import "./blocks/main-promo";
 
 /* Файлы Страницы с формой */
-@import "./blocks/form.scss";
-@import "./blocks/form-profile.scss";
-@import "./blocks/form-program.scss";
-@import "./blocks/form-program-list.scss";
-@import "./blocks/form-contacts.scss";
-@import "./blocks/form-comment.scss";
-@import "./blocks/form-optionally.scss";
-@import "./blocks/form-optionally-list.scss";
+@import "./blocks/form";
+@import "./blocks/form-profile";
+@import "./blocks/form-program";
+@import "./blocks/form-program-list";
+@import "./blocks/form-contacts";
+@import "./blocks/form-comment";
+@import "./blocks/form-optionally";
+@import "./blocks/form-optionally-list";
 
 /* Файлы для Footer */
-@import "./blocks/main-footer.scss";
-@import "./blocks/footer-location.scss";
-@import "./blocks/footer-contacts.scss";
-@import "./blocks/social-list.scss";
-@import "./blocks/copyright.scss";
-
-
-
-
-
+@import "./blocks/main-footer";
+@import "./blocks/footer-location";
+@import "./blocks/footer-contacts";
+@import "./blocks/social-list";
+@import "./blocks/copyright";

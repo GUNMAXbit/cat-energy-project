@@ -1,6 +1,6 @@
 .main-container-header {
-  background: url("../img/background-color.png") no-repeat,
-    url("../img/background-photo.jpg") no-repeat;
+  background: url("/img/background-color.png") no-repeat,
+    url("/img/background-photo.jpg") no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -20,4 +20,37 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $basic_white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container-header {
+    height: 872px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-container-header__title {
+    padding-top: 62px;
+    margin: 0 0 41px 0;
+    color: $basic_black;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-container-header__description {
+    margin: 0 0 49px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+
+  .main-container-header__img {
+    left: 29px;
+    top: 341px;
+    position: absolute;
+    z-index: -1;
+  }
 }

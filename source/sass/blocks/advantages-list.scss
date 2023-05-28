@@ -22,3 +22,50 @@
   line-height: 18px;
   color: $special_dark-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    column-gap: 154px;
+    row-gap: 37px;
+    list-style-type: none;
+  }
+
+  .advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+  }
+
+  .advantages-list__item:first-child {
+    background: url("/img/advantages-item-first-number.svg") top right 40px
+      no-repeat;
+  }
+
+  .advantages-list__item:nth-child(3n + 2) {
+    background: url("/img/advantages-item-second-number.svg") top right 5px
+      no-repeat;
+  }
+
+  .advantages-list__item:nth-child(3n) {
+    background: url("/img/advantages-item-third-number.svg") top right 5px
+      no-repeat;
+  }
+
+  .advantages-list__item:nth-child(4n) {
+    background: url("/img/advantages-item-fourth-number.svg") top right 5px
+      no-repeat;
+  }
+
+  .advantages-list__item-description {
+    margin: 0;
+    font-family: $font-family-Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $special_dark-grey;
+  }
+}

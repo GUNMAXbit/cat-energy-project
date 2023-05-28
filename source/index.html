@@ -2,30 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__link-first">
-          <img
-            class="main-header__link-first-image"
-            src="img/logo-picture.svg"
-            width="33"
-            height="37"
-            alt="Логотип «Cat Energy»."
-          />
-        </a>
-        <a class="main-header__link-secondary">
-          <img
-            class="main-header__link-secondary-image"
-            src="img/logo-name.svg"
-            width="101"
-            height="18"
-            alt="Логотип с названием «Cat Energy»."
-          />
-        </a>
+      <div class="main-header-wrapper">
+        <a class="main-header__link-first"></a>
+        <a class="main-header__link-secondary"> </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
@@ -56,13 +41,11 @@
         <p class="main-container-header__description">
           Занялся собой? Займись котом!
         </p>
-        <img
-          class="main-container-header__img"
-          src="img/product.svg"
-          width="280"
-          height="270"
-          alt="Продукт Cat energy."
-        />
+        <picture class="main-container-header__img">
+          <source srcset="img/product-mobile.svg" media="(max-width: 767px)" />
+          <source srcset="img/product-tablet.jpg" media="(min-width: 768px)" />
+          <img srcset="img/product-mobile.svg" alt="Изображение продукта." />
+        </picture>
         <a class="button main-container-header__btn" href="form.html"
           >Подобрать программу
         </a>
@@ -71,13 +54,17 @@
         <h2 class="visually-hidden">Программы</h2>
         <ul class="program-list">
           <li class="program-list__item">
-            <img
-              class="program-list__item-icon"
-              src="img/small-cat.svg"
-              width="50"
-              height="53"
-              alt="Иконка с маленьким котом."
-            />
+            <picture class="program-list__item-icon">
+              <source
+                srcset="img/small-cat-mobile.svg"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="img/small-cat-tablet.svg"
+                media="(min-width: 768px)"
+              />
+              <img srcset="img/small-cat.svg" alt="Иконка с маленьким котом." />
+            </picture>
             <h3 class="program-list__item-title">Похудение</h3>
             <p class="program-list__item-description">
               Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -87,13 +74,20 @@
             <a class="button" href="#">Каталог slim</a>
           </li>
           <li class="program-list__item">
-            <img
-              class="program-list__item-icon"
-              src="img/strong-cat.svg"
-              width="67"
-              height="50"
-              alt="Иконка с большим котом."
-            />
+            <picture class="program-list__item-icon">
+              <source
+                srcset="img/strong-cat-mobile.svg"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="img/strong-cat-tablet.svg"
+                media="(min-width: 768px)"
+              />
+              <img
+                srcset="img/strong-cat-mobile.svg"
+                alt="Иконка с большим котом."
+              />
+            </picture>
             <h3 class="program-list__item-title">Набор массы</h3>
             <p class="program-list__item-description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -107,52 +101,74 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages-list">
           <li class="advantages-list__item">
-            <img
-              class="advantages-list__item-icon"
-              src="img/foliage.svg"
-              width="60"
-              height="60"
-              alt="Иконка с лепестком."
-            />
+            <picture class="advantages-list__item-icon">
+              <source
+                srcset="img/foliage-mobile.svg"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="img/foliage-tablet.svg"
+                media="(min-width: 768px)"
+              />
+              <img
+                srcset="img/foliage-mobile.svg.svg"
+                alt="Иконка с лепестком."
+              />
+            </picture>
             <p class="advantages-list__item-description">
               Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
           <li class="advantages-list__item">
-            <img
-              class="advantages-list__item-icon"
-              src="img/water.svg"
-              width="60"
-              height="60"
-              alt="Стакан с водой."
-            />
+            <picture class="advantages-list__item-icon">
+              <source
+                srcset="img/water-mobile.svg"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="img/water-tablet.svg"
+                media="(min-width: 768px)"
+              />
+              <img srcset="img/water-mobile.svg.svg" alt="Стакан с водой." />
+            </picture>
             <p class="advantages-list__item-description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и
               готово.
             </p>
           </li>
           <li class="advantages-list__item">
-            <img
-              class="advantages-list__item-icon"
-              src="img/tableware.svg"
-              width="60"
-              height="60"
-              alt="Кухонные принадлежности."
-            />
+            <picture class="advantages-list__item-icon">
+              <source
+                srcset="img/tableware-mobile.svg"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="img/tableware-tablet.svg"
+                media="(min-width: 768px)"
+              />
+              <img
+                srcset="img/tableware-mobile.svg.svg"
+                alt="Кухонные принадлежности."
+              />
+            </picture>
             <p class="advantages-list__item-description">
               Замените один-два приема обычной еды на наше функциональное
               питание.
             </p>
           </li>
           <li class="advantages-list__item">
-            <img
-              class="advantages-list__item-icon"
-              src="img/clock.svg"
-              width="60"
-              height="60"
-              alt="Часы."
-            />
+            <picture class="advantages-list__item-icon">
+              <source
+                srcset="img/clock-mobile.svg"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="img/clock-tablet.svg"
+                media="(min-width: 768px)"
+              />
+              <img srcset="img/clock-mobile.svg.svg" alt="Часы." />
+            </picture>
             <p class="advantages-list__item-description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!
@@ -218,7 +234,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.305395708147!2d30.319860933888926!3d59.937904937671966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1684906451449!5m2!1sru!2sru"
             width="100%"
             height="100%"
-            style="border: 0;"
+            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

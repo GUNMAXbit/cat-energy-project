@@ -1,5 +1,37 @@
-
 .main-header-wrapper {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__link-first {
+  display: block;
+  width: 33px;
+  height: 37px;
+  background: url("/img/logo-mobile-picture.svg") no-repeat;
+}
+
+.main-header__link-secondary {
+  display: block;
+  width: 101px;
+  height: 19px;
+  background: url("/img/logo-mobile-name.svg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__link-first {
+    margin: 0;
+    display: block;
+    width: 174px;
+    height: 52px;
+    background: url("/img/tablet-logo.svg") no-repeat;
   }
+
+  .main-header__link-secondary {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

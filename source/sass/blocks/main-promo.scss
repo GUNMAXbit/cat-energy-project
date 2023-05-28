@@ -1,23 +1,22 @@
 .main-promo {
   padding-top: 58px;
   margin-bottom: 35px;
-  background: url("../img/promo-back.png") no-repeat,
-    url("../img/promo-img.jpg") no-repeat;
+  background: url("/img/promo-back.png") no-repeat,
+    url("/img/promo-img.jpg") no-repeat;
   display: flex;
   flex-direction: column;
 }
 
-  .main-promo__img {
-    margin-bottom: 48px;
-  }
+.main-promo__img {
+  margin-bottom: 48px;
+}
 
-  .main-promo__description {
-    font-family: $font-family-Arial;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: $basic_white;
-    margin: 0 0 43px 0;
-  }
-
+.main-promo__description {
+  font-family: $font-family-Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic_white;
+  margin: 0 0 43px 0;
+}

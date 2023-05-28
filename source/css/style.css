@@ -4,20 +4,20 @@
   font-family: "Oswald Medium";
   font-weight: 700;
   font-style: normal;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("/fonts/oswaldmedium.woff2") format("woff2"), url("/fonts/oswaldmedium.woff") format("woff");
 }
 @font-face {
   font-family: "Oswald Regular";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("/fonts/oswaldregular.woff2") format("woff2"), url("/fonts/oswaldregular.woff") format("woff");
 }
 /* Colors */
+/* Viewports */
 .page-body {
   height: 100%;
   font-size: 18px;
-  font-family: "Oswald Regular", "Oswald Medium", "Arial", sans-serif;
-  line-height: 27px;
+  font-family: "Oswald Regular", sans-serif, "Arial", sans-serif, sans-serif;
 }
 
 .visually-hidden {
@@ -40,16 +40,63 @@
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .main-header {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 .main-header-wrapper {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.main-header__link-first {
+  display: block;
+  width: 33px;
+  height: 37px;
+  background: url("/img/logo-mobile-picture.svg") no-repeat;
+}
+
+.main-header__link-secondary {
+  display: block;
+  width: 101px;
+  height: 19px;
+  background: url("/img/logo-mobile-name.svg") no-repeat;
+}
+
+@media (min-width: 768px) {
+  .main-header__link-first {
+    margin: 0;
+    display: block;
+    width: 174px;
+    height: 52px;
+    background: url("/img/tablet-logo.svg") no-repeat;
+  }
+
+  .main-header__link-secondary {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
 .main-nav {
   display: flex;
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .main-nav-list {
   margin: 0;
   padding: 0;
@@ -59,7 +106,6 @@
 .main-nav-list__item-link {
   display: block;
   padding: 22px 0;
-  font-family: "Oswald Regular";
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -68,8 +114,29 @@
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .main-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  .main-nav-list__item-link {
+    display: block;
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+  }
+}
 .main-container-header {
-  background: url("../img/background-color.png") no-repeat, url("../img/background-photo.jpg") no-repeat;
+  background: url("/img/background-color.png") no-repeat, url("/img/background-photo.jpg") no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -91,6 +158,38 @@
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .main-container-header {
+    height: 872px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-container-header__title {
+    padding-top: 62px;
+    margin: 0 0 41px 0;
+    color: #000000;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-container-header__description {
+    margin: 0 0 49px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .main-container-header__img {
+    left: 29px;
+    top: 341px;
+    position: absolute;
+    z-index: -1;
+  }
+}
 /* Файлы Главной страницы */
 .advantages {
   margin-bottom: 53px;
@@ -104,6 +203,19 @@
   color: #000000;
 }
 
+@media (min-width: 768px) {
+  .advantages {
+    margin-bottom: 90px;
+  }
+
+  .advantages__title {
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+}
 .advantages-list {
   margin: 0;
   padding: 0;
@@ -122,13 +234,64 @@
 
 .advantages-list__item-description {
   margin: 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 }
 
+@media (min-width: 768px) {
+  .advantages-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    column-gap: 154px;
+    row-gap: 37px;
+    list-style-type: none;
+  }
+
+  .advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+  }
+
+  .advantages-list__item:first-child {
+    background: url("/img/advantages-item-first-number.svg") top right 40px no-repeat;
+  }
+
+  .advantages-list__item:nth-child(3n+2) {
+    background: url("/img/advantages-item-second-number.svg") top right 5px no-repeat;
+  }
+
+  .advantages-list__item:nth-child(3n) {
+    background: url("/img/advantages-item-third-number.svg") top right 5px no-repeat;
+  }
+
+  .advantages-list__item:nth-child(4n) {
+    background: url("/img/advantages-item-fourth-number.svg") top right 5px no-repeat;
+  }
+
+  .advantages-list__item-description {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+.program {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .program {
+    display: flex;
+  }
+}
 .program-list {
   margin: 0;
   padding: 0;
@@ -154,13 +317,36 @@
 
 .program-list__item-description {
   margin: 0 0 42px 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 }
 
+@media (min-width: 768px) {
+  .program-list__item:last-child {
+    margin-bottom: 45px;
+  }
+
+  .program-list__item-title {
+    margin: 0 0 24px 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .program-list__item-description {
+    margin: 0 0 52px 0;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+}
 .example {
   display: flex;
   flex-direction: column;
@@ -178,7 +364,7 @@
 
 .example__description {
   margin: 0 0 20px 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -258,7 +444,7 @@
 }
 
 .catalog-list__item-description-text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -282,7 +468,7 @@
 
 .catalog-list__item-more-description {
   margin: 0 0 21px 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -326,7 +512,7 @@
 }
 
 .optional-list__item-description-text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -336,7 +522,7 @@
 .main-promo {
   padding-top: 58px;
   margin-bottom: 35px;
-  background: url("../img/promo-back.png") no-repeat, url("../img/promo-img.jpg") no-repeat;
+  background: url("/img/promo-back.png") no-repeat, url("/img/promo-img.jpg") no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -346,7 +532,7 @@
 }
 
 .main-promo__description {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -383,7 +569,7 @@
 }
 
 .form_text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -542,7 +728,7 @@
 }
 
 .footer-location__description {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

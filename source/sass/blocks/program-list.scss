@@ -29,3 +29,27 @@
   line-height: 18px;
   color: $special_dark-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .program-list__item:last-child {
+    margin-bottom: 45px;
+  }
+
+  .program-list__item-title {
+    margin: 0 0 24px 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+
+  .program-list__item-description {
+    margin: 0 0 52px 0;
+    font-family: $font-family-Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic_black;
+  }
+}

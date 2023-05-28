@@ -6,47 +6,46 @@
   flex-direction: column;
 }
 
-  .catalog-list__item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 11px;
-  }
+.catalog-list__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+}
 
-  .catalog-list__item-container {
-    width: 112px;
-    display: grid;
-    grid-template-columns: repeat(2, 140px);
-    margin-bottom: 13px;
-  }
+.catalog-list__item-container {
+  width: 112px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin-bottom: 13px;
+}
 
-  .catalog-list__item-text {
-    display: flex;
-    flex-direction: column;
-  }
+.catalog-list__item-text {
+  display: flex;
+  flex-direction: column;
+}
 
-  .catalog-list__item-title {
-    margin: 0 64px 14px 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: $basic_black-3;
-  }
+.catalog-list__item-title {
+  margin: 0 64px 14px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: $eerie_black;
+}
 
-  .catalog-list__item-description {
-    display: flex;
-  }
+.catalog-list__item-description {
+  display: flex;
+}
 
-  .catalog-list__item-description-text {
-    font-family: $font-family-Arial;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special_dark-grey;
-  }
-
+.catalog-list__item-description-text {
+  font-family: $font-family-Arial;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
 
 .catalog-list__item-more {
   display: flex;
@@ -54,21 +53,20 @@
   margin-bottom: 50px;
 }
 
-  .catalog-list__item-more-title {
-    margin: 78px 0 8px 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $basic_black-2;
-  }
+.catalog-list__item-more-title {
+  margin: 78px 0 8px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special_black;
+}
 
-  .catalog-list__item-more-description {
-    margin: 0 0 21px 0;
-    font-family: $font-family-Arial;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special_dark-grey;
-  }
-
+.catalog-list__item-more-description {
+  margin: 0 0 21px 0;
+  font-family: $font-family-Arial;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}

@@ -1,1 +1,9 @@
+.program {
+  display: flex;
+}
 
+@media (min-width: $tablet-width) {
+  .program {
+    display: flex;
+  }
+}

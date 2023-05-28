@@ -6,17 +6,16 @@
   margin: 0 0 24px 0;
 }
 
-  .form-profile__field {
-    display: flex;
-    margin-bottom: 14px;
-  }
+.form-profile__field {
+  display: flex;
+  margin-bottom: 14px;
+}
 
-  .form-profile__label {
-    margin-right: 12px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $special_dark-grey;
-  }
-
+.form-profile__label {
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
