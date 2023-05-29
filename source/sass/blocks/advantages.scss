@@ -23,3 +23,17 @@
     color: $basic_black;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 90px;
+  }
+
+  .advantages__title {
+    margin: 0 0 32px 0;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic_black;
+  }
+}

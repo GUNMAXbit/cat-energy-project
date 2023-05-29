@@ -41,15 +41,14 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .example {
     display: flex;
     flex-direction: column;
-    background:none;
+    background: none;
   }
 
   .example__title {
-    padding:0;
+    padding: 0;
     margin: 0 0 63px 0;
     font-weight: 400;
     font-size: 60px;
@@ -66,7 +65,7 @@
     color: $special_dark-grey;
   }
 
-  .example__wrapper{
+  .example__wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 72px;

@@ -1,4 +1,3 @@
-
 .sociall-list {
   margin: 0;
   padding: 0;
@@ -6,14 +5,13 @@
   display: flex;
 }
 
-.sociall-list__item-link{
+.sociall-list__item-link {
   display: block;
   width: 30px;
   height: 30px;
 }
 
 @media (min-width: $tablet-width) {
-
   .footer-contacts__wrapper {
     display: flex;
   }
@@ -24,7 +22,7 @@
     display: flex;
   }
 
-  .sociall-list__item-link{
+  .sociall-list__item-link {
     display: block;
     width: 30px;
     height: 30px;
