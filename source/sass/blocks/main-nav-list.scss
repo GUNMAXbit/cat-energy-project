@@ -21,7 +21,7 @@
     padding: 0;
     list-style-type: none;
     display: flex;
-    width: 440px;
+    min-width: 440px;
     justify-content: space-between;
   }
 
@@ -33,6 +33,28 @@
     line-height: 24px;
     text-transform: uppercase;
     color: $basic_black;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    min-width: 478px;
+    justify-content: space-between;
+  }
+
+  .main-nav-list__item-link {
+    display: block;
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $basic_white;
     text-decoration: none;
   }
 }

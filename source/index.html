@@ -44,6 +44,7 @@
         <picture class="main-container-header__img">
           <source srcset="img/product-mobile.svg" media="(max-width: 767px)" />
           <source srcset="img/product-tablet.jpg" media="(min-width: 768px)" />
+          <source srcset="img/product-desktop.png" media="(min-width: 1200px)" />
           <img srcset="img/product-mobile.svg" alt="Изображение продукта." />
         </picture>
         <a class="button main-container-header__btn" href="form.html"
@@ -167,7 +168,7 @@
                 srcset="img/clock-tablet.svg"
                 media="(min-width: 768px)"
               />
-              <img srcset="img/clock-mobile.svg.svg" alt="Часы." />
+              <img srcset="img/clock-mobile.svg" alt="Часы." />
             </picture>
             <p class="advantages-list__item-description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
@@ -183,6 +184,7 @@
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
+        <div class="example__wrapper">
         <div class="example__information">
           <label>
             <input
@@ -202,13 +204,18 @@
           </label>
         </div>
         <span class="example__cost">Затраты на питание: 15 000 РУБ. </span>
-        <img
-          class="example__img"
-          src="img/cat.svg"
-          width="280"
-          height="232"
-          alt="Фотография кота."
+      </div>
+      <picture class="example__img">
+        <source
+          srcset="img/cat-mobile.svg"
+          media="(max-width: 767px)"
         />
+        <source
+          srcset="img/cat-tablet.jpg"
+          media="(min-width: 768px)"
+        />
+        <img srcset="img/cat-mobile.svg" alt="Фотография кота."/>
+      </picture>
         <div class="range">
           <span class="range__text">Было</span>
           <div class="range__scale">
@@ -244,30 +251,24 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts__logo">
-          <img
-            class="footer-contacts__logo-image"
-            src="img/logo-name.svg"
-            width="101"
-            height="18"
-            alt="Логотип с названием «Cat Energy»."
-          />
+          <img src="/img/logo-mobile-name.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__item-link" href="https://vk.com/htmlacademy"
-              >Мы в Вконтакте</a
+        <ul class="sociall-list">
+          <li class="sociall-list__item">
+            <a class="sociall-list__item-link" href="https://vk.com/htmlacademy"
+              ></a
             >
           </li>
-          <li class="social-list__item">
+          <li class="sociall-list__item">
             <a
-              class="social-list__item-link"
+              class="sociall-list__item-link"
               href="https://www.youtube.com/user/htmlacademyru"
-              >Мы в Ютубе</a
+              ></a
             >
           </li>
-          <li class="social-list__item">
-            <a class="social-list__item-link" href="https://t.me/htmlacademy"
-              >Мы в Телеграме</a
+          <li class="sociall-list__item">
+            <a class="sociall-list__item-link" href="https://t.me/htmlacademy"
+              ></a
             >
           </li>
         </ul>

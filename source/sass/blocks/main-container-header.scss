@@ -54,3 +54,38 @@
     z-index: -1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-container-header {
+    height: 872px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .main-container-header__title {
+    padding-top: 111px;
+    margin: 0 0 41px 0;
+    color: $basic_black;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-container-header__description {
+    margin: 0 0 52px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+
+  .main-container-header__img {
+    left: 330px;
+    top: 141px;
+    position: absolute;
+    z-index: -1;
+    background: transparent;
+  }
+}

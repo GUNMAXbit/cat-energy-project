@@ -1,5 +1,32 @@
 
-.social-list {
+.sociall-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
+}
+
+.sociall-list__item-link{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .footer-contacts__wrapper {
+    display: flex;
+  }
+  .sociall-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+
+  .sociall-list__item-link{
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
 }

@@ -12,3 +12,13 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    margin-top: 53px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -35,3 +35,20 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header__link-first {
+    display: block;
+    width: 202px;
+    height: 59px;
+    background: url("/img/logo-desktop.svg") no-repeat;
+  }
+
+  .main-header__link-secondary {
+    display: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
