@@ -2,15 +2,8 @@
   display: flex;
 }
 
-@media (min-width: $tablet-width) {
-  .program {
-    display: flex;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .program {
-    display: flex;
     margin-bottom: 80px;
   }
 }

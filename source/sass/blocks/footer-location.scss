@@ -1,10 +1,9 @@
 .footer-location__text {
-  margin: 26px 0;
   display: flex;
 }
 
 .footer-location__title {
-  margin: 0;
+  margin: 26px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -13,6 +12,7 @@
 }
 
 .footer-location__description {
+  margin: 26px 0;
   font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;
@@ -27,26 +27,17 @@
 
 @media (min-width: $tablet-width) {
   .footer-location__text {
-    margin: 59px 0 56px 0;
-    display: flex;
     justify-content: space-between;
   }
 
   .footer-location__title {
-    margin: 0;
-    font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    text-transform: uppercase;
-    color: $special_black;
   }
 
   .footer-location__description {
-    font-family: $font-family-Arial;
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: $special_dark-grey;
   }
 
   .footer-location__map {
@@ -63,10 +54,8 @@
     height: 198px;
     position: absolute;
     margin: 0;
-    display: flex;
-    justify-content: space-between;
     background: $basic_white;
-  }
+
 }
 
 .footer-location {
@@ -76,4 +65,5 @@ position: relative;
 .footer-location__map {
   width: 1440px;
   height: 400px;
+}
 }
