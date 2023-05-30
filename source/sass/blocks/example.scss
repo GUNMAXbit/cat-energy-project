@@ -65,13 +65,60 @@
     color: $special_dark-grey;
   }
 
-  .example__wrapper {
+  .example-information__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 80px;
+  }
+
+  .example__information {
+    display: flex;
+    margin: 0 167px 0 0;
+  }
+
+  .example__cost {
+    margin-bottom: 0;
   }
 
   .example__first-field {
     margin-right: 42px;
+  }
+
+  .example-img__wrapper {
+    display: flex;
+    flex-direction: column;
+    background: $basic_grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .example-description__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 194px;
+  }
+
+  .example-information__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0px;
+  }
+
+  .example__information {
+    display: flex;
+    margin: 0 0 60px 0;
+  }
+
+  .example-img__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-direction: row;
+    background: $basic_grey;
   }
 }

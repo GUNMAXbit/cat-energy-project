@@ -308,11 +308,11 @@
 }
 @media (min-width: 1200px) {
   .advantages {
-    margin-bottom: 90px;
+    margin-bottom: 69Spx;
   }
 
   .advantages__title {
-    margin: 0 0 32px 0;
+    margin: 0 0 72px 0;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -384,6 +384,23 @@
     font-size: 16px;
     line-height: 24px;
     color: #444444;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 246px);
+    column-gap: 94px;
+    row-gap: 37px;
+    list-style-type: none;
+  }
+
+  .advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
   }
 }
 .program {
@@ -572,14 +589,59 @@
     color: #444444;
   }
 
-  .example__wrapper {
+  .example-information__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 80px;
+  }
+
+  .example__information {
+    display: flex;
+    margin: 0 167px 0 0;
+  }
+
+  .example__cost {
+    margin-bottom: 0;
   }
 
   .example__first-field {
     margin-right: 42px;
+  }
+
+  .example-img__wrapper {
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+  }
+}
+@media (min-width: 1200px) {
+  .example-description__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 194px;
+  }
+
+  .example-information__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+  }
+
+  .example__information {
+    display: flex;
+    margin: 0 0 60px 0;
+  }
+
+  .example-img__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-direction: row;
+    background: #f2f2f2;
   }
 }
 .range {
@@ -980,6 +1042,28 @@
     height: 400px;
   }
 }
+@media (min-width: 1200px) {
+  .footer-location__text {
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    height: 198px;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+  }
+}
+.footer-location {
+  position: relative;
+}
+
+.footer-location__map {
+  width: 1440px;
+  height: 400px;
+}
+
 .footer-contacts {
   margin: 39px 0 22px 0;
   display: flex;

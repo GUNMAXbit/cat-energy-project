@@ -69,3 +69,21 @@
     color: $special_dark-grey;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 246px);
+    column-gap: 94px;
+    row-gap: 37px;
+    list-style-type: none;
+  }
+
+  .advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+  }
+}

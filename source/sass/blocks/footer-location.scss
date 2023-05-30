@@ -54,3 +54,26 @@
     height: 400px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-location__text {
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    height: 198px;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background: $basic_white;
+  }
+}
+
+.footer-location {
+position: relative;
+}
+
+.footer-location__map {
+  width: 1440px;
+  height: 400px;
+}

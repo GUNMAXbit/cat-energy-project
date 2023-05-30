@@ -45,7 +45,7 @@
           <source srcset="img/product-mobile.svg" media="(max-width: 767px)" />
           <source srcset="img/product-tablet.jpg" media="(min-width: 768px)" />
           <source
-            srcset="img/product-desktop.png"
+            srcset="img/product-desktop.svg"
             media="(min-width: 1200px)"
           />
           <img srcset="img/product-mobile.svg" alt="Изображение продукта." />
@@ -182,12 +182,14 @@
       </section>
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
+        <div class="example__wrapper">
+        <div class="example-description__wrapper">
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__wrapper">
+        <div class="example-information__wrapper">
           <div class="example__information">
             <label>
               <input
@@ -208,9 +210,11 @@
           </div>
           <span class="example__cost">Затраты на питание: 15 000 РУБ. </span>
         </div>
+      </div>
+      <div class="example-img__wrapper">
         <picture class="example__img">
           <source srcset="img/cat-mobile.svg" media="(max-width: 767px)" />
-          <source srcset="img/cat-tablet.jpg" media="(min-width: 768px)" />
+          <source srcset="img/cat-tablet.svg" media="(min-width: 768px)" />
           <img srcset="img/cat-mobile.svg" alt="Фотография кота." />
         </picture>
         <div class="range">
@@ -220,6 +224,8 @@
           </div>
           <span class="range__text">Стало</span>
         </div>
+      </div>
+    </div>
       </section>
     </main>
     <footer class="main-footer">
