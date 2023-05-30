@@ -55,18 +55,15 @@
 
 @media (min-width: $desktop-width) {
   .program-list {
-    flex-direction: row;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
   }
 
   .program-list__item {
-    width: 570px;
-    height: 374px;
     margin: 0;
   }
 
-  .program-list__item:first-child {
-    margin-right: 80px;
-  }
 
   .program-list__item:last-child {
     margin-bottom: 0;

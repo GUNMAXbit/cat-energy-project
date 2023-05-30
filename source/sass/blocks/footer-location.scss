@@ -21,8 +21,7 @@
 }
 
 .footer-location__map {
-  width: 320px;
-  height: 362px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,9 +40,9 @@
   }
 
   .footer-location__map {
-    width: 760px;
     height: 400px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -63,7 +62,6 @@ position: relative;
 }
 
 .footer-location__map {
-  width: 1440px;
   height: 400px;
 }
 }

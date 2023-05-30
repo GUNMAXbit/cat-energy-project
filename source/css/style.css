@@ -44,6 +44,16 @@
   margin: 0 20px;
 }
 
+@media (min-width: 768px) {
+  .container-wrapper {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-wrapper {
+    margin: 0 110px;
+  }
+}
 /* Файлы для Header */
 .main-header {
   display: flex;
@@ -184,12 +194,11 @@
 }
 
 .main-container-header__img {
-  margin: 100% auto;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
   .main-container-header {
-    height: 872px;
     background: none;
   }
 
@@ -202,22 +211,24 @@
   }
 
   .main-container-header__description {
-    margin: 0 0 49px 0;
+    margin: 0 0 20px 0;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
   }
 
-  .main-container-header__img {
-    left: 29px;
-    top: 341px;
+  .main-container-header__btn {
+    display: block;
     position: absolute;
-    z-index: -1;
+    z-index: 2;
+    top: 370px;
+    left: 120px;
   }
 }
 @media (min-width: 1200px) {
   .main-container-header {
     height: 664px;
+    background: url("/img/product-desktop.svg") top right 330px no-repeat;
   }
 
   .main-container-header__title {
@@ -229,8 +240,7 @@
   }
 
   .main-container-header__img {
-    left: 330px;
-    top: 141px;
+    display: none;
   }
 }
 /* Файлы Главной страницы */
@@ -294,7 +304,7 @@
 @media (min-width: 768px) {
   .advantages-list {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 154px;
     row-gap: 37px;
   }
@@ -332,7 +342,7 @@
 }
 @media (min-width: 1200px) {
   .advantages-list {
-    grid-template-columns: repeat(4, 246px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 94px;
   }
 
@@ -405,17 +415,13 @@
 }
 @media (min-width: 1200px) {
   .program-list {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   }
 
   .program-list__item {
-    width: 570px;
-    height: 374px;
     margin: 0;
-  }
-
-  .program-list__item:first-child {
-    margin-right: 80px;
   }
 
   .program-list__item:last-child {
@@ -457,6 +463,10 @@
 .example__information {
   display: flex;
   margin-bottom: 24px;
+}
+
+.example__label {
+  width: 50%;
 }
 
 .example-information__wrapper {
@@ -918,8 +928,7 @@
 }
 
 .footer-location__map {
-  width: 320px;
-  height: 362px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -938,7 +947,6 @@
   }
 
   .footer-location__map {
-    width: 760px;
     height: 400px;
   }
 }
@@ -958,18 +966,17 @@
   }
 
   .footer-location__map {
-    width: 1440px;
     height: 400px;
   }
 }
 .footer-contacts {
-  margin: 0;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
 }
 
 .footer-contacts__logo {
+  margin: 39px 0 32px 0;
   display: block;
   width: 128px;
   height: 24px;
@@ -977,7 +984,6 @@
 
 @media (min-width: 768px) {
   .footer-contacts {
-    margin: 58px 0 55px 0;
     flex-direction: row;
     justify-content: space-between;
   }

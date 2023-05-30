@@ -26,7 +26,7 @@
 @media (min-width: $tablet-width) {
   .advantages-list {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 154px;
     row-gap: 37px;
   }
@@ -69,7 +69,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages-list {
-    grid-template-columns: repeat(4, 246px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 94px;
   }
 
