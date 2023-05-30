@@ -42,7 +42,6 @@
   .footer-location__map {
     height: 400px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -54,14 +53,13 @@
     position: absolute;
     margin: 0;
     background: $basic_white;
+  }
 
-}
+  .footer-location {
+    position: relative;
+  }
 
-.footer-location {
-position: relative;
-}
-
-.footer-location__map {
-  height: 400px;
-}
+  .footer-location__map {
+    height: 400px;
+  }
 }

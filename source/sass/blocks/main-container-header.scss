@@ -1,7 +1,7 @@
 .main-container-header {
   background: url("/img/background-color.png") no-repeat,
     url("/img/background-photo.jpg") no-repeat;
-    background-size: 100% auto;
+  background-size: 100% auto;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -25,7 +25,7 @@
 }
 
 .main-container-header__img {
-margin:auto;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,20 +48,19 @@ margin:auto;
     color: $basic_black;
   }
 
-  .main-container-header__btn{
+  .main-container-header__btn {
     display: block;
     position: absolute;
     z-index: 2;
     top: 370px;
     left: 120px;
-
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-container-header {
     height: 664px;
-    background: url("/img/product-desktop.svg") top right 330px no-repeat,
+    background: url("/img/product-desktop.svg") top right 330px no-repeat;
   }
 
   .main-container-header__title {
@@ -73,6 +72,6 @@ margin:auto;
   }
 
   .main-container-header__img {
-   display: none;
-}
+    display: none;
+  }
 }

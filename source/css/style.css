@@ -44,14 +44,26 @@
   margin: 0 20px;
 }
 
+.example__container-wrapper {
+  margin: 0 20px;
+}
+
 @media (min-width: 768px) {
   .container-wrapper {
     margin: 0 30px;
+  }
+
+  .example__container-wrapper {
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
   .container-wrapper {
     margin: 0 110px;
+  }
+
+  .example__container-wrapper {
+    margin: 0;
   }
 }
 /* Файлы для Header */
@@ -269,7 +281,7 @@
 }
 @media (min-width: 1200px) {
   .advantages {
-    margin-bottom: 69Spx;
+    margin-bottom: 69px;
   }
 
   .advantages__title {
@@ -444,7 +456,7 @@
 
 .example__title {
   padding-top: 25px;
-  margin: 0 0 40px 20px;
+  margin: 0 0 40px 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -496,13 +508,13 @@
 
   .example__title {
     padding: 0;
-    margin: 0 0 63px 0;
+    margin: 0 0 63px 30px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .example__description {
-    margin: 0 0 54px 0;
+    margin: 0 30px 54px 30px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -510,7 +522,7 @@
   .example-information__wrapper {
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 80px;
+    margin: 0 30px 80px 0;
   }
 
   .example__information {
@@ -537,8 +549,12 @@
   }
 }
 @media (min-width: 1200px) {
+  .example__title {
+    margin: 0 0 76px 110px;
+  }
+
   .example__description {
-    margin: 0 0 69px 0;
+    margin: 0 0 69px 110px;
   }
 
   .example-description__wrapper {
@@ -550,7 +566,7 @@
   .example-information__wrapper {
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 0 0 110px;
   }
 
   .example__information {
