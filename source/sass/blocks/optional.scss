@@ -5,3 +5,21 @@
   line-height: 24px;
   color: $basic_black;
 }
+
+@media (min-width: $tablet-width) {
+
+  .optional__title {
+    margin: 0 0 106px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .optional-wrapper{
+display: flex;
+margin-bottom: 86px;
+  }
+}
+

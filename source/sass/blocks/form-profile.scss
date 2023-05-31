@@ -19,3 +19,26 @@
   text-transform: uppercase;
   color: $special_dark-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .form-profile {
+    margin: 0 0 72px 0;
+  }
+
+  .form-profile__field {
+    margin-bottom: 20px;
+  }
+
+  .form-profile__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .form-profile {
+    margin: 0;
+  }
+
+}

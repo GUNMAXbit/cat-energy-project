@@ -11,3 +11,15 @@
   line-height: 26px;
   color: $basic_black;
 }
+
+@media (min-width: $tablet-width) {
+  .form-comment {
+    margin-bottom: 65px;
+  }
+
+  .form-comment__title {
+    margin: 0 0 76px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

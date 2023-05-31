@@ -7,52 +7,39 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__link-first">
-          <img
-            class="main-header__link-first-image"
-            src="img/logo-picture.svg"
-            width="33"
-            height="37"
-            alt="Логотип «Cat Energy»."
-          />
-        </a>
-        <a class="main-header__link-secondary">
-          <img
-            class="main-header__link-secondary-image"
-            src="img/logo-name.svg"
-            width="101"
-            height="18"
-            alt="Логотип с названием «Cat Energy»."
-          />
-        </a>
+    <header class="main-header container-wrapper">
+      <div class="main-header-wrapper">
+        <a class="main-header__link-first"></a>
+        <a class="main-header__link-secondary"> </a>
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Кнопка меню</span>
         </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="index.html"> Главная </a>
+            <a class="main-nav-list__item-link main-nav-list__item-link-user" href="index.html"> Главная </a>
           </li>
-          <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="catalog.html">
+          <li class="main-nav-list__item ">
+            <a class="main-nav-list__item-link main-nav-list__item-link-user" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="#"> Подбор программы </a>
+            <a class="main-nav-list__item-link main-nav-list__item-link-user" href="#">
+              Подбор программы
+            </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-form-container">
+    <main class="main-form-container container-wrapper">
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__description">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
+        <div class="form__wrapper">
         <fieldset class="form-profile">
           <div class="form-profile__field">
             <label class="form-profile__label" for="form__name">ИМЯ:*</label>
@@ -92,50 +79,52 @@
         <fieldset class="form-program">
           <ul class="form-program-list">
             <li class="form-program-list__item">
+              <input
+              class="form-program-list__item-input"
+              type="radio"
+              name="program"
+              value="slim"
+              id="form__slim"
+              checked
+            />
               <label class="form-program-list__item-control" for="form__slim">
                 Похудение
               </label>
-              <input
-                class="form-program-list__item-input"
-                type="radio"
-                name="program"
-                value="slim"
-                id="form__slim"
-                checked
-              />
             </li>
             <li class="form-program-list__item">
+              <input
+              class="form-program-list__item-input"
+              type="radio"
+              name="program"
+              value="gain"
+              id="form__gain"
+            />
               <label class="form-program-list__item-control" for="form__gain"
                 >Набор массы
               </label>
-              <input
-                class="form-program-list__item-input"
-                type="radio"
-                name="program"
-                value="gain"
-                id="form__gain"
-              />
             </li>
             <li class="form-program-list__item">
+              <input
+              class="form-program-list__item-input"
+              type="radio"
+              name="program"
+              value="need-advice"
+              id="form__need-advice"
+            />
               <label
                 class="form-program-list__item-control"
                 for="form__need-advice"
                 >Не знаю (Нужен ваш совет)
               </label>
-              <input
-                class="form-program-list__item-input"
-                type="radio"
-                name="program"
-                value="need-advice"
-                id="form__need-advice"
-              />
             </li>
           </ul>
+        </div>
         </fieldset>
         <fieldset class="form-contacts">
           <legend class="form-contacts__title">
             Контактные данные (владельца кота)
           </legend>
+          <div class="form-contacts__wrapper">
           <div class="form-contacts__field">
             <label class="form-contacts__label" for="form__email"
               >E-mail:*</label
@@ -160,6 +149,7 @@
               name="form__phone"
             />
           </div>
+        </div>
         </fieldset>
         <div class="form-comment">
           <h2 class="form-comment__title">Комментарий</h2>
@@ -238,14 +228,16 @@
             </li>
           </ul>
         </fieldset>
+        <div class="form-container">
         <button class="button form__btn" type="submit">Отправить заявку</button>
         <span class="form_text">* — Обязательные поля </span>
+      </div>
       </form>
     </main>
     <footer class="main-footer">
-      <section class="footer-location">
+      <section class="footer-location footer-location-grey">
         <h2 class="visually-hidden">Местоположение</h2>
-        <div class="footer-location__text">
+        <div class="footer-location__text  container-wrapper">
           <h3 class="footer-location__title">
             Приглашаем к сотрудничеству дилеров!
           </h3>
@@ -254,57 +246,56 @@
           >
         </div>
         <div class="footer-location__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.305395708147!2d30.319860933888926!3d59.937904937671966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1684906451449!5m2!1sru!2sru"
+          <img
+            src="/img/map.svg"
             width="100%"
             height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            alt="Логотип Cat Energy"
+          />
         </div>
       </section>
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts__logo">
-          <img
-            class="footer-contacts__logo-image"
-            src="img/logo-name.svg"
-            width="101"
-            height="18"
-            alt="Логотип с названием «Cat Energy»."
-          />
-        </a>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__item-link" href="https://vk.com/htmlacademy"
-              >Мы в Вконтакте</a
-            >
-          </li>
-          <li class="social-list__item">
+        <div class="container-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="footer-contacts__logo">
+            <img
+              src="/img/logo-mobile-name.svg"
+              width="128"
+              height="24"
+              alt="Логотип Cat Energy"
+            />
+          </a>
+          <ul class="sociall-list">
+            <li class="sociall-list__item">
+              <a
+                class="sociall-list__item-link"
+                href="https://vk.com/htmlacademy"
+              ></a>
+            </li>
+            <li class="sociall-list__item">
+              <a
+                class="sociall-list__item-link"
+                href="https://www.youtube.com/user/htmlacademyru"
+              ></a>
+            </li>
+            <li class="sociall-list__item">
+              <a
+                class="sociall-list__item-link"
+                href="https://t.me/htmlacademy"
+              ></a>
+            </li>
+          </ul>
+          <div class="copyright">
             <a
-              class="social-list__item-link"
-              href="https://www.youtube.com/user/htmlacademyru"
-              >Мы в Ютубе</a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+              >HTML Academy</a
             >
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__item-link" href="https://t.me/htmlacademy"
-              >Мы в Телеграме</a
-            >
-          </li>
-        </ul>
-        <div class="copyright">
-          <a
-            class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            >HTML Academy</a
-          >
-          <a
-            class="copyright__logo-link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-          ></a>
+            <a
+              class="copyright__logo-link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            ></a>
+          </div>
         </div>
       </section>
     </footer>

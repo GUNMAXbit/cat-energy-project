@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.footer-location-grey {
+  background: $basic_grey;
+}
+
 .footer-location__title {
   margin: 26px 0;
   font-weight: 400;
@@ -29,6 +33,10 @@
     justify-content: space-between;
   }
 
+  .footer-location-grey {
+    background: $basic_grey;
+  }
+
   .footer-location__title {
     font-size: 20px;
     line-height: 26px;
@@ -54,6 +62,7 @@
     margin: 0;
     background: $basic_white;
   }
+
 
   .footer-location {
     position: relative;

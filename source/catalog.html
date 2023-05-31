@@ -7,47 +7,33 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo-first">
-          <img
-            class="main-header__logo-first-image"
-            src="img/logo-picture.svg"
-            width="33"
-            height="37"
-            alt="Логотип «Cat Energy»."
-          />
-        </a>
-        <a class="main-header__logo-secondary">
-          <img
-            class="main-header__logo-secondary-image"
-            src="img/logo-name.svg"
-            width="101"
-            height="18"
-            alt="Логотип с названием «Cat Energy»."
-          />
-        </a>
+    <header class="main-header container-wrapper">
+      <div class="main-header-wrapper">
+        <a class="main-header__link-first"></a>
+        <a class="main-header__link-secondary"> </a>
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Кнопка меню</span>
         </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="index.html"> Главная </a>
+            <a class="main-nav-list__item-link main-nav-list__item-link-user" href="index.html"> Главная </a>
+          </li>
+          <li class="main-nav-list__item ">
+            <a class="main-nav-list__item-link main-nav-list__item-link-user" href="#">
+              Каталог продукции
+            </a>
           </li>
           <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="№"> Каталог продукции </a>
-          </li>
-          <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="form.html">
+            <a class="main-nav-list__item-link main-nav-list__item-link-user" href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner-container">
+    <main class="main-inner-container container-wrapper">
       <section class="catalog">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog-list">
@@ -297,8 +283,10 @@
       </section>
       <section class="optional">
         <h1 class="optional__title">Дополнительные товары</h1>
+        <div class="optional-wrapper">
         <ul class="optional-list">
           <li class="optional-list__item">
+            <div class="optional-list__container">
             <h2 class="optional-list__item-title">Сахарозаменитель</h2>
             <div class="optional-list__item-description">
               <span class="optional-list__item-description-text"
@@ -306,31 +294,37 @@
               >
               <span class="optional-list__item-description-text">200 Р.</span>
             </div>
+          </div>
             <button class="button optional-list__item-btn" type="button">
               Заказать
             </button>
           </li>
           <li class="optional-list__item">
+            <div class="optional-list__container">
             <h2 class="optional-list__item-title">Питьевая вода</h2>
             <div class="optional-list__item-description">
               <span class="optional-list__item-description-text">5 литров</span>
               <span class="optional-list__item-description-text">50 Р.</span>
             </div>
+          </div>
             <button class="button optional-list__item-btn" type="button">
               Заказать
             </button>
           </li>
           <li class="optional-list__item">
+            <div class="optional-list__container">
             <h2 class="optional-list__item-title">Молоко</h2>
             <div class="optional-list__item-description">
               <span class="optional-list__item-description-text">1 литр</span>
               <span class="optional-list__item-description-text">100 Р.</span>
             </div>
+          </div>
             <button class="button optional-list__item-btn" type="button">
               Заказать
             </button>
           </li>
           <li class="optional-list__item">
+            <div class="optional-list__container">
             <h2 class="optional-list__item-title">Витамины</h2>
             <div class="optional-list__item-description">
               <span class="optional-list__item-description-text"
@@ -338,29 +332,31 @@
               >
               <span class="optional-list__item-description-text">300 Р.</span>
             </div>
+          </div>
             <button class="button optional-list__item-btn" type="button">
               Заказать
             </button>
           </li>
         </ul>
-      </section>
-      <div class="main-promo">
-        <img
-          class="main-promo__img"
-          src="img/promo-icon.svg"
-          width="78"
-          height="80"
-          alt="Иконка промо-акции."
-        />
-        <p class="main-promo__description">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+        <div class="main-promo">
+          <img
+            class="main-promo__img"
+            src="img/promo-icon.svg"
+            width="78"
+            height="80"
+            alt="Иконка промо-акции."
+          />
+          <p class="main-promo__description">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </div>
       </div>
+      </section>
     </main>
     <footer class="main-footer">
-      <section class="footer-location">
+      <section class="footer-location footer-location-grey">
         <h2 class="visually-hidden">Местоположение</h2>
-        <div class="footer-location__text">
+        <div class="footer-location__text  container-wrapper">
           <h3 class="footer-location__title">
             Приглашаем к сотрудничеству дилеров!
           </h3>
@@ -369,57 +365,56 @@
           >
         </div>
         <div class="footer-location__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.305395708147!2d30.319860933888926!3d59.937904937671966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1684906451449!5m2!1sru!2sru"
+          <img
+            src="/img/map.svg"
             width="100%"
             height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            alt="Логотип Cat Energy"
+          />
         </div>
       </section>
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="footer-contacts__logo">
-          <img
-            class="footer-contacts__logo-image"
-            src="img/logo-name.svg"
-            width="101"
-            height="18"
-            alt="Логотип с названием «Cat Energy»."
-          />
-        </a>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__item-link" href="https://vk.com/htmlacademy"
-              >Мы в Вконтакте</a
-            >
-          </li>
-          <li class="social-list__item">
+        <div class="container-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="footer-contacts__logo">
+            <img
+              src="/img/logo-mobile-name.svg"
+              width="128"
+              height="24"
+              alt="Логотип Cat Energy"
+            />
+          </a>
+          <ul class="sociall-list">
+            <li class="sociall-list__item">
+              <a
+                class="sociall-list__item-link"
+                href="https://vk.com/htmlacademy"
+              ></a>
+            </li>
+            <li class="sociall-list__item">
+              <a
+                class="sociall-list__item-link"
+                href="https://www.youtube.com/user/htmlacademyru"
+              ></a>
+            </li>
+            <li class="sociall-list__item">
+              <a
+                class="sociall-list__item-link"
+                href="https://t.me/htmlacademy"
+              ></a>
+            </li>
+          </ul>
+          <div class="copyright">
             <a
-              class="social-list__item-link"
-              href="https://www.youtube.com/user/htmlacademyru"
-              >Мы в Ютубе</a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+              >HTML Academy</a
             >
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__item-link" href="https://t.me/htmlacademy"
-              >Мы в Телеграме</a
-            >
-          </li>
-        </ul>
-        <div class="copyright">
-          <a
-            class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            >HTML Academy</a
-          >
-          <a
-            class="copyright__logo-link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-          ></a>
+            <a
+              class="copyright__logo-link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            ></a>
+          </div>
         </div>
       </section>
     </footer>

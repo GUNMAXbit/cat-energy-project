@@ -1,5 +1,5 @@
 .form-program-list {
-  margin: 0 0 26px 0;
+  margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -7,7 +7,7 @@
 }
 
 .form-program-list__item {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 }
 
 .form-program-list__item-control {
@@ -16,4 +16,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $eerie_black;
+}
+
+@media (min-width: $tablet-width) {
+
+  .form-program-list__item-control {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

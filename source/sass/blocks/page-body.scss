@@ -1,4 +1,11 @@
-.page-body {
+.page-main-body {
+  margin: 0;
+  height: 100%;
+  font-size: 18px;
+  font-family: $font-family-Oswald;
+}
+
+.page-body  {
   margin: 0;
   height: 100%;
   font-size: 18px;
@@ -6,8 +13,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-body {
+  .page-main-body {
     background: url("/img/color-background-desktop.png") right top no-repeat,
       url("/img/index-background-desktop.jpg") right top no-repeat;
   }
 }
+
