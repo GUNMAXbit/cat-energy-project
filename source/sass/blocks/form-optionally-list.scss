@@ -2,10 +2,31 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  column-gap: 124px;
+  width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+          }
 }
 
 .form-optionally-list__item {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 250px;
+      }
 }
 
 .form-optionally-list__item-control {
@@ -14,36 +35,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic_black;
-}
 
-@media (min-width: $tablet-width) {
-
-  .form-optionally-list {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-row-gap: 32px;
-column-gap: 124px;
-width: 100%;
+  @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
   }
-
-  .form-optionally-list__item {
-    margin-bottom: 0;
-  }
-
-  .form-optionally-list__item-control {
-    font-size: 20px;
-    line-height: 30px;
-}
 }
 
-@media (min-width: $desktop-width) {
 
-  .form-optionally-list {
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-      }
-
-      .form-optionally-list__item {
-        max-width: 250px;
-      }
-}

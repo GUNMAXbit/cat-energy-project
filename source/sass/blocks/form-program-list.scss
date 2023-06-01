@@ -16,12 +16,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $eerie_black;
+
+  @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
 }
 
-@media (min-width: $tablet-width) {
-
-  .form-program-list__item-control {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}

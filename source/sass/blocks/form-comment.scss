@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
 }
 
 .form-comment__title {
@@ -10,16 +14,11 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+      margin: 0 0 76px 0;
+      font-size: 36px;
+      line-height: 36px;
+    }
 }
 
-@media (min-width: $tablet-width) {
-  .form-comment {
-    margin-bottom: 65px;
-  }
-
-  .form-comment__title {
-    margin: 0 0 76px 0;
-    font-size: 36px;
-    line-height: 36px;
-  }
-}

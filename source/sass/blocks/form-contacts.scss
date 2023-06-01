@@ -4,6 +4,14 @@
   border: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+      margin: 0 0 45px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0 0 67px 0;
+      }
 }
 
 .form-contacts__title {
@@ -12,11 +20,24 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
 }
 
 .form-contacts__field {
   margin-bottom: 14px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
 }
 
 .form-contacts__label {
@@ -26,48 +47,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
-}
 
-@media (min-width: $tablet-width) {
-  .form-contacts {
-    margin: 0 0 45px 0;
-  }
+  @media (min-width: $tablet-width) {
+      margin-right: 16px;
+      font-size: 20px;
+      line-height: 30px;
+    }
 
-  .form-contacts__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .form-contacts__field {
-    margin-bottom: 20px;
-  }
-
-  .form-contacts__label {
-    margin-right: 16px;
-    font-size: 20px;
-    line-height: 30px;
+    @media (min-width: $desktop-width) {
+      margin-right: 16px;
+      font-size: 20px;
+      line-height: 30px;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .form-contacts {
-    margin: 0 0 67px 0;
-  }
 
   .form-contacts__wrapper {
+    @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 78px;
-  }
-
-
-  .form-contacts__field {
-    margin-bottom: 0;
-  }
-
-  .form-contacts__label {
-    margin-right: 16px;
-    font-size: 20px;
-    line-height: 30px;
   }
 }

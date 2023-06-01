@@ -1,19 +1,15 @@
 .main-header {
   display: flex;
   flex-direction: column;
-}
 
 @media (min-width: $tablet-width) {
-  .main-header {
     margin-top: 24px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-}
 
 @media (min-width: $desktop-width) {
-  .main-header {
     margin-top: 53px;
   }
 }

@@ -9,6 +9,19 @@
   width: 33px;
   height: 37px;
   background: url("/img/logo-mobile-picture.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 174px;
+      height: 52px;
+      background: url("/img/tablet-logo.svg") no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 202px;
+        height: 59px;
+        background: url("/img/logo-desktop.svg") no-repeat;
+      }
 }
 
 .main-header__link-secondary {
@@ -16,29 +29,16 @@
   width: 101px;
   height: 19px;
   background: url("/img/logo-mobile-name.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+      display: none;
+    }
 }
-
-@media (min-width: $tablet-width) {
-  .main-header__link-first {
-    margin: 0;
-    width: 174px;
-    height: 52px;
-    background: url("/img/tablet-logo.svg") no-repeat;
-  }
-
-  .main-header__link-secondary {
-    display: none;
-  }
 
   .main-nav__toggle {
+    @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-header__link-first {
-    width: 202px;
-    height: 59px;
-    background: url("/img/logo-desktop.svg") no-repeat;
-  }
-}
+

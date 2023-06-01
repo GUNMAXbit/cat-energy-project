@@ -4,12 +4,22 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 80px;
+    }
 }
 
 .program-list__item {
   display: block;
   background-color: $basic_grey;
-  margin-bottom: 20px;
 }
 
 .program-list__item-title {
@@ -19,6 +29,16 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+      margin: 0 0 24px 0;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0 0 73px 0;
+      }
 }
 
 .program-list__item-description {
@@ -28,51 +48,16 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+      margin: 0 0 52px 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: $basic_black;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0 0 27px 0;
+      }
 }
 
-@media (min-width: $tablet-width) {
-  .program-list__item:last-child {
-    margin-bottom: 45px;
-  }
-
-  .program-list__item {
-    margin-bottom: 30px;
-  }
-
-  .program-list__item-title {
-    margin: 0 0 24px 0;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .program-list__item-description {
-    margin: 0 0 52px 0;
-    font-size: 16px;
-    line-height: 24px;
-    color: $basic_black;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
-  }
-
-  .program-list__item {
-    margin: 0;
-  }
-
-  .program-list__item:last-child {
-    margin-bottom: 0;
-  }
-
-  .program-list__item-title {
-    margin: 0 0 73px 0;
-  }
-
-  .program-list__item-description {
-    margin: 0 0 27px 0;
-  }
-}

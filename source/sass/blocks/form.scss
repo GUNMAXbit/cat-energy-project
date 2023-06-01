@@ -1,6 +1,14 @@
 .form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+     margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 82px;
+       }
 }
 
 .form__title {
@@ -9,6 +17,16 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+      margin: 75px 0 54px 0;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 73px 0 189px 0;
+    }
 }
 
 .form__description {
@@ -18,10 +36,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+      margin: 0 0 66px 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
 }
 
 .form__btn {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 61px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 81px 0 0;
+  }
 }
 
 .form_text {
@@ -31,62 +63,31 @@
   line-height: 16px;
   color: $basic_black;
   margin-bottom: 32px;
-}
 
-@media (min-width: $tablet-width) {
-  .form {
-   margin-bottom: 72px;
+  @media (min-width: $tablet-width) {
+    line-height: 16px;
+    margin-bottom: 0;
   }
 
-  .form__title {
-    margin: 75px 0 54px 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .form__description {
-    margin: 0 0 66px 0;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .form-container {
-    display: flex;
-  }
-
-  .form__btn {
-    margin: 0 61px 0 0;
-  }
-
-  .form_text {
+  @media (min-width: $desktop-width) {
     line-height: 16px;
     margin-bottom: 0;
   }
 }
 
-@media (min-width: $tablet-width) {
 
-  .form {
-    margin-bottom: 82px;
-   }
+
+  .form-container {
+    @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
 
    .form__wrapper {
+    @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     margin: 0 0 49px 0;
    }
-
-  .form__title {
-    margin: 73px 0 189px 0;
-  }
-
-  .form__btn {
-    margin: 0 81px 0 0;
-  }
-
-  .form_text {
-    line-height: 16px;
-    margin-bottom: 0;
-  }
 }

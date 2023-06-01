@@ -3,18 +3,14 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-}
 
 @media (min-width: $tablet-width){
-  .catalog__title {
     margin: 64px 0 90px 0;
     font-size: 60px;
     line-height: 60px;
   }
-}
 
 @media (min-width: $desktop-width) {
-  .catalog__title {
     margin: 74px 0 165px 0;
   }
 }
