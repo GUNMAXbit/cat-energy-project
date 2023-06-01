@@ -7,27 +7,26 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 154px;
-      row-gap: 37px;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 154px;
+    row-gap: 37px;
+  }
 
-    @media (min-width: $desktop-width) {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 94px;
-      }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 94px;
+  }
 }
 
 .advantages-list__item {
   display: flex;
 
-  @media (min-width: $tablet-width)
-  {   flex-direction: column;
-      min-height: 280px;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    min-height: 280px;
+  }
 }
-
 
 .advantages-list__item-description {
   margin: 0;
@@ -38,39 +37,36 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-      margin: 0;
-      font-size: 16px;
-      line-height: 24px;
-    }
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-
-  .advantages-list__item:first-child {
-    @media (min-width: $tablet-width) {
+.advantages-list__item:first-child {
+  @media (min-width: $tablet-width) {
     background: url("/img/advantages-item-first-number.svg") top right 40px
       no-repeat;
   }
 }
 
-  .advantages-list__item:nth-child(3n + 2) {
-    @media (min-width: $tablet-width) {
+.advantages-list__item:nth-child(3n + 2) {
+  @media (min-width: $tablet-width) {
     background: url("/img/advantages-item-second-number.svg") top right 5px
       no-repeat;
   }
 }
 
-  .advantages-list__item:nth-child(3n) {
-    @media (min-width: $tablet-width) {
+.advantages-list__item:nth-child(3n) {
+  @media (min-width: $tablet-width) {
     background: url("/img/advantages-item-third-number.svg") top right 5px
       no-repeat;
   }
-  }
+}
 
-  .advantages-list__item:nth-child(4n) {
-    @media (min-width: $tablet-width) {
+.advantages-list__item:nth-child(4n) {
+  @media (min-width: $tablet-width) {
     background: url("/img/advantages-item-fourth-number.svg") top right 5px
       no-repeat;
   }
-
 }
-

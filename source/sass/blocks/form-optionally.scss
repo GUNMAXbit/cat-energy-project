@@ -5,12 +5,12 @@
   margin: 0 0 22px 0;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 54px 0;
-    }
+    margin: 0 0 54px 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0 0 61px 0;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 61px 0;
+  }
 }
 
 .form-optionally__title {
@@ -21,10 +21,8 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 57px 0;
-      font-size: 36px;
-      line-height: 36px;
-    }
+    margin: 0 0 57px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
-
-

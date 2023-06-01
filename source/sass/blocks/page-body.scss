@@ -5,16 +5,14 @@
   font-family: $font-family-Oswald;
 
   @media (min-width: $desktop-width) {
-      background: url("/img/color-background-desktop.png") right top no-repeat,
-        url("/img/index-background-desktop.jpg") right top no-repeat;
-    }
+    background: url("/img/color-background-desktop.png") right top no-repeat,
+      url("/img/index-background-desktop.jpg") right top no-repeat;
+  }
 }
 
-.page-body  {
+.page-body {
   margin: 0;
   height: 100%;
   font-size: 18px;
   font-family: $font-family-Oswald;
 }
-
-

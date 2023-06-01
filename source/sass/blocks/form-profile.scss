@@ -6,12 +6,12 @@
   margin: 0 0 24px 0;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 72px 0;
-    }
+    margin: 0 0 72px 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .form-profile__field {
@@ -19,8 +19,8 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+  }
 }
 
 .form-profile__label {
@@ -32,10 +32,7 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-    }
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
-
-
-

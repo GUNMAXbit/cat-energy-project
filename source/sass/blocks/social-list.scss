@@ -3,7 +3,7 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  }
+}
 
 .social-list__item-link {
   display: block;
@@ -11,8 +11,8 @@
   height: 30px;
 }
 
-  .footer-contacts__wrapper {
-   @media (min-width: $tablet-width) {
+.footer-contacts__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }

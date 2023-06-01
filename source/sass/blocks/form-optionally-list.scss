@@ -4,29 +4,29 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 32px;
-  column-gap: 124px;
-  width: 100%;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 124px;
+    width: 100%;
+  }
 
-    @media (min-width: $desktop-width) {
-        grid-template-columns: repeat(4, 1fr);
-        width: 100%;
-          }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
 }
 
 .form-optionally-list__item {
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        max-width: 250px;
-      }
+  @media (min-width: $desktop-width) {
+    max-width: 250px;
+  }
 }
 
 .form-optionally-list__item-control {
@@ -37,9 +37,7 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
-
-

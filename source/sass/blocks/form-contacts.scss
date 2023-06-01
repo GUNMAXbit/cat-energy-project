@@ -6,12 +6,12 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 45px 0;
-    }
+    margin: 0 0 45px 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0 0 67px 0;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 67px 0;
+  }
 }
 
 .form-contacts__title {
@@ -22,9 +22,9 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
-    }
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-contacts__field {
@@ -32,12 +32,12 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form-contacts__label {
@@ -49,20 +49,20 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-      margin-right: 16px;
-      font-size: 20px;
-      line-height: 30px;
-    }
+    margin-right: 16px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-right: 16px;
-      font-size: 20px;
-      line-height: 30px;
+  @media (min-width: $desktop-width) {
+    margin-right: 16px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
-  .form-contacts__wrapper {
-    @media (min-width: $desktop-width) {
+.form-contacts__wrapper {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 78px;

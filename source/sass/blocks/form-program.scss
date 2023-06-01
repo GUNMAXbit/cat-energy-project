@@ -5,13 +5,12 @@
   margin: 0 0 26px 0;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 75px 0;
-      border: 1px solid $special_light_grey;
-    }
+    margin: 0 0 75px 0;
+    border: 1px solid $special_light_grey;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0;
-        border: 1px solid $special_light_grey;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    border: 1px solid $special_light_grey;
+  }
 }
-

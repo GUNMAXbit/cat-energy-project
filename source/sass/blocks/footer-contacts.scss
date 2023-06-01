@@ -4,9 +4,9 @@
   background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer-contacts__logo {
@@ -15,4 +15,3 @@
   width: 128px;
   height: 24px;
 }
-

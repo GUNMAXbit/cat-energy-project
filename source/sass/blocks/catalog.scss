@@ -4,13 +4,13 @@
   font-size: 36px;
   line-height: 36px;
 
-@media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin: 64px 0 90px 0;
     font-size: 60px;
     line-height: 60px;
   }
 
-@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 74px 0 165px 0;
   }
 }

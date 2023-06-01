@@ -7,14 +7,14 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 97px 0;
-      row-gap: 32px;
-    }
+    margin: 0 0 97px 0;
+    row-gap: 32px;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0 80px 0 0;
-        row-gap: 0;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0 80px 0 0;
+    row-gap: 0;
+  }
 }
 
 .optional-list__item {
@@ -23,10 +23,9 @@
   column-gap: 32px;
 
   @media (min-width: $desktop-width) {
-      flex-direction: row;
-    }
+    flex-direction: row;
+  }
 }
-
 
 .optional-list__item-title {
   margin: 0 0 13px 0;
@@ -37,16 +36,16 @@
   color: $eerie_black;
 
   @media (min-width: $tablet-width) {
-      margin: 0;
-      font-size: 20px;
-      line-height: 20px;
-    }
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0;
-        font-size: 20px;
-        line-height: 20px;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .optional-list__item-description {
@@ -63,26 +62,23 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
   }
 }
 
-
-  .optional-list__container {
-
-    @media (min-width: $tablet-width) {
+.optional-list__container {
+  @media (min-width: $tablet-width) {
     display: flex;
     margin-bottom: 25px;
   }
 
-@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     margin-bottom: 25px;
   }
-
 }

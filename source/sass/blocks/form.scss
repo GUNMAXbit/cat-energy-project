@@ -3,12 +3,12 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-     margin-bottom: 72px;
-    }
+    margin-bottom: 72px;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin-bottom: 82px;
-       }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .form__title {
@@ -19,14 +19,14 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-      margin: 75px 0 54px 0;
-      font-size: 60px;
-      line-height: 60px;
-    }
+    margin: 75px 0 54px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin: 73px 0 189px 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 73px 0 189px 0;
+  }
 }
 
 .form__description {
@@ -38,10 +38,10 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 66px 0;
-      font-size: 20px;
-      line-height: 30px;
-    }
+    margin: 0 0 66px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__btn {
@@ -75,19 +75,17 @@
   }
 }
 
-
-
-  .form-container {
-    @media (min-width: $tablet-width) {
+.form-container {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
-   .form__wrapper {
-    @media (min-width: $desktop-width) {
+.form__wrapper {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     margin: 0 0 49px 0;
-   }
+  }
 }

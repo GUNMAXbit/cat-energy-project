@@ -7,14 +7,14 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-row-gap: 30px;
+    row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 80px;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .program-list__item {
@@ -31,14 +31,14 @@ row-gap: 30px;
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 24px 0;
-      font-size: 36px;
-      line-height: 36px;
-    }
+    margin: 0 0 24px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0 0 73px 0;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 0;
+  }
 }
 
 .program-list__item-description {
@@ -50,14 +50,13 @@ row-gap: 30px;
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 52px 0;
-      font-size: 16px;
-      line-height: 24px;
-      color: $basic_black;
-    }
+    margin: 0 0 52px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic_black;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0 0 27px 0;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 27px 0;
+  }
 }
-

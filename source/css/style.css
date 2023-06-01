@@ -291,10 +291,6 @@
   }
 }
 
-.main-container-header__img {
-  margin: auto;
-}
-
 @media (min-width: 768px) {
   .main-container-header__btn {
     display: block;
@@ -305,6 +301,9 @@
   }
 }
 
+.main-container-header__img {
+  margin: auto;
+}
 @media (min-width: 1440px) {
   .main-container-header__img {
     display: none;

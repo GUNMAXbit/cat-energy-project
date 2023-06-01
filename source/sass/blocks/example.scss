@@ -24,8 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
-      margin: 0 0 76px 110px;
-    }
+    margin: 0 0 76px 110px;
+  }
 }
 
 .example__description {
@@ -37,14 +37,14 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-      margin: 0 30px 54px 30px;
-      font-size: 16px;
-      line-height: 24px;
-    }
+    margin: 0 30px 54px 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0 0 69px 110px;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px 110px;
+  }
 }
 
 .example__information {
@@ -72,16 +72,16 @@
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
-      justify-content: space-between;
-      flex-direction: row;
-      margin: 0 30px 80px 0;
-    }
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 30px 80px 0;
+  }
 
-    @media (min-width: $desktop-width) {
-      flex-direction: column;
-      justify-content: space-between;
-      margin: 0 0 0 110px;
-    }
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 110px;
+  }
 }
 
 .example__cost {
@@ -105,37 +105,32 @@
   }
 }
 
-  .example__first-field {
-    @media (min-width: $tablet-width) {
+.example__first-field {
+  @media (min-width: $tablet-width) {
     margin-right: 42px;
-    }
   }
+}
 
-  .example-img__wrapper {
-    @media (min-width: $tablet-width) {
+.example-img__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     background: $basic_grey;
-    }
   }
+}
 
-
-  .example-description__wrapper {
-    @media (min-width: $desktop-width) {
+.example-description__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     margin-right: 194px;
-    }
   }
+}
 
-
-
-
-  .example__wrapper {
-    @media (min-width: $desktop-width) {
+.example__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     background: $basic_grey;
-    }
   }
-
+}

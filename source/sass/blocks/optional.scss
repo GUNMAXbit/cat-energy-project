@@ -5,18 +5,16 @@
   line-height: 24px;
   color: $basic_black;
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0 0 106px 0;
     font-size: 36px;
     line-height: 36px;
   }
 }
 
-
-  .optional-wrapper{
-@media (min-width: $desktop-width) {
-display: flex;
-margin-bottom: 86px;
+.optional-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 86px;
   }
 }
-

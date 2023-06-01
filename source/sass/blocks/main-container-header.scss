@@ -5,18 +5,18 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-      background: none;
-    }
+    background: none;
+  }
 
-    @media (min-width: $desktop-width) {
-        height: 664px;
-        background: url("/img/product-desktop.svg") top right 330px no-repeat;
-      }
+  @media (min-width: $desktop-width) {
+    height: 664px;
+    background: url("/img/product-desktop.svg") top right 330px no-repeat;
+  }
 }
 
 .main-container-header::before {
   position: absolute;
-  content: '';
+  content: "";
   background: url("/img/background-photo.jpg") no-repeat top/100% auto;
   height: 100%;
   width: 100%;
@@ -25,13 +25,12 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
 }
 
 .main-container-header::after {
   position: absolute;
-  content: '';
-  background:rgba(104, 183, 56, 0.85);
+  content: "";
+  background: rgba(104, 183, 56, 0.85);
   background-size: 100% auto;
   min-height: 65%;
   width: 100%;
@@ -40,7 +39,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
 }
 
 .main-container-header__title {
@@ -52,16 +50,16 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-      padding-top: 62px;
-      margin: 0 0 41px 0;
-      color: $basic_black;
-      font-size: 60px;
-      line-height: 60px;
-    }
+    padding-top: 62px;
+    margin: 0 0 41px 0;
+    color: $basic_black;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
-    @media (min-width: $desktop-width) {
-        padding-top: 111px;
-      }
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+  }
 }
 
 .main-container-header__description {
@@ -72,23 +70,19 @@
   color: $basic_white;
 
   @media (min-width: $tablet-width) {
-      margin: 0 0 20px 0;
-      font-size: 20px;
-      line-height: 20px;
-      color: $basic_black;
-    }
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic_black;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0 0 52px 0;
-      }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 0;
+  }
 }
 
-.main-container-header__img {
-  margin: auto;
-}
-
-  .main-container-header__btn {
-    @media (min-width: $tablet-width) {
+.main-container-header__btn {
+  @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
     z-index: 2;
@@ -97,8 +91,10 @@
   }
 }
 
-  .main-container-header__img {
-    @media (min-width: $desktop-width) {
+.main-container-header__img {
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

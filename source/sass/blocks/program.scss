@@ -1,7 +1,7 @@
 .program {
   display: flex;
 
-@media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 80px;
   }
 }
