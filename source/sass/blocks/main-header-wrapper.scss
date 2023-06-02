@@ -8,19 +8,16 @@
   display: block;
   width: 33px;
   height: 37px;
-  background: url("/img/logo-mobile-picture.svg") no-repeat;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 174px;
     height: 52px;
-    background: url("/img/tablet-logo.svg") no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    background: url("/img/logo-desktop.svg") no-repeat;
   }
 }
 
@@ -28,7 +25,6 @@
   display: block;
   width: 101px;
   height: 19px;
-  background: url("/img/logo-mobile-name.svg") no-repeat;
 
   @media (min-width: $tablet-width) {
     display: none;

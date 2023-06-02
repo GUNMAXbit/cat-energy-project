@@ -20,11 +20,6 @@
   font-size: 18px;
   font-family: "Oswald Regular", "Arial", sans-serif;
 }
-@media (min-width: 1440px) {
-  .page-main-body {
-    background: url("/img/color-background-desktop.png") right top no-repeat, url("/img/index-background-desktop.jpg") right top no-repeat;
-  }
-}
 
 .page-body {
   margin: 0;
@@ -79,6 +74,7 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
   .main-header {
@@ -104,21 +100,18 @@
   display: block;
   width: 33px;
   height: 37px;
-  background: url("/img/logo-mobile-picture.svg") no-repeat;
 }
 @media (min-width: 768px) {
   .main-header__link-first {
     margin: 0;
     width: 174px;
     height: 52px;
-    background: url("/img/tablet-logo.svg") no-repeat;
   }
 }
 @media (min-width: 1440px) {
   .main-header__link-first {
     width: 202px;
     height: 59px;
-    background: url("/img/logo-desktop.svg") no-repeat;
   }
 }
 
@@ -126,7 +119,6 @@
   display: block;
   width: 101px;
   height: 19px;
-  background: url("/img/logo-mobile-name.svg") no-repeat;
 }
 @media (min-width: 768px) {
   .main-header__link-secondary {
@@ -190,7 +182,6 @@
   .main-nav-list__item-link {
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
   }
 }
 
@@ -205,10 +196,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .main-container-header {
     background: none;
+    align-items: start;
   }
 }
 @media (min-width: 1440px) {
@@ -229,6 +222,13 @@
 @media (min-width: 768px) {
   .main-container-header::before {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .main-container-header::before {
+    display: block;
+    background: url("/img/index-background-desktop.jpg") no-repeat right;
+    top: -115px;
   }
 }
 
@@ -254,19 +254,22 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .main-container-header__title {
     padding-top: 62px;
-    margin: 0 0 41px 0;
+    margin: 0 0 41px 117px;
     color: #000000;
     font-size: 60px;
     line-height: 60px;
+    text-align: start;
   }
 }
 @media (min-width: 1440px) {
   .main-container-header__title {
     padding-top: 111px;
+    margin: 0 0 41px 190px;
   }
 }
 
@@ -279,7 +282,7 @@
 }
 @media (min-width: 768px) {
   .main-container-header__description {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 119px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
@@ -287,7 +290,7 @@
 }
 @media (min-width: 1440px) {
   .main-container-header__description {
-    margin: 0 0 52px 0;
+    margin: 0 0 52px 190px;
   }
 }
 
@@ -298,6 +301,12 @@
     z-index: 2;
     top: 370px;
     left: 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-container-header__btn {
+    margin: 0 0 0 190px;
+    position: static;
   }
 }
 
@@ -957,18 +966,17 @@
 }
 
 .main-promo {
+  position: relative;
   padding: 58px 0 0 0;
   margin-bottom: 35px;
-  background: url("/img/promo-back.png") no-repeat, url("/img/promo-img.jpg") no-repeat;
   display: flex;
   flex-direction: column;
-  background-size: 100% auto;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .main-promo {
     padding: 60px 0;
     margin-bottom: 76px;
-    background: url("/img/promo-back-tablet.png") no-repeat, url("/img/promo-img-tablet.jpg") no-repeat;
     flex-direction: row;
   }
 }
@@ -976,9 +984,36 @@
   .main-promo {
     padding: 55px 0 0 0;
     margin-bottom: 0;
-    background: url("/img/promo-back-desktop.png") no-repeat, url("/img/promo-img-desktop.jpg") no-repeat;
     flex-direction: column;
   }
+}
+
+.main-promo::before {
+  position: absolute;
+  content: "";
+  background: url("/img/promo-img.jpg") no-repeat center/100% auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .main-promo::before {
+    background: url("/img/promo-img-tablet.jpg") no-repeat center/100% auto;
+  }
+}
+@media (min-width: 1440px) {
+  .main-promo::before {
+    background: url("/img/promo-img-desktop.jpg") no-repeat center/100% auto;
+  }
+}
+
+.main-promo::after {
+  position: absolute;
+  content: "";
+  background: rgba(104, 183, 56, 0.85) no-repeat center/100% auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .main-promo__img {

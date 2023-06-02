@@ -1,27 +1,47 @@
 .main-promo {
+  position: relative;
   padding: 58px 0 0 0;
   margin-bottom: 35px;
-  background: url("/img/promo-back.png") no-repeat,
-    url("/img/promo-img.jpg") no-repeat;
   display: flex;
   flex-direction: column;
-  background-size: 100% auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
     margin-bottom: 76px;
-    background: url("/img/promo-back-tablet.png") no-repeat,
-      url("/img/promo-img-tablet.jpg") no-repeat;
     flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
     padding: 55px 0 0 0;
     margin-bottom: 0;
-    background: url("/img/promo-back-desktop.png") no-repeat,
-      url("/img/promo-img-desktop.jpg") no-repeat;
     flex-direction: column;
   }
+}
+
+.main-promo::before {
+  position: absolute;
+  content: "";
+  background: url("/img/promo-img.jpg") no-repeat center/100% auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background: url("/img/promo-img-tablet.jpg") no-repeat center/100% auto;
+  }
+  @media (min-width: $desktop-width) {
+    background: url("/img/promo-img-desktop.jpg") no-repeat center/100% auto;
+  }
+}
+
+.main-promo::after {
+  position: absolute;
+  content: "";
+  background: rgba(104, 183, 56, 0.85) no-repeat center/100% auto;
+height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 .main-promo__img {

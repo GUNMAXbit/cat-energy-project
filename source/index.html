@@ -9,8 +9,20 @@
   <body class="page-main-body">
     <header class="main-header container-wrapper">
       <div class="main-header-wrapper">
-        <a class="main-header__link-first"></a>
-        <a class="main-header__link-secondary"> </a>
+        <a class="main-header__link-first" href="index.html">
+          <picture>
+            <source srcset="img/logo-mobile-picture.svg" media="(max-width: 767px)" />
+            <source srcset="img/tablet-logo.svg" media="(min-width: 768px)" />
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)" />
+            <img srcset="img/logo-mobile-picture.svg" alt="Картинка логитипа Cat Energy." />
+          </picture>
+        </a>
+        <a class="main-header__link-secondary" href="index.html">
+          <picture>
+            <source srcset="img/logo-mobile-name.svg" media="(max-width: 767px)" />
+            <img srcset="img/logo-mobile-name.svg" alt="название логитипа Cat Energy." />
+          </picture>
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
@@ -47,7 +59,7 @@
           <img srcset="img/product-mobile.svg" alt="Изображение продукта." />
         </picture>
         <a
-          class="button main-container-header__btn container-wrapper"
+          class="button main-container-header__btn"
           href="form.html"
           >Подобрать программу
         </a>
