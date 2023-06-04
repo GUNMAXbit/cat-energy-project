@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
-    <header class="main-header container-wrapper">
-      <div class="main-header-wrapper">
+    <header class="main-header main-header--opened main-header--nojs">
+      <div class="main-header-wrapper container-wrapper">
         <a class="main-header__link-first" href="index.html">
           <picture>
-            <source srcset="img/logo-mobile-picture.svg" media="(max-width: 767px)" />
+            <source
+              srcset="img/logo-mobile-picture.svg"
+              media="(max-width: 767px)"
+            />
             <source srcset="img/tablet-logo.svg" media="(min-width: 768px)" />
             <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)" />
-            <img srcset="img/logo-mobile-picture.svg" alt="Картинка логитипа Cat Energy." />
+            <img
+              srcset="img/logo-mobile-picture.svg"
+              alt="Картинка логитипа Cat Energy."
+            />
           </picture>
         </a>
         <a class="main-header__link-secondary" href="index.html">
           <picture>
-            <source srcset="img/logo-mobile-name.svg" media="(max-width: 767px)" />
-            <img srcset="img/logo-mobile-name.svg" alt="название логитипа Cat Energy." />
+            <source
+              srcset="img/logo-mobile-name.svg"
+              media="(max-width: 767px)"
+            />
+            <img
+              srcset="img/logo-mobile-name.svg"
+              alt="название логитипа Cat Energy."
+            />
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
       </div>
@@ -38,7 +50,10 @@
             </a>
           </li>
           <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="#">
+            <a
+              class="main-nav-list__item-link main-nav-list__item--active"
+              href="#"
+            >
               Подбор программы
             </a>
           </li>
@@ -52,116 +67,116 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <div class="form__wrapper">
-        <fieldset class="form-profile">
-          <div class="form-profile__field">
-            <label class="form-profile__label" for="form__name">ИМЯ:*</label>
-            <input
-              class="form-profile__input-name"
-              type="text"
-              placeholder="барсик"
-              id="form__name"
-              name="form__name"
-            />
-          </div>
-          <div class="form-profile__field">
-            <label class="form-profile__label" for="form__mass"
-              >Вес (кг):*</label
-            >
-            <input
-              class="form-profile__input-mass"
-              type="text"
-              placeholder="7"
-              id="form__mass"
-              name="form__mass"
-            />
-          </div>
-          <div class="form-profile__field">
-            <label class="form-profile__label" for="form__age"
-              >Возраст (лет):</label
-            >
-            <input
-              class="form-profile__input-age"
-              type="text"
-              placeholder="7"
-              id="form__age"
-              name="form__age"
-            />
-          </div>
-        </fieldset>
-        <fieldset class="form-program">
-          <ul class="form-program-list">
-            <li class="form-program-list__item">
+          <fieldset class="form-profile">
+            <div class="form-profile__field">
+              <label class="form-profile__label" for="form__name">ИМЯ:*</label>
               <input
-              class="form-program-list__item-input"
-              type="radio"
-              name="program"
-              value="slim"
-              id="form__slim"
-              checked
-            />
-              <label class="form-program-list__item-control" for="form__slim">
-                Похудение
-              </label>
-            </li>
-            <li class="form-program-list__item">
+                class="form-profile__input-name"
+                type="text"
+                placeholder="барсик"
+                id="form__name"
+                name="form__name"
+              />
+            </div>
+            <div class="form-profile__field">
+              <label class="form-profile__label" for="form__mass"
+                >Вес (кг):*</label
+              >
               <input
-              class="form-program-list__item-input"
-              type="radio"
-              name="program"
-              value="gain"
-              id="form__gain"
-            />
-              <label class="form-program-list__item-control" for="form__gain"
-                >Набор массы
-              </label>
-            </li>
-            <li class="form-program-list__item">
+                class="form-profile__input-mass"
+                type="text"
+                placeholder="7"
+                id="form__mass"
+                name="form__mass"
+              />
+            </div>
+            <div class="form-profile__field">
+              <label class="form-profile__label" for="form__age"
+                >Возраст (лет):</label
+              >
               <input
-              class="form-program-list__item-input"
-              type="radio"
-              name="program"
-              value="need-advice"
-              id="form__need-advice"
-            />
-              <label
-                class="form-program-list__item-control"
-                for="form__need-advice"
-                >Не знаю (Нужен ваш совет)
-              </label>
-            </li>
-          </ul>
+                class="form-profile__input-age"
+                type="text"
+                placeholder="7"
+                id="form__age"
+                name="form__age"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="form-program">
+            <ul class="form-program-list">
+              <li class="form-program-list__item">
+                <input
+                  class="form-program-list__item-input"
+                  type="radio"
+                  name="program"
+                  value="slim"
+                  id="form__slim"
+                  checked
+                />
+                <label class="form-program-list__item-control" for="form__slim">
+                  Похудение
+                </label>
+              </li>
+              <li class="form-program-list__item">
+                <input
+                  class="form-program-list__item-input"
+                  type="radio"
+                  name="program"
+                  value="gain"
+                  id="form__gain"
+                />
+                <label class="form-program-list__item-control" for="form__gain"
+                  >Набор массы
+                </label>
+              </li>
+              <li class="form-program-list__item">
+                <input
+                  class="form-program-list__item-input"
+                  type="radio"
+                  name="program"
+                  value="need-advice"
+                  id="form__need-advice"
+                />
+                <label
+                  class="form-program-list__item-control"
+                  for="form__need-advice"
+                  >Не знаю (Нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-        </fieldset>
         <fieldset class="form-contacts">
           <legend class="form-contacts__title">
             Контактные данные (владельца кота)
           </legend>
           <div class="form-contacts__wrapper">
-          <div class="form-contacts__field">
-            <label class="form-contacts__label" for="form__email"
-              >E-mail:*</label
-            >
-            <input
-              class="form-contacts__input-email"
-              type="email"
-              placeholder="kuklachev@gmail.com"
-              id="form__email"
-              name="form__email"
-            />
+            <div class="form-contacts__field">
+              <label class="form-contacts__label" for="form__email"
+                >E-mail:*</label
+              >
+              <input
+                class="form-contacts__input-email"
+                type="email"
+                placeholder="kuklachev@gmail.com"
+                id="form__email"
+                name="form__email"
+              />
+            </div>
+            <div class="form-contacts__field">
+              <label class="form-contacts__label" for="form__phone"
+                >Телефон:*</label
+              >
+              <input
+                class="form-contacts__input-phone"
+                type="text"
+                placeholder="8 (960) 900-60-90"
+                id="form__phone"
+                name="form__phone"
+              />
+            </div>
           </div>
-          <div class="form-contacts__field">
-            <label class="form-contacts__label" for="form__phone"
-              >Телефон:*</label
-            >
-            <input
-              class="form-contacts__input-phone"
-              type="text"
-              placeholder="8 (960) 900-60-90"
-              id="form__phone"
-              name="form__phone"
-            />
-          </div>
-        </div>
         </fieldset>
         <div class="form-comment">
           <h2 class="form-comment__title">Комментарий</h2>
@@ -241,15 +256,17 @@
           </ul>
         </fieldset>
         <div class="form-container">
-        <button class="button form__btn" type="submit">Отправить заявку</button>
-        <span class="form_text">* — Обязательные поля </span>
-      </div>
+          <button class="button form__btn" type="submit">
+            Отправить заявку
+          </button>
+          <span class="form_text">* — Обязательные поля </span>
+        </div>
       </form>
     </main>
     <footer class="main-footer">
       <section class="footer-location footer-location-grey">
         <h2 class="visually-hidden">Местоположение</h2>
-        <div class="footer-location__text  container-wrapper">
+        <div class="footer-location__text container-wrapper">
           <h3 class="footer-location__title">
             Приглашаем к сотрудничеству дилеров!
           </h3>
@@ -311,5 +328,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

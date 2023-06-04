@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
-    <header class="main-header container-wrapper">
-      <div class="main-header-wrapper">
+    <header class="main-header main-header--opened main-header--nojs">
+      <div class="main-header-wrapper container-wrapper">
         <a class="main-header__link-first" href="index.html">
           <picture>
-            <source srcset="img/logo-mobile-picture.svg" media="(max-width: 767px)" />
+            <source
+              srcset="img/logo-mobile-picture.svg"
+              media="(max-width: 767px)"
+            />
             <source srcset="img/tablet-logo.svg" media="(min-width: 768px)" />
             <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)" />
-            <img srcset="img/logo-mobile-picture.svg" alt="Картинка логитипа Cat Energy." />
+            <img
+              srcset="img/logo-mobile-picture.svg"
+              alt="Картинка логитипа Cat Energy."
+            />
           </picture>
         </a>
         <a class="main-header__link-secondary" href="index.html">
           <picture>
-            <source srcset="img/logo-mobile-name.svg" media="(max-width: 767px)" />
-            <img srcset="img/logo-mobile-name.svg" alt="название логитипа Cat Energy." />
+            <source
+              srcset="img/logo-mobile-name.svg"
+              media="(max-width: 767px)"
+            />
+            <img
+              srcset="img/logo-mobile-name.svg"
+              alt="название логитипа Cat Energy."
+            />
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
       </div>
@@ -32,10 +44,8 @@
           <li class="main-nav-list__item">
             <a class="main-nav-list__item-link" href="index.html"> Главная </a>
           </li>
-          <li class="main-nav-list__item">
-            <a class="main-nav-list__item-link" href="#">
-              Каталог продукции
-            </a>
+          <li class="main-nav-list__item main-nav-list__item--active">
+            <a class="main-nav-list__item-link" href="#"> Каталог продукции </a>
           </li>
           <li class="main-nav-list__item">
             <a class="main-nav-list__item-link" href="form.html">
@@ -296,79 +306,91 @@
       <section class="optional">
         <h1 class="optional__title">Дополнительные товары</h1>
         <div class="optional-wrapper">
-        <ul class="optional-list">
-          <li class="optional-list__item">
-            <div class="optional-list__container">
-            <h2 class="optional-list__item-title">Сахарозаменитель</h2>
-            <div class="optional-list__item-description">
-              <span class="optional-list__item-description-text"
-                >1 упаковка (100 г)</span
-              >
-              <span class="optional-list__item-description-text">200 Р.</span>
-            </div>
+          <ul class="optional-list">
+            <li class="optional-list__item">
+              <div class="optional-list__container">
+                <h2 class="optional-list__item-title">Сахарозаменитель</h2>
+                <div class="optional-list__item-description">
+                  <span class="optional-list__item-description-text"
+                    >1 упаковка (100 г)</span
+                  >
+                  <span class="optional-list__item-description-text"
+                    >200 Р.</span
+                  >
+                </div>
+              </div>
+              <button class="button optional-list__item-btn" type="button">
+                Заказать
+              </button>
+            </li>
+            <li class="optional-list__item">
+              <div class="optional-list__container">
+                <h2 class="optional-list__item-title">Питьевая вода</h2>
+                <div class="optional-list__item-description">
+                  <span class="optional-list__item-description-text"
+                    >5 литров</span
+                  >
+                  <span class="optional-list__item-description-text"
+                    >50 Р.</span
+                  >
+                </div>
+              </div>
+              <button class="button optional-list__item-btn" type="button">
+                Заказать
+              </button>
+            </li>
+            <li class="optional-list__item">
+              <div class="optional-list__container">
+                <h2 class="optional-list__item-title">Молоко</h2>
+                <div class="optional-list__item-description">
+                  <span class="optional-list__item-description-text"
+                    >1 литр</span
+                  >
+                  <span class="optional-list__item-description-text"
+                    >100 Р.</span
+                  >
+                </div>
+              </div>
+              <button class="button optional-list__item-btn" type="button">
+                Заказать
+              </button>
+            </li>
+            <li class="optional-list__item">
+              <div class="optional-list__container">
+                <h2 class="optional-list__item-title">Витамины</h2>
+                <div class="optional-list__item-description">
+                  <span class="optional-list__item-description-text"
+                    >1 упаковка (30 г)</span
+                  >
+                  <span class="optional-list__item-description-text"
+                    >300 Р.</span
+                  >
+                </div>
+              </div>
+              <button class="button optional-list__item-btn" type="button">
+                Заказать
+              </button>
+            </li>
+          </ul>
+          <div class="main-promo">
+            <img
+              class="main-promo__img"
+              src="img/promo-icon.svg"
+              width="78"
+              height="80"
+              alt="Иконка промо-акции."
+            />
+            <p class="main-promo__description">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
           </div>
-            <button class="button optional-list__item-btn" type="button">
-              Заказать
-            </button>
-          </li>
-          <li class="optional-list__item">
-            <div class="optional-list__container">
-            <h2 class="optional-list__item-title">Питьевая вода</h2>
-            <div class="optional-list__item-description">
-              <span class="optional-list__item-description-text">5 литров</span>
-              <span class="optional-list__item-description-text">50 Р.</span>
-            </div>
-          </div>
-            <button class="button optional-list__item-btn" type="button">
-              Заказать
-            </button>
-          </li>
-          <li class="optional-list__item">
-            <div class="optional-list__container">
-            <h2 class="optional-list__item-title">Молоко</h2>
-            <div class="optional-list__item-description">
-              <span class="optional-list__item-description-text">1 литр</span>
-              <span class="optional-list__item-description-text">100 Р.</span>
-            </div>
-          </div>
-            <button class="button optional-list__item-btn" type="button">
-              Заказать
-            </button>
-          </li>
-          <li class="optional-list__item">
-            <div class="optional-list__container">
-            <h2 class="optional-list__item-title">Витамины</h2>
-            <div class="optional-list__item-description">
-              <span class="optional-list__item-description-text"
-                >1 упаковка (30 г)</span
-              >
-              <span class="optional-list__item-description-text">300 Р.</span>
-            </div>
-          </div>
-            <button class="button optional-list__item-btn" type="button">
-              Заказать
-            </button>
-          </li>
-        </ul>
-        <div class="main-promo">
-          <img
-            class="main-promo__img"
-            src="img/promo-icon.svg"
-            width="78"
-            height="80"
-            alt="Иконка промо-акции."
-          />
-          <p class="main-promo__description">
-            Закажите все и получите чехол для кота в подарок!
-          </p>
         </div>
-      </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="footer-location footer-location-grey">
         <h2 class="visually-hidden">Местоположение</h2>
-        <div class="footer-location__text  container-wrapper">
+        <div class="footer-location__text container-wrapper">
           <h3 class="footer-location__title">
             Приглашаем к сотрудничеству дилеров!
           </h3>
@@ -430,5 +452,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

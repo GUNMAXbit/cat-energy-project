@@ -1,8 +1,16 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-right: 30px;
+    width: 57%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+    width: 33%;
   }
 }

@@ -64,7 +64,7 @@
     color: $basic_black;
     font-size: 60px;
     line-height: 60px;
-    text-align:start;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,8 +103,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 0 190px;
-    position:static;
-}
+    position: static;
+  }
 }
 
 .main-container-header__img {

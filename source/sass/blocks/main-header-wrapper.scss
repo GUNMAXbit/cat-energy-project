@@ -2,12 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 16px;
+  }
 }
 
 .main-header__link-first {
   display: block;
   width: 33px;
   height: 37px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -26,13 +38,105 @@
   width: 101px;
   height: 19px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav__toggle {
+.main-header--closed .main-header__toggle {
+  cursor: pointer;
+  width: 25px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  background-image: url("/img/burger-menu.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  .main-header--nojs .main-header__toggle {
+    display: none;
+  }
+}
+
+.main-header--closed .main-nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-header--opened .main-header__toggle {
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    left: -3px;
+    background-color: $basic_black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  .main-header--opened .main-nav {
+    @media (min-width: $mobile-width-only) {
+      display: flex;
+    }
+  }
+
+  .main-header--nojs .main-header__toggle {
+    display: none;
+  }
+
+  .main-header--nojs .main-nav {
+    display: flex;
   }
 }

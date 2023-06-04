@@ -95,11 +95,22 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .main-header-wrapper {
+    margin-bottom: 16px;
+  }
+}
 
 .main-header__link-first {
   display: block;
   width: 33px;
   height: 37px;
+}
+.main-header__link-first:hover {
+  opacity: 0.8;
+}
+.main-header__link-first:active {
+  opacity: 0.6;
 }
 @media (min-width: 768px) {
   .main-header__link-first {
@@ -120,25 +131,115 @@
   width: 101px;
   height: 19px;
 }
+.main-header__link-secondary:hover {
+  opacity: 0.8;
+}
+.main-header__link-secondary:active {
+  opacity: 0.6;
+}
 @media (min-width: 768px) {
   .main-header__link-secondary {
     display: none;
   }
 }
 
+.main-header--closed .main-header__toggle {
+  cursor: pointer;
+  width: 25px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  background-image: url("/img/burger-menu.svg");
+  background-repeat: no-repeat;
+}
+.main-header--closed .main-header__toggle:hover {
+  opacity: 0.5;
+}
+.main-header--closed .main-header__toggle:active {
+  opacity: 0.2;
+}
 @media (min-width: 768px) {
-  .main-nav__toggle {
+  .main-header--closed .main-header__toggle {
     display: none;
   }
+}
+.main-header--closed .main-header__toggle .main-header--nojs .main-header__toggle {
+  display: none;
+}
+
+.main-header--closed .main-nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main-header--closed .main-nav {
+    display: flex;
+  }
+}
+
+.main-header--opened .main-header__toggle {
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+.main-header--opened .main-header__toggle::before, .main-header--opened .main-header__toggle::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 1px;
+  left: -3px;
+  background-color: #000000;
+}
+.main-header--opened .main-header__toggle::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.main-header--opened .main-header__toggle::after {
+  transform: rotate(-45deg);
+}
+.main-header--opened .main-header__toggle:hover {
+  opacity: 0.5;
+}
+.main-header--opened .main-header__toggle:active {
+  opacity: 0.2;
+}
+@media (min-width: 768px) {
+  .main-header--opened .main-header__toggle {
+    display: none;
+  }
+}
+@media (min-width: 767px) {
+  .main-header--opened .main-header__toggle .main-header--opened .main-nav {
+    display: flex;
+  }
+}
+.main-header--opened .main-header__toggle .main-header--nojs .main-header__toggle {
+  display: none;
+}
+.main-header--opened .main-header__toggle .main-header--nojs .main-nav {
+  display: flex;
 }
 
 .main-nav {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 @media (min-width: 768px) {
   .main-nav {
     flex-direction: row;
+    margin-right: 30px;
+    width: 57%;
+  }
+}
+@media (min-width: 1440px) {
+  .main-nav {
+    margin-right: 110px;
+    width: 33%;
   }
 }
 
@@ -146,17 +247,26 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .main-nav-list {
     display: flex;
-    min-width: 440px;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
+
+@media (min-width: 768px) {
+  .main-nav-list__item--active {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
 @media (min-width: 1440px) {
-  .main-nav-list {
-    min-width: 478px;
+  .main-nav-list__item-user--active {
+    border-bottom: 2px solid #ffffff;
   }
 }
 
@@ -169,6 +279,18 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+.main-nav-list__item-link:hover {
+  opacity: 0.8;
+}
+.main-nav-list__item-link:active {
+  opacity: 0.6;
+}
+@media (max-width: 767px) {
+  .main-nav-list__item-link {
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+  }
 }
 @media (min-width: 768px) {
   .main-nav-list__item-link {
@@ -187,7 +309,7 @@
 
 @media (min-width: 1440px) {
   .main-nav-list__item-link-user {
-    color: #000000;
+    color: #ffffff;
   }
 }
 
@@ -1204,13 +1326,13 @@
 @media (min-width: 768px) {
   .form-program {
     margin: 0 0 75px 0;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
   }
 }
 @media (min-width: 1440px) {
   .form-program {
     margin: 0;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
   }
 }
 
