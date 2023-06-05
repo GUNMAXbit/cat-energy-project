@@ -6,11 +6,12 @@
   @media (min-width: $tablet-width) {
     background: none;
   }
+
 }
 
 .example__title {
   padding-top: 25px;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -43,17 +44,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 69px 110px;
+    margin: 0 0 69px 0;
   }
 }
 
 .example__information {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
+  column-gap: 11%;
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    margin: 0 167px 0 0;
+    margin: 0 167px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,7 +64,70 @@
 }
 
 .example__label {
+  position: relative;
   width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.example__field{
+display: block;
+width: 100%;
+height: 56px;
+background: transparent;
+border: 1px solid $special_grey;
+border-radius: 3px;
+
+@media (min-width: $tablet-width) {
+  width: 100%;
+  height: 72px;
+}
+
+}
+
+
+.example__field::placeholder {
+font-family: "Oswald Regular";
+font-size: 24px;
+line-height: 24px;
+text-align: center;
+color: $basic_black;
+
+@media (min-width: $tablet-width) {
+  font-size: 30px;
+line-height: 37px;
+  background: $basic_white;
+}
+
+@media (min-width: $desktop-width) {
+  background: $basic_grey;
+}
+}
+
+.example__text {
+  display: block;
+  position: absolute;
+  font-family: $font-family-Arial;
+font-size: 12px;
+width: 81px;
+line-height: 100%;
+color: $special_dark-grey;
+background: $grey;
+text-align: center;
+z-index: 2;
+top: 53px;
+
+@media (min-width: $tablet-width) {
+  font-size: 14px;
+line-height: 14px;
+width: 142px;
+top: 66px;
+  background: $basic_white;
+}
+
+@media (min-width: $desktop-width) {
+  background: $basic_grey;
+}
 }
 
 .example-information__wrapper {
@@ -75,12 +140,13 @@
     justify-content: space-between;
     flex-direction: row;
     margin: 0 30px 80px 0;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 0 0 110px;
+    margin: 0;
   }
 }
 
@@ -90,10 +156,13 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    font-size: 20px;
+    text-align: end;
   }
 }
 
@@ -105,11 +174,6 @@
   }
 }
 
-.example__first-field {
-  @media (min-width: $tablet-width) {
-    margin-right: 42px;
-  }
-}
 
 .example-img__wrapper {
   @media (min-width: $tablet-width) {
@@ -132,5 +196,6 @@
     display: flex;
     flex-direction: row;
     background: $basic_grey;
+    padding: 70px 110px;
   }
 }

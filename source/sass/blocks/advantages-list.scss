@@ -21,10 +21,14 @@
 
 .advantages-list__item {
   display: flex;
+  column-gap: 20px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     min-height: 280px;
+    row-gap: 31px;
+    align-items: start;
   }
 }
 

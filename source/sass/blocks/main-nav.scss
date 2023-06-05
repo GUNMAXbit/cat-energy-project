@@ -2,8 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    top: 63px;
 
   @media (min-width: $tablet-width) {
+    position: static;
+    background: none;
     flex-direction: row;
     margin-right: 30px;
     width: 57%;

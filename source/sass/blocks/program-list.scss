@@ -18,8 +18,18 @@
 }
 
 .program-list__item {
+
+  padding: 20px 33px 22px 20px;
   display: block;
   background-color: $basic_grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 51px 59px 52px;
+  }
 }
 
 .program-list__item-title {
@@ -42,6 +52,7 @@
 }
 
 .program-list__item-description {
+  position: relative;
   margin: 0 0 42px 0;
   font-family: $font-family-Arial;
   font-weight: 400;
@@ -59,4 +70,49 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 27px 0;
   }
+}
+
+.program-list__item-description::before {
+
+  @media (max-width: $mobile-width-only) {
+    content: '';
+    position: absolute;
+  width: 100%;;
+  border: 1px solid $program-line-color;
+  bottom: -23px;
+  }
+}
+
+.program-list__item-button {
+  display: block;
+  font-size: 16px;
+line-height: 16px;
+color: $basic_black;
+width: 132px;
+text-align: start;
+background:url("/img/arrow.svg") top 2px right 8px no-repeat ;
+
+&:hover {
+  background:url("/img/long-arrow.svg") top 2px right no-repeat ;
+}
+
+&:active {
+  opacity: 0.5;;
+}
+
+@media (min-width: $tablet-width) {
+  font-size: 20px;
+line-height: 30px;
+width: 165px;
+background-position: top 9px right 8px;
+
+&:hover {
+  background:url("/img/long-arrow.svg") top 9px right no-repeat ;
+}
+
+}
+
+@media (min-width: $desktop-width) {
+  width: 168px;
+}
 }
