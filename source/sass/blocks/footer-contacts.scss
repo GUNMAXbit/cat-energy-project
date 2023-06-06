@@ -14,4 +14,12 @@
   display: block;
   width: 128px;
   height: 24px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }

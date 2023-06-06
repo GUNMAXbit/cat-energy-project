@@ -15,9 +15,14 @@
   }
 }
 
+.main-container-header__back {
+position: absolute;
+z-index: -1;
+}
+
 .main-container-header::before {
   position: absolute;
-  content: "";
+content: '';
   background: url("/img/background-photo.jpg") no-repeat top/100% auto;
   height: 100%;
   width: 100%;
@@ -36,7 +41,7 @@
 
 .main-container-header::after {
   position: absolute;
-  content: "";
+content: '';
   background: rgba(104, 183, 56, 0.85);
   background-size: 100% auto;
   min-height: 65%;
