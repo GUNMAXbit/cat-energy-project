@@ -54,23 +54,27 @@
   column-gap: 11%;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
     margin: 0 167px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     margin: 0 0 60px 0;
   }
 }
 
 .example__label {
   position: relative;
-  width: 50%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: $mobile-width-only) {
+    width: 50%;
+    }
 }
 
 .example__field{
+  padding: 0;
 display: block;
 width: 100%;
 height: 56px;
@@ -79,7 +83,7 @@ border: 1px solid $special_grey;
 border-radius: 3px;
 
 @media (min-width: $tablet-width) {
-  width: 100%;
+  width: 162px;
   height: 72px;
 }
 
@@ -163,7 +167,13 @@ top: 66px;
     margin-bottom: 0;
     font-size: 20px;
     text-align: end;
+    width: 174px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 100%;
+}
 }
 
 .example__img {
@@ -181,6 +191,12 @@ top: 66px;
     flex-direction: column;
     background: $basic_grey;
   }
+
+    @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background: $basic_grey;
+  }
 }
 
 .example-description__wrapper {
@@ -193,8 +209,8 @@ top: 66px;
 
 .example__wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background: $basic_grey;
     padding: 70px 110px;
   }

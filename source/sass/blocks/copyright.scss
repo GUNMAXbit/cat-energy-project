@@ -1,9 +1,16 @@
 .copyright {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #D9D9D9;
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: space-between;
+    border-top: 1px solid $program-line-color;
+  }
+
+  @media (min-width: $tablet-width) {
+column-gap: 22px;
+  }
 }
 
 .copyright__link {
@@ -12,4 +19,29 @@ font-size: 16px;
 line-height: 18px;
 text-decoration: none;
 color: $special_dark-grey;
+
+&:active {
+  opacity: 0.3;
+}
+
+@media (max-width: $mobile-width-only) {
+  margin: 28px 0 32px 0;
+}
+}
+
+.copyright__logo-link {
+  display: flex;
+}
+
+.footer-icon {
+  fill: $icon-color;
+
+&:hover {
+  fill: $basic_green;
+}
+
+&:active {
+  fill: $basic_green;
+  opacity: 0.3;
+}
 }

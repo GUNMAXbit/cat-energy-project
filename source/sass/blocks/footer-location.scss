@@ -1,15 +1,21 @@
 .footer-location__text {
   display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 26px 0;
+    }
 
   @media (min-width: $tablet-width) {
+    padding: 56px 40px 63px 40px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 56px 80px;
     top: 95px;
     left: 110px;
-    width: 565px;
-    height: 198px;
+    width: 405px;
     position: absolute;
     margin: 0;
     background: $basic_white;
@@ -25,7 +31,8 @@
 }
 
 .footer-location__title {
-  margin: 26px 0;
+  min-width: 140px;
+  margin:0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -39,21 +46,35 @@
 }
 
 .footer-location__description {
-  margin: 26px 0;
+width: 140px;
+  margin:0;
   font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
 
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+    }
+
   @media (min-width: $tablet-width) {
+    width: 160px;
+    text-align: right;
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
-.footer-location__map {
-  width: 100%;
+iframe {
+  display: block;
+    width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 400px;

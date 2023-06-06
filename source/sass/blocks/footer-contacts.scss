@@ -3,14 +3,31 @@
   flex-direction: column;
   background-color: $basic_grey;
 
+  @media (max-width: $mobile-width-only) {
+  padding: 0 20px;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 58px 30px 55px 30px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 110px 55px 110px;
+  }
+}
+
+.footer-contacts_logo-container {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    margin: 39px 0 32px 0;
+    justify-content: center;
   }
 }
 
 .footer-contacts__logo {
-  margin: 39px 0 32px 0;
   display: block;
   width: 128px;
   height: 24px;
@@ -23,3 +40,4 @@
     opacity: 0.2;
   }
 }
+
