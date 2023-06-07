@@ -10,6 +10,18 @@
   }
 }
 
+.container-catalog-wrapper {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
+}
+
 .example__container-wrapper {
   margin: 0 20px;
 

@@ -1,5 +1,5 @@
 .catalog__title {
-  margin: 27px 0 41px 0;
+  margin: 27px 0 41px 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -11,6 +11,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 74px 0 165px 0;
+    margin: 74px 0 165px 110px;
   }
 }

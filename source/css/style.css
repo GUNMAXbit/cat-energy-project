@@ -56,6 +56,20 @@
   }
 }
 
+.container-catalog-wrapper {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .container-catalog-wrapper {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .container-catalog-wrapper {
+    margin: 0 110px;
+  }
+}
+
 .example__container-wrapper {
   margin: 0 20px;
 }
@@ -454,6 +468,8 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
+  font-family: inherit;
 }
 
 .main-container-header__btn {
@@ -1084,7 +1100,7 @@
 
 /* Файлы Страницы каталога */
 .catalog__title {
-  margin: 27px 0 41px 0;
+  margin: 27px 0 41px 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -1098,7 +1114,7 @@
 }
 @media (min-width: 1440px) {
   .catalog__title {
-    margin: 74px 0 165px 0;
+    margin: 74px 0 165px 110px;
   }
 }
 
@@ -1130,24 +1146,28 @@
 .catalog-list__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 11px;
+}
+@media (max-width: 767px) {
+  .catalog-list__item {
+    border-top: 1px solid #ebebeb;
+    padding: 19px 20px 25px 20px;
+  }
 }
 @media (min-width: 768px) {
   .catalog-list__item {
-    margin-bottom: 0;
     background: #f2f2f2;
+    padding: 0 37px 39px 37px;
   }
 }
 
 .catalog-list__item-container {
-  width: 112px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  margin-bottom: 13px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 22px;
 }
 @media (min-width: 768px) {
   .catalog-list__item-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 42px;
@@ -1176,6 +1196,7 @@
   align-items: center;
   text-transform: uppercase;
   color: #222222;
+  width: 60%;
 }
 @media (min-width: 768px) {
   .catalog-list__item-title {
@@ -1192,6 +1213,7 @@
 
 .catalog-list__item-description {
   display: flex;
+  justify-content: space-between;
 }
 
 .catalog-list__item-description-text {
@@ -1253,6 +1275,14 @@
   .catalog-list__item-img {
     margin-bottom: 42px;
   }
+}
+
+.catalog-list__item-btn {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #68b738;
+  padding: 10px 0;
 }
 
 .optional__title {
