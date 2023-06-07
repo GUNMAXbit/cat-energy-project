@@ -55,8 +55,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner-container container-catalog-wrapper">
-      <section class="catalog">
+    <main class="main-inner-container">
+      <section class="catalog container-catalog-wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog-list">
           <li class="catalog-list__item">
@@ -291,19 +291,22 @@
             </button>
           </li>
           <li class="catalog-list__item-more">
+            <div class="catalog-list__item-more-wrapper">
+            <a class="catalog-list__item-more-toogle" href="#"></a>
             <h2 class="catalog-list__item-more-title">
               Показать еще 100500 товаров
             </h2>
             <p class="catalog-list__item-more-description">
               На самом деле вкусов гораздо больше!
             </p>
-            <button class="button catalog-list__item-btn" type="button">
-              Заказать
+          </div>
+            <button class="button catalog-list__item-more-btn" type="button">
+              показать все
             </button>
           </li>
         </ul>
       </section>
-      <section class="optional">
+      <section class="optional container-wrapper">
         <h1 class="optional__title">Дополнительные товары</h1>
         <div class="optional-wrapper">
           <ul class="optional-list">
@@ -373,6 +376,7 @@
             </li>
           </ul>
           <div class="main-promo">
+            <div class="main-promo-wrapper">
             <img
               class="main-promo__img"
               src="img/promo-icon.svg"
@@ -384,11 +388,12 @@
               Закажите все и получите чехол для кота в подарок!
             </p>
           </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <section class="footer-location">
+      <section class="footer-location footer-location-grey">
         <h2 class="visually-hidden">Местоположение</h2>
         <div class="footer-location__text container-wrapper">
           <h3 class="footer-location__title">

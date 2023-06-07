@@ -1,5 +1,10 @@
+.optional {
+  position: relative;
+}
+
 .optional__title {
-  margin: 0 0 49px 0;
+  margin: 0 0 36px 0;
+  width: 226px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -12,9 +17,21 @@
   }
 }
 
+
 .optional-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     margin-bottom: 86px;
+    column-gap: 80px;
   }
+}
+
+.optional::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  background: $basic_green;
+  width: 100%;
+  z-index: -1;
+  top: 14px;
 }

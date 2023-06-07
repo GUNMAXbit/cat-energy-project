@@ -35,6 +35,10 @@
     padding: 0 37px 39px 37px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px 39px;
+  }
+
 }
 
 .catalog-list__item-container {
@@ -46,14 +50,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 42px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 42px;
   }
 }
 
@@ -67,26 +69,31 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
   color: $eerie_black;
   width: 60%;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 21px 0;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 14px;
     font-size: 20px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
+    width: 80%
   }
 }
 
 .catalog-list__item-description {
   display: flex;
   justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .catalog-list__item-description-text {
@@ -98,16 +105,52 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    margin: 7px 0 9px 0;
   }
 }
 
 .catalog-list__item-more {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $basic_light_grey;
+    padding: 25px 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 38px 38px 38px;
+      }
+}
+
+.catalog-list__item-more-toogle {
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 23px;
+    background: url("/img/plus-mobile.svg") center no-repeat;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 49px;
+      background: url("/img/plus-tablet&desktop.svg") center no-repeat;
+    }
 }
 
 .catalog-list__item-more-title {
-  margin: 78px 0 8px 0;
+  margin: 0 0 8px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -118,6 +161,12 @@
     margin: 0 0 23px 0;
     font-size: 20px;
     line-height: 22px;
+    width: 60%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
   }
 }
 
@@ -133,6 +182,12 @@
     margin: 0 0 87px 0;
     font-size: 16px;
     line-height: 18px;
+    width: 80%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -152,4 +207,34 @@ line-height: 20px;
 color: $basic_white;
 background: $basic_green;
 padding: 10px 0;
+
+&:hover {
+  background: $basic_light_green;
+}
+
+&:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+}
+
+.catalog-list__item-more-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog-list__item-more-btn {
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_dark-grey;
+  background: $basic_grey;
+  padding: 10px 0;
+
+  &:hover {
+    background: $basic_light_grey;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3)
+  }
 }

@@ -24,10 +24,6 @@
 
 .footer-location-grey {
   background: $basic_grey;
-
-  @media (min-width: $tablet-width) {
-    background: $basic_grey;
-  }
 }
 
 .footer-location__title {

@@ -1,30 +1,40 @@
 .optional-list {
-  margin: 0 0 54px 0;
+  margin: 0 0 35px 0;
   padding: 0;
   list-style-type: none;
   display: flex;
-  column-gap: 32px;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 97px 0;
-    row-gap: 32px;
+    margin: 0 0 69px 0;
+    border: 1px solid $special_grey;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 80px 0 0;
-    row-gap: 0;
+    margin: 0;
+    border: none;
+    width: 73%;
   }
 }
 
 .optional-list__item {
   display: flex;
   flex-direction: column;
-  column-gap: 32px;
+  border-top: 1px solid $special_grey;
 
+  @media (min-width: $tablet-width) {
+padding: 0 38px;
+    }
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding: 0;
+    align-items: center;
+    column-gap: 38px;
   }
+}
+
+.optional-list__item:last-child {
+  border-bottom: 1px solid $special_grey;
 }
 
 .optional-list__item-title {
@@ -35,22 +45,27 @@
   text-transform: uppercase;
   color: $eerie_black;
 
+  @media (max-width: $mobile-width-only) {
+    padding-top: 13px;
+    }
+
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin:0;
     font-size: 20px;
     line-height: 20px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    font-size: 20px;
-    line-height: 20px;
-  }
 }
 
 .optional-list__item-description {
   display: flex;
   margin-bottom: 15px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 35%;
+  }
 }
 
 .optional-list__item-description-text {
@@ -73,12 +88,41 @@
 
 .optional-list__container {
   @media (min-width: $tablet-width) {
+    margin: 26px 0 25px 0;
     display: flex;
-    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 25px;
+    margin: 25px 0 27px 0;
+    width: 73%;
+  }
+}
+
+.optional-list__item-btn {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic_white;
+  background: $basic_green;
+  padding: 10px 0;
+  margin-bottom: 19px;
+
+  &:hover {
+    background: $basic_light_green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 27%;
   }
 }
