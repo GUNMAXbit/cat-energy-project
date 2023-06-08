@@ -23,8 +23,9 @@
   border-top: 1px solid $special_grey;
 
   @media (min-width: $tablet-width) {
-padding: 0 38px;
-    }
+    padding: 0 38px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     padding: 0;
@@ -47,14 +48,13 @@ padding: 0 38px;
 
   @media (max-width: $mobile-width-only) {
     padding-top: 13px;
-    }
+  }
 
   @media (min-width: $tablet-width) {
-    margin:0;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
   }
-
 }
 
 .optional-list__item-description {

@@ -4,7 +4,7 @@
 
   @media (max-width: $mobile-width-only) {
     padding: 26px 0;
-    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 56px 40px 63px 40px;
@@ -28,7 +28,7 @@
 
 .footer-location__title {
   min-width: 140px;
-  margin:0;
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -42,8 +42,8 @@
 }
 
 .footer-location__description {
-width: 140px;
-  margin:0;
+  width: 140px;
+  margin: 0;
   font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;
@@ -54,7 +54,7 @@ width: 140px;
     br {
       display: none;
     }
-    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 160px;
@@ -70,7 +70,7 @@ width: 140px;
 
 iframe {
   display: block;
-    width: 100%;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 400px;

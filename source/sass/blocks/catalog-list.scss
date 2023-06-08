@@ -1,6 +1,6 @@
 .catalog-list {
   padding: 0;
-  margin: 0;
+  margin-bottom: 25px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid $basic_light_grey;
     padding: 19px 20px 25px 20px;
-    }
+  }
 
   @media (min-width: $tablet-width) {
     background: $basic_grey;
@@ -38,7 +38,6 @@
   @media (min-width: $desktop-width) {
     padding: 0 38px 40px 39px;
   }
-
 }
 
 .catalog-list__item-container {
@@ -83,7 +82,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    width: 80%
+    width: 80%;
   }
 }
 
@@ -91,7 +90,7 @@
   display: flex;
   justify-content: space-between;
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special_grey;
   }
 }
@@ -116,11 +115,11 @@
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid $basic_light_grey;
     padding: 25px 20px;
-    }
+  }
 
-    @media (min-width: $tablet-width) {
-      padding: 52px 38px 38px 38px;
-      }
+  @media (min-width: $tablet-width) {
+    padding: 52px 38px 38px 38px;
+  }
 }
 
 .catalog-list__item-more-toogle {
@@ -139,14 +138,14 @@
     height: 30px;
     margin-bottom: 23px;
     background: url("/img/plus-mobile.svg") center no-repeat;
-    }
+  }
 
-    @media (min-width: $tablet-width) {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 49px;
-      background: url("/img/plus-tablet&desktop.svg") center no-repeat;
-    }
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 49px;
+    background: url("/img/plus-tablet&desktop.svg") center no-repeat;
+  }
 }
 
 .catalog-list__item-more-title {
@@ -203,18 +202,18 @@
 
 .catalog-list__item-btn {
   font-size: 16px;
-line-height: 20px;
-color: $basic_white;
-background: $basic_green;
-padding: 10px 0;
+  line-height: 20px;
+  color: $basic_white;
+  background: $basic_green;
+  padding: 10px 0;
 
-&:hover {
-  background: $basic_light_green;
-}
+  &:hover {
+    background: $basic_light_green;
+  }
 
-&:active {
-  color: rgba(255, 255, 255, 0.3);
-}
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .catalog-list__item-more-wrapper {
@@ -235,6 +234,6 @@ padding: 10px 0;
   }
 
   &:active {
-    color: rgba(68, 68, 68, 0.3)
+    color: rgba(68, 68, 68, 0.3);
   }
 }

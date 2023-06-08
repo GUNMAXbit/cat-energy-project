@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-    position: absolute;
-    z-index: 2;
-    background: white;
-    top: 63px;
+  position: absolute;
+  z-index: 2;
+  background: $basic_white;
+  top: 63px;
 
   @media (min-width: $tablet-width) {
     position: static;

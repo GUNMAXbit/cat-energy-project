@@ -17,26 +17,25 @@
 }
 
 .main-container-header__back {
-position: absolute;
-z-index: -1;
-width: 100%;
-height: 65%;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 65%;
 
-@media (min-width: $desktop-width) {
-
+  @media (min-width: $desktop-width) {
     width: 50%;
     height: 694px;
     right: 0;
-}
+  }
 }
 
 .main-container-header__back::before {
   position: absolute;
-content: '';
+  content: "";
   background: url("/img/background-photo.jpg");
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-    background-position: center;
+  background-position: center;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -48,16 +47,16 @@ content: '';
   @media (min-width: $desktop-width) {
     display: block;
     background: url("/img/index-background-desktop.jpg");
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-      background-position: center;
+    background-position: center;
     top: -115px;
   }
 }
 
 .main-container-header__back::after {
   position: absolute;
-content: '';
+  content: "";
   background: rgba(104, 183, 56, 0.85);
   background-size: 100% auto;
   min-height: 100%;
@@ -129,25 +128,25 @@ content: '';
 
 .main-container-header__btn {
   display: block;
-font-size: 14px;
-line-height: 18px;
-width: 86%;
-padding: 7px 0;
-color: $basic_white;
-background-color: $basic_green;
+  font-size: 14px;
+  line-height: 18px;
+  width: 86%;
+  padding: 7px 0;
+  color: $basic_white;
+  background-color: $basic_green;
 
-&:hover {
-  background: $basic_light_green;
-}
+  &:hover {
+    background: $basic_light_green;
+  }
 
-&:active {
-  color: rgba(255, 255, 255, 0.3);;
-}
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-line-height: 20px;
-width: 34%;
+    line-height: 20px;
+    width: 34%;
     position: absolute;
     padding: 14px 0;
     z-index: 2;
@@ -169,4 +168,3 @@ width: 34%;
     display: none;
   }
 }
-

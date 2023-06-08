@@ -9,24 +9,24 @@
   }
 
   @media (min-width: $tablet-width) {
-column-gap: 22px;
+    column-gap: 22px;
   }
 }
 
 .copyright__link {
   font-family: $font-family-Arial;
-font-size: 16px;
-line-height: 18px;
-text-decoration: none;
-color: $special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: $special_dark-grey;
 
-&:active {
-  opacity: 0.3;
-}
+  &:active {
+    opacity: 0.3;
+  }
 
-@media (max-width: $mobile-width-only) {
-  margin: 28px 0 32px 0;
-}
+  @media (max-width: $mobile-width-only) {
+    margin: 28px 0 32px 0;
+  }
 }
 
 .copyright__logo-link {
@@ -36,12 +36,12 @@ color: $special_dark-grey;
 .footer-icon {
   fill: $icon-color;
 
-&:hover {
-  fill: $basic_green;
-}
+  &:hover {
+    fill: $basic_green;
+  }
 
-&:active {
-  fill: $basic_green;
-  opacity: 0.3;
-}
+  &:active {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
 }

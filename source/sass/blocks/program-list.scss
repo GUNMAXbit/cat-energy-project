@@ -18,7 +18,6 @@
 }
 
 .program-list__item {
-
   padding: 20px 33px 22px 20px;
   display: block;
   background-color: $basic_grey;
@@ -73,46 +72,44 @@
 }
 
 .program-list__item-description::before {
-
   @media (max-width: $mobile-width-only) {
-    content: '';
+    content: "";
     position: absolute;
-  width: 100%;;
-  border: 1px solid $program-line-color;
-  bottom: -23px;
+    width: 100%;
+    border: 1px solid $program-line-color;
+    bottom: -23px;
   }
 }
 
 .program-list__item-button {
   display: block;
   font-size: 16px;
-line-height: 16px;
-color: $basic_black;
-width: 132px;
-text-align: start;
-background:url("/img/arrow.svg") top 2px right 8px no-repeat ;
+  line-height: 16px;
+  color: $basic_black;
+  width: 132px;
+  text-align: start;
+  background: url("/img/arrow.svg") top 2px right 8px no-repeat;
 
-&:hover {
-  background:url("/img/long-arrow.svg") top 2px right no-repeat ;
-}
+  &:hover {
+    background: url("/img/long-arrow.svg") top 2px right no-repeat;
+  }
 
-&:active {
-  opacity: 0.5;;
-}
+  &:active {
+    opacity: 0.5;
+  }
 
-@media (min-width: $tablet-width) {
-  font-size: 20px;
-line-height: 30px;
-width: 165px;
-background-position: top 9px right 8px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 165px;
+    background-position: top 9px right 8px;
 
-&:hover {
-  background:url("/img/long-arrow.svg") top 9px right no-repeat ;
-}
+    &:hover {
+      background: url("/img/long-arrow.svg") top 9px right no-repeat;
+    }
+  }
 
-}
-
-@media (min-width: $desktop-width) {
-  width: 168px;
-}
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
