@@ -4,10 +4,15 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  row-gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 18px;
+    margin-left: 28px;
+  }
 }
 
 .form-program-list__item {
-  margin-bottom: 13px;
   height: 30px;
 }
 
@@ -37,7 +42,7 @@
     border: 1px solid $special_grey;
 }
 
-.form-program-list__item-control-mark::after {
+.form-program-list__item-input[type="radio"]:checked + .form-program-list__item-control-mark::after {
   position: absolute;
   background-image: url("/img/radiobutton-checked.svg");
   background-repeat: no-repeat;
