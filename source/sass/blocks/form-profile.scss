@@ -45,6 +45,11 @@
   height: 38px;
   border: 1px solid $special_light_grey;
 
+  @media (min-width: $tablet-width) {
+    height: 43px;
+    padding: 7px 0 0 19px;
+  }
+
   &:hover {
     border: 1px solid $special_grey;
   }
@@ -54,10 +59,11 @@
     border: 2px solid $special_dark-grey;
   }
 
-  &:invalid {
+  &:focus:invalid {
     outline: none;
     border: 2px solid $status_error;
   }
+
 }
 
 .form-profile__input::placeholder {
@@ -68,8 +74,7 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 37px;
-    background: $basic_white;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
