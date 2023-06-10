@@ -52,7 +52,9 @@
 
 .program-list__item-description {
   position: relative;
-  margin: 0 0 42px 0;
+  margin: 0 0 19px 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $program-line-color;
   font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;
@@ -68,16 +70,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 27px 0;
-  }
-}
-
-.program-list__item-description::before {
-  @media (max-width: $mobile-width-only) {
-    content: "";
-    position: absolute;
-    width: 100%;
-    border: 1px solid $program-line-color;
-    bottom: -23px;
   }
 }
 

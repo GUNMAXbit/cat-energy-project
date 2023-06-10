@@ -3,6 +3,10 @@
   flex-direction: column;
   margin-top: 10px;
 
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $program-line-color;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 24px;
     flex-direction: row;

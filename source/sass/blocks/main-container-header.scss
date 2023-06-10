@@ -32,7 +32,7 @@
 .main-container-header__back::before {
   position: absolute;
   content: "";
-  background: url("/img/background-photo.jpg");
+  background-image: url("/img/background-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -46,7 +46,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    background: url("/img/index-background-desktop.jpg");
+    background-image: url("/img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

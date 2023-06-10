@@ -33,16 +33,17 @@
 
 .form-program-list__item-control-mark {
   position: absolute;
-    top: -1px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background: #ffffff;
-    border-radius: 50%;
-    border: 1px solid $special_grey;
+  top: -1px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid $special_grey;
 }
 
-.form-program-list__item-input[type="radio"]:checked + .form-program-list__item-control-mark::after {
+.form-program-list__item-input[type="radio"]:checked
+  + .form-program-list__item-control-mark::after {
   position: absolute;
   background-image: url("/img/radiobutton-checked.svg");
   background-repeat: no-repeat;

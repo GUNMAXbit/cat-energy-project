@@ -69,3 +69,9 @@
     color: $basic_white;
   }
 }
+
+.main-nav-list__item:last-child {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special_border_color;
+  }
+}
