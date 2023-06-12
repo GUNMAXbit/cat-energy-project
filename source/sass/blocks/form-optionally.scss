@@ -3,6 +3,7 @@
   display: flex;
   padding: 0;
   margin: 0 0 22px 0;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 54px 0;
@@ -13,16 +14,34 @@
   }
 }
 
-.form-optionally__title {
+.form-optionally__line {
   margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 57px 0;
+  }
+}
+
+.form-optionally__title {
+  width: 140px;
+  margin: 0;
   font-weight: 400;
+  display: inline-block;
+  padding: 0 22px 0 20px;
+  background: $basic-white;
   font-size: 24px;
   line-height: 26px;
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 57px 0;
+    margin: 0 0 0 30px;
+    padding: 0 40px;
+    width: 211px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 70px;
   }
 }

@@ -33,17 +33,17 @@
     row-gap: 31px;
     align-items: start;
   }
-}
 
-.advantages-list__item::after {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: counter(advantages);
-    font-size: 280px;
-    line-height: 280px;
-    font-family: $font-family-Oswald;
-    z-index: -1;
-    color: $basic_grey;
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: counter(advantages);
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $font-family-Oswald;
+      z-index: -1;
+      color: $basic_grey;
+    }
   }
 }
 
@@ -92,31 +92,3 @@
     line-height: 24px;
   }
 }
-
-// .advantages-list__item:first-child {
-//   @media (min-width: $tablet-width) {
-//     background: url("/img/advantages-item-first-number.svg") top right 40px
-//       no-repeat;
-//   }
-// }
-
-// .advantages-list__item:nth-child(3n + 2) {
-//   @media (min-width: $tablet-width) {
-//     background: url("/img/advantages-item-second-number.svg") top right 5px
-//       no-repeat;
-//   }
-// }
-
-// .advantages-list__item:nth-child(3n) {
-//   @media (min-width: $tablet-width) {
-//     background: url("/img/advantages-item-third-number.svg") top right 5px
-//       no-repeat;
-//   }
-// }
-
-// .advantages-list__item:nth-child(4n) {
-//   @media (min-width: $tablet-width) {
-//     background: url("/img/advantages-item-fourth-number.svg") top right 5px
-//       no-repeat;
-//   }
-// }

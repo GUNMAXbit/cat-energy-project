@@ -2,26 +2,23 @@
   display: flex;
   flex-direction: column;
   border: none;
+  row-gap: 14px;
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0 20px 24px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 72px 0;
+    margin: 0 67px 72px 70px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 0 0 110px;
   }
 }
 
 .form-profile__field {
   display: flex;
-  margin-bottom: 14px;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
-  }
 }
 
 .form-profile__label {

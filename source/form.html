@@ -67,74 +67,70 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <div class="form__wrapper">
-          <div class="container-wrapper">
-            <fieldset class="form-profile">
-              <div class="form-profile__field">
-                <label class="form-profile__label" for="form__name"
-                  >ИМЯ:*</label
-                >
-                <input
-                  class="form-profile__input"
-                  type="text"
-                  placeholder="БАРСИК"
-                  id="form__name"
-                  name="form__name"
-                  required
-                />
-              </div>
-              <div class="form-profile__field">
-                <label class="form-profile__label" for="form__mass"
-                  >Вес (кг):*</label
-                >
-                <input
-                  class="form-profile__input"
-                  type="text"
-                  placeholder="7"
-                  id="form__mass"
-                  name="form__mass"
-                  required
-                />
-              </div>
-              <div class="form-profile__field">
-                <label class="form-profile__label" for="form__age"
-                  >Возраст (лет):</label
-                >
-                <input
-                  class="form-profile__input"
-                  type="text"
-                  placeholder="7"
-                  id="form__age"
-                  name="form__age"
-                />
-              </div>
-            </fieldset>
-          </div>
+          <fieldset class="form-profile">
+            <div class="form-profile__field">
+              <label class="form-profile__label" for="form__name">ИМЯ:*</label>
+              <input
+                class="form-profile__input"
+                type="text"
+                placeholder="БАРСИК"
+                id="form__name"
+                name="form__name"
+                required
+              />
+            </div>
+            <div class="form-profile__field">
+              <label class="form-profile__label" for="form__mass"
+                >Вес (кг):*</label
+              >
+              <input
+                class="form-profile__input"
+                type="text"
+                placeholder="7"
+                id="form__mass"
+                name="form__mass"
+                required
+              />
+            </div>
+            <div class="form-profile__field">
+              <label class="form-profile__label" for="form__age"
+                >Возраст (лет):</label
+              >
+              <input
+                class="form-profile__input"
+                type="text"
+                placeholder="7"
+                id="form__age"
+                name="form__age"
+              />
+            </div>
+          </fieldset>
           <fieldset class="form-program">
             <ul class="form-program-list">
               <li class="form-program-list__item">
                 <label class="form-program-list__item-control" for="form__slim">
-                <input
-                  class="visually-hidden form-program-list__item-input"
-                  type="radio"
-                  name="program"
-                  value="slim"
-                  id="form__slim"
-                  checked
-                />
-                <span class="form-program-list__item-control-mark"></span>
+                  <input
+                    class="visually-hidden form-program-list__item-input"
+                    type="radio"
+                    name="program"
+                    value="slim"
+                    id="form__slim"
+                    checked
+                  />
+                  <span class="form-program-list__item-control-mark"></span>
                   Похудение
                 </label>
               </li>
               <li class="form-program-list__item">
                 <label class="form-program-list__item-control" for="form__gain">
-                <input
-                  class="visually-hidden form-program-list__item-input"
-                  type="radio"
-                  name="program"
-                  value="gain"
-                  id="form__gain"
-                />
-                <span class="form-program-list__item-control-mark"></span>
+                  <input
+                    class="visually-hidden form-program-list__item-input"
+                    type="radio"
+                    name="program"
+                    value="gain"
+                    id="form__gain"
+                  />
+                  <span class="form-program-list__item-control-mark"></span>
                   Набор массы
                 </label>
               </li>
@@ -142,26 +138,30 @@
                 <label
                   class="form-program-list__item-control"
                   for="form__need-advice"
-                  >
-                <input
-                  class="visually-hidden form-program-list__item-input"
-                  type="radio"
-                  name="program"
-                  value="need-advice"
-                  id="form__need-advice"
-                />
-                <span class="form-program-list__item-control-mark"></span>
+                >
+                  <input
+                    class="visually-hidden form-program-list__item-input"
+                    type="radio"
+                    name="program"
+                    value="need-advice"
+                    id="form__need-advice"
+                  />
+                  <span class="form-program-list__item-control-mark"></span>
                   Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="container-wrapper">
-          <fieldset class="form-contacts">
-            <legend class="form-contacts__title">
-              Контактные данные (владельца кота)
-            </legend>
+        <fieldset class="form-contacts">
+          <div class="line form-contacts__line">
+            <div class="line-container">
+              <legend class="form-contacts__title">
+                Контактные данные (владельца кота)
+              </legend>
+            </div>
+          </div>
+          <div class="form-container-wrapper">
             <div class="form-contacts__wrapper">
               <div class="form-contacts__field">
                 <label class="form-contacts__label" for="form__email"
@@ -190,9 +190,15 @@
                 />
               </div>
             </div>
-          </fieldset>
-          <div class="form-comment">
-            <h2 class="form-comment__title">Комментарий</h2>
+          </div>
+        </fieldset>
+        <div class="form-comment">
+          <div class="line form-comment__line">
+            <div class="line-container">
+              <h2 class="form-comment__title">Комментарий</h2>
+            </div>
+          </div>
+          <div class="form-container-wrapper">
             <label class="form-comment__label" for="form__comment"></label>
             <input
               class="form-comment__input"
@@ -202,8 +208,14 @@
               name="form__comment"
             />
           </div>
-          <fieldset class="form-optionally">
-            <legend class="form-optionally__title">Дополнительно</legend>
+        </div>
+        <fieldset class="form-optionally">
+          <div class="line form-optionally__line">
+            <div class="line-container">
+              <legend class="form-optionally__title">Дополнительно</legend>
+            </div>
+          </div>
+          <div class="form-container-wrapper">
             <ul class="form-optionally-list">
               <li class="form-optionally-list__item">
                 <label
@@ -211,13 +223,14 @@
                   for="form__sweetener"
                 >
                   <input
-                    class="form-optionally-list__item-input"
+                    class="visually-hidden form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
                     value="sweetener"
                     id="form__sweetener"
                     checked
                   />
+                  <span class="form-optionally-list__item-control-mark"></span>
                   Cахарозаменитель
                 </label>
               </li>
@@ -227,12 +240,13 @@
                   for="form__water"
                 >
                   <input
-                    class="form-optionally-list__item-input"
+                    class="visually-hidden form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
                     value="water"
                     id="form__water"
                   />
+                  <span class="form-optionally-list__item-control-mark"></span>
                   Питьевая вода
                 </label>
               </li>
@@ -242,12 +256,13 @@
                   for="form__milk"
                 >
                   <input
-                    class="form-optionally-list__item-input"
+                    class="visually-hidden form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
                     value="milk"
                     id="form__milk"
                   />
+                  <span class="form-optionally-list__item-control-mark"></span>
                   Молоко
                 </label>
               </li>
@@ -257,23 +272,24 @@
                   for="form__vitamins"
                 >
                   <input
-                    class="form-optionally-list__item-input"
+                    class="visually-hidden form-optionally-list__item-input"
                     type="checkbox"
                     name="optionally"
                     value="vitamins"
                     id="form__vitamins"
                   />
+                  <span class="form-optionally-list__item-control-mark"></span>
                   Витамины
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <div class="form-container">
-            <button class="button form__btn" type="submit">
-              Отправить заявку
-            </button>
-            <span class="form_text">* — Обязательные поля </span>
           </div>
+        </fieldset>
+        <div class="form-container form-container-wrapper">
+          <button class="button form__btn" type="submit">
+            Отправить заявку
+          </button>
+          <span class="form_text">* — Обязательные поля </span>
         </div>
       </form>
     </main>
