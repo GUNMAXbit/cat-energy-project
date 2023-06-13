@@ -51,6 +51,18 @@
   }
 }
 
+.logo {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
 .main-header--closed .main-header__toggle {
   cursor: pointer;
   width: 25px;

@@ -47,6 +47,7 @@
 }
 
 .form-contacts__field {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -86,22 +87,24 @@
   &:hover {
     border: 1px solid $special_grey;
   }
-
-  &:focus {
-    outline: none;
-    border: 2px solid $special_dark-grey;
-  }
-
-  &:focus:invalid {
-    outline: none;
-    border: 2px solid $status_error;
-  }
 }
 
 .form-contacts__input-email {
   background-image: url("/img/email-icon.svg");
   background-repeat: no-repeat;
   background-position: right 16px top 50%;
+
+  &:focus {
+    background-image: url("/img/email-focus.svg");
+    outline: none;
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    background-image: url("/img/email-error.svg");
+    outline: none;
+    border: 2px solid $status_error;
+  }
 
   @media (min-width: $tablet-width) {
     background-position: right 20px top 50%;
@@ -112,6 +115,18 @@
   background-image: url("/img/phone-icon.svg");
   background-repeat: no-repeat;
   background-position: right 13px top 50%;
+
+  &:focus {
+    background-image: url("/img/phone-focus.svg");
+    outline: none;
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    background-image: url("/img/phone-error.svg");
+    outline: none;
+    border: 2px solid $status_error;
+  }
 
   @media (min-width: $tablet-width) {
     background-position: right 18px top 50%;

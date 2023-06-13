@@ -72,14 +72,22 @@
 }
 
 .advantages-list__item-icon {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background: $basic-green;
+
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    width: 80px;
+    height: 80px;
   }
 }
 
 .advantages-list__item-description {
   margin: 0;
-  width: 90%;
+  width: 70%;
   font-family: $font-family-Arial;
   font-weight: 400;
   font-size: 14px;

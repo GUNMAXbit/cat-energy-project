@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 76px 110px;
+    margin: 40px 0 146px 0;
   }
 }
 
@@ -177,6 +177,8 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    width: 591px;
+    height: 576px;
     margin-bottom: 29px;
   }
 }
@@ -191,8 +193,17 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    background: $basic_grey;
+    background: linear-gradient(0deg, $grey 75%, $basic_white 25%);
   }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+  }
+}
+
+.example-picture__wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .example-description__wrapper {
@@ -207,7 +218,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: $basic_grey;
-    padding: 70px 110px;
+    background: linear-gradient(0deg, $basic_grey 75%, $basic_white 25%);
+    padding: 0 0 75px 110px;
   }
 }
