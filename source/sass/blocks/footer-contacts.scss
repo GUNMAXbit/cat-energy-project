@@ -40,3 +40,32 @@
     opacity: 0.2;
   }
 }
+
+.footer-icon {
+  fill: $icon-color;
+
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
+}
+
+.footer-contacts__vk,
+.footer-contacts__yt,
+.footer-contacts__tg,
+.copyright__logo-link-icon {
+  fill: $icon-color;
+
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
+}

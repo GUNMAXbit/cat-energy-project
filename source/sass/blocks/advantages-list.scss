@@ -27,6 +27,7 @@
   counter-increment: advantages;
 
   @media (min-width: $tablet-width) {
+    padding-top: 35px;
     position: relative;
     flex-direction: column;
     min-height: 280px;
@@ -95,6 +96,7 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    width: 90%;
     margin: 0;
     font-size: 16px;
     line-height: 24px;

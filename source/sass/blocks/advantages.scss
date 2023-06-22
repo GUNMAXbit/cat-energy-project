@@ -2,10 +2,14 @@
   margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 90px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $special_border_color;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    border-bottom: none;
     margin-bottom: 20px;
   }
 }

@@ -74,14 +74,16 @@
 
 .form-contacts__input-email,
 .form-contacts__input-phone {
-  padding: 2px 0 0 16px;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0 0 16px;
   width: 100%;
-  height: 41px;
+  height: 45px;
   border: 1px solid $special_light_grey;
 
   @media (min-width: $tablet-width) {
-    height: 45px;
-    padding: 5px 0 0 19px;
+    height: 52px;
+    padding: 0 0 0 19px;
   }
 
   &:hover {

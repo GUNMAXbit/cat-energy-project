@@ -32,16 +32,3 @@
 .copyright__logo-link {
   display: flex;
 }
-
-.footer-icon {
-  fill: $icon-color;
-
-  &:hover {
-    fill: $basic_green;
-  }
-
-  &:active {
-    fill: $basic_green;
-    opacity: 0.3;
-  }
-}
