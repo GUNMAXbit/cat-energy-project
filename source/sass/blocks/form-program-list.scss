@@ -30,6 +30,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $eerie_black;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -65,8 +66,8 @@
 .form-program-list__item-input[type="radio"]:checked
   + .form-program-list__item-control-mark::after {
   position: absolute;
-  background-image: url("/img/radiobutton-checked.svg");
-  background-repeat: no-repeat;
+  border-radius: 50%;
+  background: $basic_green;
   top: 7px;
   left: 8px;
   width: 14px;
@@ -74,7 +75,8 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    background-image: url("/img/radiobutton-big-checked.svg");
+    border-radius: 50%;
+    background: $basic_green;
     width: 19px;
     height: 18px;
     top: 10px;

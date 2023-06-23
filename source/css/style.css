@@ -2220,6 +2220,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .form-program-list__item-control {
@@ -2254,8 +2255,8 @@
 
 .form-program-list__item-input[type=radio]:checked + .form-program-list__item-control-mark::after {
   position: absolute;
-  background-image: url("/img/radiobutton-checked.svg");
-  background-repeat: no-repeat;
+  border-radius: 50%;
+  background: #68b738;
   top: 7px;
   left: 8px;
   width: 14px;
@@ -2264,7 +2265,8 @@
 }
 @media (min-width: 768px) {
   .form-program-list__item-input[type=radio]:checked + .form-program-list__item-control-mark::after {
-    background-image: url("/img/radiobutton-big-checked.svg");
+    border-radius: 50%;
+    background: #68b738;
     width: 19px;
     height: 18px;
     top: 10px;
@@ -2622,6 +2624,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .form-optionally-list__item-control {
@@ -2655,7 +2658,7 @@
 
 .form-optionally-list__item-input[type=checkbox]:checked + .form-optionally-list__item-control-mark::after {
   position: absolute;
-  background-image: url("/img/checkbox-mobile.svg");
+  background-image: url("/img/checkbox-mobile.png");
   background-repeat: no-repeat;
   top: 8px;
   left: 6px;
@@ -2665,7 +2668,7 @@
 }
 @media (min-width: 768px) {
   .form-optionally-list__item-input[type=checkbox]:checked + .form-optionally-list__item-control-mark::after {
-    background-image: url("/img/checkbox.svg");
+    background-image: url("/img/checkbox.png");
     width: 24px;
     height: 19px;
     top: 10px;
