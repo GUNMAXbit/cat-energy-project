@@ -1498,8 +1498,14 @@
 }
 @media (min-width: 768px) {
   .catalog-list__item-more {
-    height: 429px;
+    height: 407px;
     align-self: flex-end;
+    border: 2px solid #e6e6e6;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-list__item-more {
+    height: 455px;
   }
 }
 
@@ -1517,15 +1523,25 @@
     width: 30px;
     height: 30px;
     margin-bottom: 23px;
-    background: url("/img/plus-mobile.svg") center no-repeat;
   }
 }
 @media (min-width: 768px) {
   .catalog-list__item-more-toogle {
     width: 60px;
     height: 60px;
-    margin: 52px 0 49px 0;
-    background: url("/img/plus-tablet&desktop.svg") center no-repeat;
+    margin: 31px 0 49px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-list__item-more-toogle {
+    margin: 79px 0 49px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog-list__item-more-icon {
+    width: 60px;
+    height: 60px;
   }
 }
 

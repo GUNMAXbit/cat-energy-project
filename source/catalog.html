@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page-body">
     <header class="main-header main-header--closed main-header--nojs">
@@ -376,7 +380,17 @@
           </li>
           <li class="catalog-list__item-more">
             <div class="catalog-list__item-more-wrapper">
-              <a class="catalog-list__item-more-toogle" href="#"></a>
+              <a class="catalog-list__item-more-toogle" href="#">
+                <svg
+                  class="catalog-list__item-more-icon"
+                  width="30"
+                  height="30"
+                >
+                  <use
+                    xlink:href="img/sprite.svg#catalog-list__item-more-icon"
+                  ></use>
+                </svg>
+              </a>
               <h2 class="catalog-list__item-more-title">
                 Показать еще 100500 товаров
               </h2>

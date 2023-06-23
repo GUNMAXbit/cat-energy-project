@@ -121,8 +121,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 429px;
+    height: 407px;
     align-self: flex-end;
+    border: 2px solid $special_border_color;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 455px;
   }
 }
 
@@ -141,14 +146,23 @@
     width: 30px;
     height: 30px;
     margin-bottom: 23px;
-    background: url("/img/plus-mobile.svg") center no-repeat;
   }
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    margin: 52px 0 49px 0;
-    background: url("/img/plus-tablet&desktop.svg") center no-repeat;
+    margin: 31px 0 49px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 79px 0 49px 0;
+  }
+}
+
+.catalog-list__item-more-icon {
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
   }
 }
 
