@@ -8,6 +8,7 @@
   counter-reset: advantages;
 
   @media (min-width: $tablet-width) {
+    margin: 0 95px 0 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 154px;
@@ -15,8 +16,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 94px;
+    column-gap: 80px;
   }
 }
 
@@ -27,10 +29,9 @@
   counter-increment: advantages;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
+    padding-top: 39px;
     position: relative;
     flex-direction: column;
-    min-height: 280px;
     row-gap: 31px;
     align-items: start;
   }
@@ -51,25 +52,41 @@
 .advantages-list__item-first::after {
   position: absolute;
   top: 0;
-  right: 52px;
+  right: 5px;
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
+  }
 }
 
 .advantages-list__item-second::after {
   position: absolute;
   top: 0;
-  right: 29px;
+  right: -17px;
+
+  @media (min-width: $desktop-width) {
+    right: -1px;
+  }
 }
 
 .advantages-list__item-third::after {
   position: absolute;
   top: 0;
-  right: 39px;
+  right: -18px;
+
+  @media (min-width: $desktop-width) {
+    right: -3px;
+  }
 }
 
 .advantages-list__item-fourth::after {
   position: absolute;
   top: 0;
-  right: 32px;
+  right: -20px;
+
+  @media (min-width: $desktop-width) {
+    right: -4px;
+  }
 }
 
 .advantages-list__item-icon {
@@ -95,9 +112,15 @@
   line-height: 18px;
   color: $special_dark-grey;
 
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    width: 90%;
-    margin: 0;
+    width: 107%;
+    margin: 0 0 57px 0;
     font-size: 16px;
     line-height: 24px;
   }
