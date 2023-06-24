@@ -68,6 +68,7 @@
 }
 
 .main-header--closed .main-header__toggle {
+  margin-top: 6px;
   cursor: pointer;
   width: 25px;
   height: 18px;
@@ -103,9 +104,10 @@
 }
 
 .main-header--opened .main-header__toggle {
+  margin: 4px 0 0 5px;
   position: relative;
   cursor: pointer;
-  width: 18px;
+  width: 21px;
   height: 18px;
   padding: 0;
   border: none;

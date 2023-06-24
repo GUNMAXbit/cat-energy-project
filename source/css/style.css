@@ -207,6 +207,7 @@
 }
 
 .main-header--closed .main-header__toggle {
+  margin-top: 6px;
   cursor: pointer;
   width: 25px;
   height: 18px;
@@ -241,9 +242,10 @@
 }
 
 .main-header--opened .main-header__toggle {
+  margin: 4px 0 0 5px;
   position: relative;
   cursor: pointer;
-  width: 18px;
+  width: 21px;
   height: 18px;
   padding: 0;
   border: none;
@@ -348,9 +350,9 @@
 
 .main-nav-list__item-link {
   display: block;
-  padding: 22px 0;
+  padding: 23px 0;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
@@ -1601,6 +1603,10 @@
   .catalog-list__item-img {
     margin-bottom: 42px;
   }
+}
+
+.catalog-list__item-img {
+  margin-top: 1px;
 }
 
 .catalog-list__item-img-user {
