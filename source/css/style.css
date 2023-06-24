@@ -213,7 +213,7 @@
   padding: 0;
   border: none;
   background: transparent;
-  background-image: url("/img/burger-menu.svg");
+  background-image: url("/img/icons/burger-menu.svg");
   background-repeat: no-repeat;
 }
 .main-header--closed .main-header__toggle:hover {
@@ -414,7 +414,7 @@
 }
 @media (min-width: 1440px) {
   .main-container-header {
-    background: url("/img/product-desktop.svg") top 29px right 330px no-repeat;
+    background: url("/img/assets/product-desktop.png") top 29px right 330px no-repeat;
     margin-bottom: 0;
   }
 }
@@ -436,7 +436,7 @@
 .main-container-header__back::before {
   position: absolute;
   content: "";
-  background-image: url("/img/background-photo.jpg");
+  background-image: url("/img/backgrounds/background-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -452,7 +452,7 @@
 @media (min-width: 1440px) {
   .main-container-header__back::before {
     display: block;
-    background-image: url("/img/index-background-desktop.jpg");
+    background-image: url("/img/backgrounds/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -947,10 +947,10 @@
   color: #000000;
   width: 132px;
   text-align: start;
-  background: url("/img/arrow.svg") top 2px right 8px no-repeat;
+  background: url("/img/icons/arrow.svg") top 2px right 8px no-repeat;
 }
 .program-list__item-button:hover {
-  background: url("/img/long-arrow.svg") top 2px right no-repeat;
+  background: url("/img/icons/long-arrow.svg") top 2px right no-repeat;
 }
 .program-list__item-button:active {
   opacity: 0.5;
@@ -963,7 +963,7 @@
     background-position: top 9px right 8px;
   }
   .program-list__item-button:hover {
-    background: url("/img/long-arrow.svg") top 9px right no-repeat;
+    background: url("/img/icons/long-arrow.svg") top 9px right no-repeat;
   }
 }
 @media (min-width: 1440px) {
@@ -1869,7 +1869,7 @@
 .main-promo::before {
   position: absolute;
   content: "";
-  background-image: url("/img/promo-img.jpg");
+  background-image: url("/img/backgrounds/promo-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1879,13 +1879,13 @@
 }
 @media (min-width: 768px) {
   .main-promo::before {
-    background-image: url("/img/promo-img-tablet.jpg");
+    background-image: url("/img/backgrounds/promo-img-tablet.jpg");
     background-size: 100% auto;
   }
 }
 @media (min-width: 1440px) {
   .main-promo::before {
-    background-image: url("/img/promo-img-desktop.jpg");
+    background-image: url("/img/backgrounds/promo-img-desktop.jpg");
     background-size: cover;
   }
 }
@@ -2377,17 +2377,17 @@
 }
 
 .form-contacts__input-email {
-  background-image: url("/img/email-icon.svg");
+  background-image: url("/img/icons/email-icon.svg");
   background-repeat: no-repeat;
   background-position: right 16px top 50%;
 }
 .form-contacts__input-email:focus {
-  background-image: url("/img/email-focus.svg");
+  background-image: url("/img/icons/email-focus.svg");
   outline: none;
   border: 2px solid #444444;
 }
 .form-contacts__input-email:invalid {
-  background-image: url("/img/email-error.svg");
+  background-image: url("/img/icons/email-error.svg");
   outline: none;
   border: 2px solid #ff8282;
 }
@@ -2398,17 +2398,17 @@
 }
 
 .form-contacts__input-phone {
-  background-image: url("/img/phone-icon.svg");
+  background-image: url("/img/icons/phone-icon.svg");
   background-repeat: no-repeat;
   background-position: right 13px top 50%;
 }
 .form-contacts__input-phone:focus {
-  background-image: url("/img/phone-focus.svg");
+  background-image: url("/img/icons/phone-focus.svg");
   outline: none;
   border: 2px solid #444444;
 }
 .form-contacts__input-phone:invalid {
-  background-image: url("/img/phone-error.svg");
+  background-image: url("/img/icons/phone-error.svg");
   outline: none;
   border: 2px solid #ff8282;
 }
@@ -2658,7 +2658,7 @@
 
 .form-optionally-list__item-input[type=checkbox]:checked + .form-optionally-list__item-control-mark::after {
   position: absolute;
-  background-image: url("/img/checkbox-mobile.png");
+  background-image: url("/img/icons/checkbox-mobile.png");
   background-repeat: no-repeat;
   top: 8px;
   left: 6px;
@@ -2668,7 +2668,7 @@
 }
 @media (min-width: 768px) {
   .form-optionally-list__item-input[type=checkbox]:checked + .form-optionally-list__item-control-mark::after {
-    background-image: url("/img/checkbox.png");
+    background-image: url("/img/icons/checkbox.png");
     width: 24px;
     height: 19px;
     top: 10px;

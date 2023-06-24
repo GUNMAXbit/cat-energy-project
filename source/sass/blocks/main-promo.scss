@@ -21,7 +21,7 @@
 .main-promo::before {
   position: absolute;
   content: "";
-  background-image: url("/img/promo-img.jpg");
+  background-image: url("/img/backgrounds/promo-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,12 +30,12 @@
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    background-image: url("/img/promo-img-tablet.jpg");
+    background-image: url("/img/backgrounds/promo-img-tablet.jpg");
     background-size: 100% auto;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/img/promo-img-desktop.jpg");
+    background-image: url("/img/backgrounds/promo-img-desktop.jpg");
     background-size: cover;
   }
 }

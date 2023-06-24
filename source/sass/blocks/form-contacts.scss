@@ -92,18 +92,18 @@
 }
 
 .form-contacts__input-email {
-  background-image: url("/img/email-icon.svg");
+  background-image: url("/img/icons/email-icon.svg");
   background-repeat: no-repeat;
   background-position: right 16px top 50%;
 
   &:focus {
-    background-image: url("/img/email-focus.svg");
+    background-image: url("/img/icons/email-focus.svg");
     outline: none;
     border: 2px solid $special_dark-grey;
   }
 
   &:invalid {
-    background-image: url("/img/email-error.svg");
+    background-image: url("/img/icons/email-error.svg");
     outline: none;
     border: 2px solid $status_error;
   }
@@ -114,18 +114,18 @@
 }
 
 .form-contacts__input-phone {
-  background-image: url("/img/phone-icon.svg");
+  background-image: url("/img/icons/phone-icon.svg");
   background-repeat: no-repeat;
   background-position: right 13px top 50%;
 
   &:focus {
-    background-image: url("/img/phone-focus.svg");
+    background-image: url("/img/icons/phone-focus.svg");
     outline: none;
     border: 2px solid $special_dark-grey;
   }
 
   &:invalid {
-    background-image: url("/img/phone-error.svg");
+    background-image: url("/img/icons/phone-error.svg");
     outline: none;
     border: 2px solid $status_error;
   }

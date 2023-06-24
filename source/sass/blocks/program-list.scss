@@ -153,10 +153,10 @@
   color: $basic_black;
   width: 132px;
   text-align: start;
-  background: url("/img/arrow.svg") top 2px right 8px no-repeat;
+  background: url("/img/icons/arrow.svg") top 2px right 8px no-repeat;
 
   &:hover {
-    background: url("/img/long-arrow.svg") top 2px right no-repeat;
+    background: url("/img/icons/long-arrow.svg") top 2px right no-repeat;
   }
 
   &:active {
@@ -170,7 +170,7 @@
     background-position: top 9px right 8px;
 
     &:hover {
-      background: url("/img/long-arrow.svg") top 9px right no-repeat;
+      background: url("/img/icons/long-arrow.svg") top 9px right no-repeat;
     }
   }
 

@@ -74,7 +74,7 @@
 .form-optionally-list__item-input[type="checkbox"]:checked
   + .form-optionally-list__item-control-mark::after {
   position: absolute;
-  background-image: url("/img/checkbox-mobile.png");
+  background-image: url("/img/icons/checkbox-mobile.png");
   background-repeat: no-repeat;
   top: 8px;
   left: 6px;
@@ -83,7 +83,7 @@
   content: "";
 
   @media (min-width: $tablet-width) {
-    background-image: url("/img/checkbox.png");
+    background-image: url("/img/icons/checkbox.png");
     width: 24px;
     height: 19px;
     top: 10px;
