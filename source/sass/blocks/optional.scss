@@ -13,8 +13,8 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
-    margin-left: 37px;
-    padding: 0 38px;
+    margin-left: 30px;
+    padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -28,15 +28,19 @@
 .optional-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 86px;
+    margin-bottom: 91px;
     column-gap: 80px;
   }
 }
 
 .optional__line {
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
   }
 }

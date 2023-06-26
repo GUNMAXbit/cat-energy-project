@@ -16,19 +16,18 @@
         <a class="main-header__link-first" href="index.html">
           <picture>
             <source
-              srcset="img/logo/logo-mobile-picture.svg"
-              media="(max-width: 767px)"
+              srcset="img/logo/logo-desktop.svg"
+              media="(min-width: 1440px)"
             />
             <source
               srcset="img/logo/tablet-logo.svg"
               media="(min-width: 768px)"
             />
-            <source
-              srcset="img/logo/logo-desktop.svg"
-              media="(min-width: 1440px)"
-            />
             <img
-              sr="img/logo/logo-mobile-picture.svg"
+              class="logo"
+              src="img/logo/logo-mobile-picture.svg"
+              width="34"
+              height="38"
               alt="Картинка логитипа Cat Energy."
             />
           </picture>
@@ -177,7 +176,7 @@
                     media="(min-width: 768px)"
                   />
                   <img
-                    class="catalog-list__item-img"
+                    class="catalog-list__item-img catalog-list__item-img--user-height"
                     src="img/assets/catalog/cat-energy-pro500g-fish.jpg"
                     srcset="
                       img/assets/catalog/cat-energy-pro500g-fish@2x.jpg 2x
@@ -269,7 +268,7 @@
                     media="(min-width: 768px)"
                   />
                   <img
-                    class="catalog-list__item-img"
+                    class="catalog-list__item-img catalog-list__item-img--user-height"
                     src="img/assets/catalog/cat-energy-slim500g-buckwheat.jpg"
                     srcset="
                       img/assets/catalog/cat-energy-slim500g-buckwheat@2x.jpg 2x
@@ -353,7 +352,7 @@
               Заказать
             </button>
           </li>
-          <li class="catalog-list__item">
+          <li class="catalog-list__item catalog-list__item--user-height">
             <div class="catalog-list__item-container">
               <div class="catalog-list__img-wrapper">
                 <picture>
@@ -365,7 +364,7 @@
                     media="(min-width: 768px)"
                   />
                   <img
-                    class="catalog-list__item-img"
+                    class="catalog-list__item-img catalog-list__item-img--user-height"
                     src="img/assets/catalog/cat-energy-slim500g-rice.jpg"
                     srcset="
                       img/assets/catalog/cat-energy-slim500g-rice@2x.jpg 2x
@@ -505,7 +504,8 @@
                 </svg>
               </div>
               <p class="main-promo__description">
-                Закажите все и получите чехол для кота в подарок!
+                Закажите все <br />
+                и получите чехол для кота в подарок!
               </p>
             </div>
           </div>
