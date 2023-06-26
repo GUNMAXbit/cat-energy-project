@@ -10,12 +10,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 32px;
-    column-gap: 64px;
+    column-gap: 59px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 78px;
     width: 100%;
   }
 }

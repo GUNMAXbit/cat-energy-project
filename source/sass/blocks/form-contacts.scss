@@ -15,10 +15,10 @@
 }
 
 .form-contacts__line {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 70px;
   }
 }
 
@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     width: 520px;
-    padding: 0 40px;
+    padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 0 30px;
@@ -62,7 +62,7 @@
   white-space: nowrap;
 
   @media (min-width: $tablet-width) {
-    margin-right: 16px;
+    margin-right: 18px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -76,14 +76,14 @@
 .form-contacts__input-phone {
   display: block;
   box-sizing: border-box;
-  padding: 0 0 0 16px;
+  padding: 3px 0 0 16px;
   width: 100%;
   height: 45px;
   border: 1px solid $special_light_grey;
 
   @media (min-width: $tablet-width) {
     height: 52px;
-    padding: 0 0 0 19px;
+    padding: 0 0 0 22px;
   }
 
   &:hover {
@@ -109,7 +109,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: right 20px top 50%;
+    background-position: right 13px top 50%;
   }
 }
 
@@ -131,7 +131,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: right 18px top 50%;
+    background-position: right 12px top 50%;
+    padding: 6px 0 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: right 16px top 50%;
   }
 }
 
@@ -147,6 +152,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: right 21px top 50%;
+  }
 }
 
 .form-contacts__wrapper {
@@ -161,6 +170,6 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 78px;
+    column-gap: 72px;
   }
 }
