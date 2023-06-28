@@ -4,15 +4,17 @@ import sass from "gulp-dart-sass";
 import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
-import htmlmin from "gulp-htmlmin";
 import rename from "gulp-rename";
+import htmlmin from "gulp-htmlmin";
+import del from "del";
 import terser from "gulp-terser";
-import svg from "gulp-svgo";
+import svgo from "gulp-svgo";
 import svgstore from "gulp-svgstore";
+// import squoosh from "gulp-libsquoosh";
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp
     .src("source/sass/style.scss", { sourcemaps: true })
     .pipe(plumber())
@@ -44,11 +46,11 @@ export const optimizeimages = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-const copyimages = () => {
+export const copyimages = () => {
   return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
 };
 
-// WebP
+// WebP;
 
 export const createWebP = () => {
   return gulp
@@ -59,17 +61,17 @@ export const createWebP = () => {
 
 // SVG
 
-const svgo = () => {
+export const svg = () => {
   return gulp
     .src("source/img/logo/*.svg")
-    .pipe(svg())
-    .pipe(gulp.dest("build/img"));
+    .pipe(svgo())
+    .pipe(gulp.dest("build/img/logo"));
 };
 
 export const sprite = () => {
   return gulp
     .src("source/img/icons/*.svg")
-    .pipe(svg())
+    .pipe(svgo())
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -79,9 +81,29 @@ export const sprite = () => {
     .pipe(gulp.dest("build/img"));
 };
 
+// Copy
+
+export const copy = (done) => {
+  gulp
+    .src(
+      ["source/fonts/*.{woff2,woff}", "source/*.ico", "source/*.webmanifest"],
+      {
+        base: "source",
+      }
+    )
+    .pipe(gulp.dest("build"));
+  done();
+};
+
+// Clean
+
+export const clean = () => {
+  return del("build");
+};
+
 // Server
 
-function server(done) {
+const server = (done) => {
   browser.init({
     server: {
       baseDir: "build",
@@ -91,7 +113,14 @@ function server(done) {
     ui: false,
   });
   done();
-}
+};
+
+// Reload
+
+export const reload = (done) => {
+  browser.reload();
+  done();
+};
 
 // Watcher
 
@@ -100,4 +129,10 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", browser.reload);
 };
 
-export default gulp.series(html, styles, server, watcher);
+export default gulp.series(
+  clean,
+  copy,
+  copyimages,
+  gulp.parallel(styles, html, scripts, svg, sprite),
+  gulp.series(server, watcher)
+);
