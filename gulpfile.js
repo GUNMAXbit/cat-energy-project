@@ -1,58 +1,58 @@
-import gulp from "gulp";
-import plumber from "gulp-plumber";
-import sass from "gulp-dart-sass";
-import postcss from "gulp-postcss";
-import autoprefixer from "autoprefixer";
-import browser from "browser-sync";
-import rename from "gulp-rename";
-import htmlmin from "gulp-htmlmin";
-import del from "del";
-import terser from "gulp-terser";
-import svgo from "gulp-svgo";
-import svgstore from "gulp-svgstore";
-// import squoosh from "gulp-libsquoosh";
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import sass from 'gulp-dart-sass';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
+import browser from 'browser-sync';
+
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp
     .src("source/sass/style.scss", { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer(), csso()]))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
 
 // HTML
-export const html = () => {
+const html = () => {
   return gulp
     .src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 };
 
 // Scripts
-export const scripts = () => {
+const scripts = () => {
   return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
 };
 
 // Images
-export const optimizeimages = () => {
+const optimizeImages = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
 };
 
-export const copyimages = () => {
+const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
 };
 
 // WebP;
 
-export const createWebP = () => {
+const createWebP = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh({ webp: {} }))
@@ -61,32 +61,45 @@ export const createWebP = () => {
 
 // SVG
 
-export const svg = () => {
+const svg = () => {
+  return gulp
+    .src("source/img/icons/*.svg")
+    .pipe(svgo())
+    .pipe(gulp.dest("build/img/icons"));
+};
+
+const svgLogos = () => {
   return gulp
     .src("source/img/logo/*.svg")
     .pipe(svgo())
     .pipe(gulp.dest("build/img/logo"));
 };
 
-export const sprite = () => {
-  return gulp
-    .src("source/img/icons/*.svg")
-    .pipe(svgo())
-    .pipe(
-      svgstore({
-        inlineSvg: true,
-      })
-    )
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-};
+const sprite = () => {
+  return gulp.src('source/img/sprite/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+  inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
+  }
+
+
+const optimizeFavicon = () => {
+  return gulp.src('source/img/favicons/*.svg')
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img/favicons/'));
+  }
 
 // Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp
     .src(
-      ["source/fonts/*.{woff2,woff}", "source/*.ico", "source/*.webmanifest"],
+      ["source/fonts/*.{woff2,woff}",
+      "source/*.ico",
+      "source/*.webmanifest"],
       {
         base: "source",
       }
@@ -97,7 +110,7 @@ export const copy = (done) => {
 
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return del("build");
 };
 
@@ -117,7 +130,7 @@ const server = (done) => {
 
 // Reload
 
-export const reload = (done) => {
+const reload = (done) => {
   browser.reload();
   done();
 };
@@ -126,13 +139,44 @@ export const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/*.html").on("change", browser.reload);
+  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 };
+
+// Build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  createWebP,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  svgLogos,
+  sprite,
+  optimizeFavicon
+  ),
+  );
+
+ // Default
 
 export default gulp.series(
   clean,
   copy,
-  copyimages,
-  gulp.parallel(styles, html, scripts, svg, sprite),
-  gulp.series(server, watcher)
-);
+  copyImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  svgLogos,
+  sprite,
+  optimizeFavicon
+  ),
+  gulp.series(
+  server,
+  watcher
+  ));
