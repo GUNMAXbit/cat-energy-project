@@ -49,7 +49,7 @@
   }
 }
 
-.advantages-list__item-first::after {
+.advantages-list__item--first::after {
   position: absolute;
   top: 0;
   right: 5px;
@@ -59,7 +59,7 @@
   }
 }
 
-.advantages-list__item-second::after {
+.advantages-list__item--second::after {
   position: absolute;
   top: 0;
   right: -17px;
@@ -69,7 +69,7 @@
   }
 }
 
-.advantages-list__item-third::after {
+.advantages-list__item--third::after {
   position: absolute;
   top: 0;
   right: -18px;
@@ -79,7 +79,7 @@
   }
 }
 
-.advantages-list__item-fourth::after {
+.advantages-list__item--fourth::after {
   position: absolute;
   top: 0;
   right: -20px;
