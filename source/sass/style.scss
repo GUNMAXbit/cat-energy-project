@@ -1,5 +1,5 @@
 /* Глобальные Файлы */
-@import "./global/fonts";
+@import "./fonts";
 @import "./global/variables";
 @import "./blocks/page-body";
 @import "./blocks/visually-hidden";
@@ -8,16 +8,17 @@
 
 /* Файлы для Header */
 @import "./blocks/main-header";
-@import "./blocks/main-header-wrapper";
+@import "./main-header-wrapper";
 @import "./blocks/main-nav";
 @import "./blocks/main-nav-list";
 @import "./blocks/main-container-header";
+@import "./main-container-header__back";
 
 /* Файлы Главной страницы */
 @import "./blocks/advantages";
 @import "./blocks/advantages-list";
 @import "./blocks/program";
-@import "./blocks/program-list";
+@import "./program-list";
 @import "./blocks/example";
 @import "./blocks/range";
 
@@ -26,17 +27,17 @@
 @import "./blocks/catalog-list";
 @import "./blocks/optional";
 @import "./blocks/optional-list";
-@import "./blocks/main-promo";
+@import "./main-promo";
 
 /* Файлы Страницы с формой */
 @import "./blocks/form";
 @import "./blocks/form-profile";
 @import "./blocks/form-program";
 @import "./blocks/form-program-list";
-@import "./blocks/form-contacts";
+@import "./form-contacts";
 @import "./blocks/form-comment";
 @import "./blocks/form-optionally";
-@import "./blocks/form-optionally-list";
+@import "./form-optionally-list";
 
 /* Файлы для Footer */
 @import "./blocks/main-footer";

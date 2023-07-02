@@ -1,17 +1,16 @@
-import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import sass from 'gulp-dart-sass';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import csso from 'postcss-csso';
-import rename from 'gulp-rename';
-import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import del from 'del';
-import browser from 'browser-sync';
-
+import gulp from "gulp";
+import plumber from "gulp-plumber";
+import sass from "gulp-dart-sass";
+import postcss from "gulp-postcss";
+import autoprefixer from "autoprefixer";
+import csso from "postcss-csso";
+import rename from "gulp-rename";
+import terser from "gulp-terser";
+import squoosh from "gulp-libsquoosh";
+import svgo from "gulp-svgmin";
+import svgstore from "gulp-svgstore";
+import del from "del";
+import browser from "browser-sync";
 
 // Styles
 
@@ -28,9 +27,7 @@ export const styles = () => {
 
 // HTML
 const html = () => {
-  return gulp
-    .src("source/*.html")
-    .pipe(gulp.dest("build"));
+  return gulp.src("source/*.html").pipe(gulp.dest("build"));
 };
 
 // Scripts
@@ -76,30 +73,31 @@ const svgLogos = () => {
 };
 
 const sprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
-  .pipe(svgo())
-  .pipe(svgstore({
-  inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'));
-  }
-
+  return gulp
+    .src("source/img/sprite/*.svg")
+    .pipe(svgo())
+    .pipe(
+      svgstore({
+        inlineSvg: true,
+      })
+    )
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+};
 
 const optimizeFavicon = () => {
-  return gulp.src('source/img/favicons/*.svg')
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img/favicons/'));
-  }
+  return gulp
+    .src("source/img/favicons/*.svg")
+    .pipe(svgo())
+    .pipe(gulp.dest("build/img/favicons/"));
+};
 
 // Copy
 
 const copy = (done) => {
   gulp
     .src(
-      ["source/fonts/*.{woff2,woff}",
-      "source/*.ico",
-      "source/*.webmanifest"],
+      ["source/fonts/*.{woff2,woff}", "source/*.ico", "source/*.webmanifest"],
       {
         base: "source",
       }
@@ -139,7 +137,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
@@ -150,33 +148,15 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   createWebP,
-  gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  svgLogos,
-  sprite,
-  optimizeFavicon
-  ),
-  );
+  gulp.parallel(styles, html, scripts, svg, svgLogos, sprite, optimizeFavicon)
+);
 
- // Default
+// Default
 
 export default gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  svgLogos,
-  sprite,
-  optimizeFavicon
-  ),
-  gulp.series(
-  server,
-  watcher
-  ));
+  gulp.parallel(styles, html, scripts, svg, svgLogos, sprite, optimizeFavicon),
+  gulp.series(server, watcher)
+);
