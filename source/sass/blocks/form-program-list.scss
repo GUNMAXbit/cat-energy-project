@@ -13,10 +13,10 @@
 
 .form-program-list__item {
   display: flex;
-  height: 30px;
+  min-height: 30px;
 
   @media (min-width: $tablet-width) {
-    height: 40px;
+    min-height: 40px;
   }
 }
 

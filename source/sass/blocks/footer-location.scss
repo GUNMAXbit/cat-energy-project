@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 59px 80px 54px 82px;
-    min-height: 86px;
+    max-height: 86px;
     top: 90px;
     left: 110px;
     width: 405px;
@@ -39,6 +39,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    overflow: hidden;
   }
 }
 
