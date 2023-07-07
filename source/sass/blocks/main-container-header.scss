@@ -1,0 +1,122 @@
+.main-container-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    align-items: start;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("/img/assets/product-desktop.png") top 29px right 330px
+      no-repeat;
+    margin-bottom: 0;
+  }
+}
+
+.main-container-header__title {
+  padding-top: 27px;
+  margin: 0 0 25px 0;
+  color: $basic_white;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    margin: 0 0 41px 117px;
+    color: $basic_black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+    margin: 0 0 41px 190px;
+  }
+}
+
+.main-container-header__description {
+  margin: 0 0 29px 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px 119px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic_black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 190px;
+  }
+}
+
+.button {
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  font-family: inherit;
+}
+
+.main-container-header__btn {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  width: 86%;
+  padding: 10px 0;
+  color: $basic_white;
+  background-color: $basic_green;
+
+  &:hover {
+    background: $basic_light_green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 32%;
+    position: absolute;
+    padding: 17px 0;
+    z-index: 2;
+    top: 294px;
+    left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 17%;
+    margin: 0 0 267px 190px;
+    position: static;
+  }
+}
+
+.main-container-header__img {
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.product-picture {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+}

@@ -1,0 +1,84 @@
+.form-profile {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  row-gap: 14px;
+  padding: 0;
+  margin: 0 20px 24px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 67px 72px 70px;
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 110px;
+  }
+}
+
+.form-profile__field {
+  display: flex;
+  align-items: center;
+}
+
+.form-profile__label {
+  margin-right: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 18px;
+  }
+}
+
+.form-profile__input {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0 0 16px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid $special_light_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+    padding: 0 0 0 19px;
+  }
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:focus:invalid {
+    outline: none;
+    border: 2px solid $status_error;
+  }
+}
+
+.form-profile__input::placeholder {
+  text-align: start;
+  font-family: $font-family-Oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -1,31 +1,47 @@
-// Начните писать стили здесь
-@font-face {
-  font-family: "Oswald";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("font/oswaldmedium.wolf2") format("woff2"),
-    url("fonts/oswaldmedium.wolf") format("woff");
-}
+/* Глобальные Файлы */
+@import "./fonts";
+@import "./global/variables";
+@import "./blocks/page-body";
+@import "./blocks/visually-hidden";
+@import "./blocks/container-wrapper";
+@import "./global/line";
 
-@font-face {
-  font-family: "Oswald";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("fonts/oswalregular.wolf2") format("woff2"),
-    url("fonts/oswalregular.wolf2") format("woff");
-}
+/* Файлы для Header */
+@import "./blocks/main-header";
+@import "./main-header-wrapper";
+@import "./blocks/main-nav";
+@import "./blocks/main-nav-list";
+@import "./blocks/main-container-header";
+@import "./main-container-header__back";
 
-.page {
-  height: 100%;
-  font-size: 18px;
-  font-family: "Oswald", sans-serif;
-  line-height: 27px;
-}
+/* Файлы Главной страницы */
+@import "./blocks/advantages";
+@import "./blocks/advantages-list";
+@import "./blocks/program";
+@import "./program-list";
+@import "./blocks/example";
+@import "./blocks/range";
 
-@import "./blocks/main-header.scss";
-@import "./blocks/main-header-wrapper.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/main-header-container.scss";
-@import "./blocks/advantages.scss";
+/* Файлы Страницы каталога */
+@import "./blocks/catalog";
+@import "./blocks/catalog-list";
+@import "./blocks/optional";
+@import "./blocks/optional-list";
+@import "./main-promo";
+
+/* Файлы Страницы с формой */
+@import "./blocks/form";
+@import "./blocks/form-profile";
+@import "./blocks/form-program";
+@import "./blocks/form-program-list";
+@import "./form-contacts";
+@import "./blocks/form-comment";
+@import "./blocks/form-optionally";
+@import "./form-optionally-list";
+
+/* Файлы для Footer */
+@import "./blocks/main-footer";
+@import "./blocks/footer-location";
+@import "./blocks/footer-contacts";
+@import "./blocks/social-list";
+@import "./blocks/copyright";

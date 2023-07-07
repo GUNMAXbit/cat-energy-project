@@ -1,0 +1,160 @@
+.main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 17px;
+  }
+}
+
+.main-header__link-first {
+  display: block;
+  width: 33px;
+  height: 37px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.main-header__link-secondary {
+  display: block;
+  width: 101px;
+  height: 19px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: -7px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.main-header--closed .main-header__toggle {
+  margin-top: 6px;
+  cursor: pointer;
+  width: 25px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  background-image: url("../img/icons/burger-menu.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  .main-header--nojs .main-header__toggle {
+    display: none;
+  }
+}
+
+.main-header--closed .main-nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-header--opened .main-header__toggle {
+  margin: 4px 0 0 5px;
+  position: relative;
+  cursor: pointer;
+  width: 21px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    left: -3px;
+    background-color: $basic_black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  .main-header--opened .main-nav {
+    @media (min-width: $mobile-width-only) {
+      display: flex;
+    }
+  }
+
+  .main-header--nojs .main-header__toggle {
+    display: none;
+  }
+
+  .main-header--nojs .main-nav {
+    display: flex;
+  }
+}
